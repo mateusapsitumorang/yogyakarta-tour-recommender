@@ -1,0 +1,474 @@
+<!doctype html>
+<html lang="id">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- favicon -->
+    <link rel="icon" type="image/png" href="{{ url_for('static', filename='images/favicon.png') }}">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='vendors/bootstrap/css/bootstrap.min.css') }}"
+        media="all">
+    <!-- Fonts Awesome CSS -->
+    <link rel="stylesheet" type="text/css"
+        href="{{ url_for('static', filename='vendors/fontawesome/css/all.min.css') }}">
+    <!-- jquery-ui css -->
+    <link rel="stylesheet" type="text/css"
+        href="{{ url_for('static', filename='vendors/jquery-ui/jquery-ui.min.css') }}">
+    <!-- modal video css -->
+    <link rel="stylesheet" type="text/css"
+        href="{{ url_for('static', filename='vendors/modal-video/modal-video.min.css') }}">
+    <!-- light box css -->
+    <link rel="stylesheet" type="text/css"
+        href="{{ url_for('static', filename='vendors/lightbox/dist/css/lightbox.min.css') }}">
+    <!-- slick slider css -->
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='vendors/slick/slick.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='vendors/slick/slick-theme.css') }}">
+    <!-- google fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,400&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap"
+        rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
+    <title>YogTrip</title>
+
+    {% block extra_css %}
+    <style>
+        .flash-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+            pointer-events: none;
+        }
+
+        .flash-popup {
+            max-width: 400px;
+            width: 90%;
+            padding: 20px;
+            margin: 0 auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            position: absolute;
+            top: -200px;
+            /* Posisi awal di luar layar */
+            opacity: 0;
+            transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+            pointer-events: auto;
+            text-align: center;
+        }
+
+        .flash-popup.show {
+            top: 100px;
+            /* Posisi saat ditampilkan */
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .flash-popup.hiding {
+            top: -200px;
+            opacity: 0;
+            transform: translateY(-50px);
+        }
+
+        .flash-popup.success {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        .flash-popup.danger {
+            background-color: #f44336;
+            color: white;
+        }
+
+        .flash-popup.info {
+            background-color: #2196F3;
+            color: white;
+        }
+
+        .flash-popup.warning {
+            background-color: #ff9800;
+            color: white;
+        }
+
+        .flash-close {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: none;
+            border: none;
+            color: white;
+            font-size: 20px;
+            cursor: pointer;
+            opacity: 0.7;
+            transition: opacity 0.3s ease;
+        }
+
+        .flash-close:hover {
+            opacity: 1
+        }
+    </style>
+    {% endblock %}
+</head>
+
+<body class="{% block body_class %}home{% endblock %}">
+    <!-- Flash messages NOW placed DIRECTLY in body, before any other content -->
+    {% with messages = get_flashed_messages(with_categories=true) %}
+    {% if messages %}
+    <div id="flash-container" class="flash-container">
+        {% for category, message in messages %}
+        <div class="flash-popup {{ category }}">
+            <div class="flash-content">
+                <span class="flash-message">{{ message }}</span>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+    {% endif %}
+    {% endwith %}
+
+    <div id="siteLoader" class="site-loader">
+        <div class="preloader-content">
+            <img src="{{ url_for('static', filename='images/loader1.gif') }}" alt="">
+        </div>
+    </div>
+    <script>
+        window.addEventListener('load', function () {
+            setTimeout(function () {
+                var loader = document.getElementById('siteLoader');
+                loader.style.display = 'none'; // Menyembunyikan loader setelah 1 detik
+            }, 1000); // 1000ms = 1 detik
+        });
+    </script>
+
+    <div id="page" class="full-page">
+        <header id="masthead" class="site-header header-primary">
+            <div class="top-header">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 d-none d-lg-block">
+                            <div class="header-contact-info">
+                                <ul>
+                                    <li>
+                                        <a href="https://wa.me/62874123456" target="_blank">
+                                            <i class="fas fa-phone-alt"></i> +62 274 123456
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="mailto:info@yogyakarta-travel.com"><i class="fas fa-envelope"></i>
+                                            yogtrip@gmail.com</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.google.com/maps?q=Jl.+Malioboro+No.+1,+Yogyakarta"
+                                            target="_blank">
+                                            <i class="fas fa-map-marker-alt"></i> Jl. Malioboro No. 1, Yogyakarta
+                                        </a>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 d-flex justify-content-lg-end justify-content-between">
+                            <div class="header-social social-links">
+                                <ul>
+                                    <li><a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"
+                                                aria-hidden="true"></i></a></li>
+                                    <li><a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"
+                                                aria-hidden="true"></i></a></li>
+                                    <li><a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"
+                                                aria-hidden="true"></i></a></li>
+                                    <li><a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin"
+                                                aria-hidden="true"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom-header">
+                <div class="container d-flex justify-content-between align-items-center">
+                    <div class="site-identity">
+                        <h1 class="site-title">
+                            <a href="{{ url_for('index') }}">
+                                <img class="white-logo"
+                                    src="{{ url_for('static', filename='images/travele-logo1.png') }}" alt="logo">
+                                <img class="black-logo"
+                                    src="{{ url_for('static', filename='images/travele-logo1.png') }}" alt="logo">
+                            </a>
+                        </h1>
+                    </div>
+                    <div class="main-navigation d-none d-lg-block">
+                        <nav id="navigation" class="navigation">
+                            <ul>
+                                <li><a href="{{ url_for('index_admin') }}">Beranda</a></li>
+                                <li><a href="{{ url_for('recommendation') }}">Rekomendasi Paket Wisata</a></li>
+                                <li><a href="{{ url_for('about') }}">Tentang Kami</a></li>
+                                {% if session.get('is_admin', False) %}
+                                <li><a href="{{ url_for('feedback_list') }}">Admin Dashboard</a></li>
+                                {% endif %}
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="header-btn">
+                        {% if is_logged_in %}
+                        <a href="{{ url_for('logout') }}" class="button-primary">LOGOUT</a>
+                        {% else %}
+                        <a href="{{ url_for('login') }}" class="button-primary">LOGIN</a>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main id="content" class="site-main">
+
+            {% block content %}{% endblock %}
+            <!--  contact details html end -->
+        </main>
+        <footer id="colophon" class="site-footer footer-primary">
+            <div class="top-footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6">
+                            <aside class="widget widget_text">
+                                <h3 class="widget-title">
+                                    Tentang YogTrip
+                                </h3>
+                                <div class="textwidget widget-text">
+                                    YogTrip adalah platform sistem rekomendasi paket wisata
+                                    yang dirancang khusus untuk mempermudah Anda dalam merencanakan perjalanan ke
+                                    Yogyakarta.
+                                </div>
+                                <div class="award-img">
+                                    <a href="#"><img src="assets/images/logo6.png" alt=""></a>
+                                    <a href="#"><img src="assets/images/logo2.png" alt=""></a>
+                                </div>
+                            </aside>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <aside class="widget widget_text">
+                                <h3 class="widget-title">INFORMASI KONTAK</h3>
+                                <div class="textwidget widget-text">
+                                    <ul>
+                                        <li>
+                                            <a href="https://wa.me/62874123456" target="_blank">
+                                                <i class="fas fa-phone-alt"></i> +62 274 123456
+                                            </a>
+                                        </li>
+
+                                        <li>
+                                        <li>
+                                            <a href="mailto:info@yogyakarta-travel.com"><i class="fas fa-envelope"></i>
+                                                yogtrip@gmail.com</a>
+                                        </li>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.google.com/maps?q=Jl.+Malioboro+No.+1,+Yogyakarta"
+                                                target="_blank">
+                                                <i class="fas fa-map-marker-alt"></i> Jl. Malioboro No. 1, Yogyakarta
+                                            </a>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                            </aside>
+                        </div>
+
+
+
+                        <div class="col-lg-3 col-md-6">
+                            <aside class="widget widget_recent_post">
+                                <h3 class="widget-title">Post Terbaru</h3>
+                                <ul>
+                                    <li>
+                                        <h5>
+                                            <a href="https://www.detik.com/tag/wisata-jogja">Berita dan Informasi Wisata
+                                                Jogja Terkini dan Terbaru Hari Ini - Detikcom</a>
+                                        </h5>
+                                        <div class="entry-meta">
+                                            <!-- Tambahkan informasi tambahan di sini jika perlu -->
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <h5>
+                                            <a href="https://www.kompas.com/tag/wisata-yogyakarta#google_vignette">Berita
+                                                dan Informasi Wisata Jogja Terkini dan Terbaru Hari Ini - Kompas.com</a>
+                                        </h5>
+                                        <div class="entry-meta">
+                                            <!-- Tambahkan informasi tambahan di sini jika perlu -->
+                                        </div>
+                                    </li>
+                                </ul>
+                            </aside>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6">
+                            <aside class="widget widget_newslatter">
+                                <h3 class="widget-title">Coba Rekomendasi</h3>
+                                <div class="widget-text">
+                                    Jelajahi berbagai pilihan yang kami tawarkan dan temukan apa yang Anda cari dengan
+                                    mudah.
+                                </div>
+                                <br>
+                                <form action="{{ url_for('recommendation') }}" method="get">
+                                    <input type="submit" value="Mulai Rekomendasi Sekarang">
+                                </form>
+
+                            </aside>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="buttom-footer">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-md-5">
+                            <div class="footer-menu">
+                                <ul>
+                                    <li>
+                                        <a href="{{ url_for('index') }}">Beranda</a>
+                                    </li>
+                                    <li>
+                                        <a href="{{ url_for('recommendation') }}">Rekomendasi Paket Wisata</a>
+                                    </li>
+                                    <li>
+                                        <a href="{{ url_for('about') }}">Tentang Kami</a>
+                                    </li>
+                                    {% if session['is_admin'] %}
+                                    <li><a href="{{ url_for('feedback_list') }}">Admin Dasboard</a></li>
+                                    {% endif %}
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-2 text-center">
+                            <div class="footer-logo">
+                                <img class="white-logo"
+                                    src="{{ url_for('static', filename='images/travele-logo1.png') }}" alt="logo">
+                            </div>
+                        </div>
+                        <div class="col-md-5">
+                            <div class="copy-right text-right">Copyright © 2025 YogTrip. All rights reserveds</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <a id="backTotop" href="#" class="to-top-icon">
+            <i class="fas fa-chevron-up"></i>
+        </a>
+        <!-- header html end -->
+    </div>
+
+    {% block extra_js %}
+    {% endblock %}
+    <!-- JavaScript -->
+    <script>
+        document.getElementById("backTotop").addEventListener('click', function (event) {
+            // Menghentikan efek default dari scroll-behavior smooth
+            document.documentElement.style.scrollBehavior = 'auto';
+
+            // Menggunakan scrollTo langsung menuju atas dengan animasi smooth
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+
+            // Mengaktifkan kembali scroll-behavior smooth setelah scroll selesai
+            setTimeout(function () {
+                document.documentElement.style.scrollBehavior = 'smooth';
+            }, 50000); // Menunggu 300ms setelah scroll selesai
+        });
+    </script>
+
+
+    <script>
+        window.addEventListener('DOMContentLoaded', () => {
+            document.querySelectorAll('.rating').forEach(ratingEl => {
+                const ratingValue = parseFloat(ratingEl.getAttribute('data-rating'));
+                const stars = ratingEl.querySelectorAll('i');
+
+                stars.forEach((star, index) => {
+                    const starValue = index + 1;
+                    star.classList.remove('fas', 'fa-star-half-alt');
+                    star.classList.add('far'); // outline star by default
+
+                    if (starValue <= Math.floor(ratingValue)) {
+                        star.classList.remove('far');
+                        star.classList.add('fas'); // solid star full
+                    } else if (starValue === Math.ceil(ratingValue) && ratingValue % 1 >= 0.5) {
+                        star.classList.remove('far');
+                        star.classList.add('fas', 'fa-star-half-alt'); // half star
+                    }
+                });
+            });
+        });
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const flashContainer = document.getElementById('flash-container');
+
+            if (flashContainer) {
+                const flashPopups = flashContainer.querySelectorAll('.flash-popup');
+
+                flashPopups.forEach(popup => {
+                    // Tampilkan popup dengan animasi slider
+                    setTimeout(() => {
+                        popup.classList.add('show');
+                    }, 100);
+
+                    // Tutup popup setelah beberapa detik
+                    const closeTimeout = setTimeout(() => {
+                        hidePopup(popup);
+                    }, 5000);
+
+                    // Tambahkan event listener untuk tombol close
+                    const closeButton = popup.querySelector('.flash-close');
+                    closeButton.addEventListener('click', () => {
+                        clearTimeout(closeTimeout);
+                        hidePopup(popup);
+                    });
+                });
+
+                // Fungsi untuk menyembunyikan popup
+                function hidePopup(popup) {
+                    popup.classList.remove('show');
+                    popup.classList.add('hiding');
+
+                    setTimeout(() => {
+                        popup.remove();
+                        // Hapus container jika tidak ada popup lagi
+                        if (flashContainer.children.length === 0) {
+                            flashContainer.remove();
+                        }
+                    }, 500); // Sesuaikan dengan durasi transisi
+                }
+            }
+        });
+    </script>
+    <script src="{{ url_for('static', filename='js/jquery.js') }}"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+    <script src="{{ url_for('static', filename='vendors/bootstrap/js/bootstrap.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='vendors/jquery-ui/jquery-ui.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='vendors/countdown-date-loop-counter/loopcounter.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/jquery.counterup.js') }}"></script>
+    <script src="{{ url_for('static', filename='vendors/modal-video/jquery-modal-video.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='vendors/masonry/masonry.pkgd.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='vendors/lightbox/dist/js/lightbox.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='vendors/slick/slick.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/jquery.slicknav.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/custom.min.js') }}"></script>
+</body>
+
+</html>

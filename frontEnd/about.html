@@ -1,0 +1,178 @@
+{% extends 'base.html' %}
+
+{% block title %}Home | Yogyakarta Travel{% endblock %}
+
+{% block content %}
+<!-- CSS Tambahan -->
+<style>
+   .hidden-element {
+      opacity: 0;
+      transform: translateY(50px);
+      transition: all 1s ease-out;
+   }
+
+   .founder-card .card-content {
+      text-align: left;
+      /* Teks rata kiri */
+      padding-left: 3rem;
+      /* Jarak dari tepi kiri */
+      padding-right: 2rem;
+      max-width: 1200px;
+      /* Batas lebar konten */
+      margin: 0 auto;
+   }
+
+   .no-section-spacing {
+      padding: 0 !important;
+      /* Menonaktifkan padding */
+      margin: 0 !important;
+      /* Menonaktifkan margin */
+   }
+
+
+   .show-element {
+      opacity: 1;
+      transform: translateY(0);
+   }
+
+   .card-full {
+      position: relative;
+      overflow: hidden;
+      background-size: cover;
+      background-position: center;
+      min-height: 400px;
+      /* Tinggi lebih besar untuk efek dramatis */
+      width: 100%;
+      /* Full-width */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+   }
+
+   .card-full::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      /* Lapisan semi-transparan */
+      z-index: 1;
+   }
+
+   .card-content {
+      position: relative;
+      z-index: 2;
+      color: #fff;
+      text-align: center;
+      padding: 2rem;
+      max-width: 1200px;
+      /* Batas konten agar teks tidak terlalu lebar */
+      margin: 0 auto;
+   }
+
+   .card-content h3,
+   .card-content p {
+      color: #fff !important;
+   }
+
+   .card-content .text-muted {
+      color: #e6e6e6 !important;
+   }
+
+   .section-spacing {
+      padding: 80px 0;
+   }
+</style>
+
+<!-- Banner Section -->
+<section class="inner-banner-wrap">
+   <div class="inner-baner-container"
+      style="background-image: url({{ url_for('static', filename='images/Aboutus.png') }});">
+      <div class="container">
+         <div class="inner-banner-content"></div>
+      </div>
+   </div>
+</section>
+
+
+<!-- Main Content -->
+<main class="section-spacing">
+   <!-- Tentang Kami -->
+   <section class="hidden-element mb-5">
+      <div class="container">
+         <div class="row justify-content-center">
+            <div class="col-lg-10 text-center">
+               <h2 class="text-center mb-5">Tentang Kami</h2>
+               <p class="lead text-secondary fs-5">
+                  YogTrip adalah platform sistem rekomendasi paket wisata yang dirancang khusus untuk mempermudah
+                  Anda dalam merencanakan perjalanan ke Yogyakarta. Dengan berbagai pilihan paket wisata yang
+                  telah disesuaikan dengan preferensi dan kebutuhan Anda, YogTrip membantu Anda menemukan
+                  pengalaman terbaik di Kota Gudeg ini.
+               </p>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <!-- Keunggulan -->
+   <section class="hidden-element mb-5">
+      <div class="row justify-content-center">
+         <div class="col-lg-10 text-center">
+            <h2 class="mb-4">Keunggulan Kami</h2>
+            <p class="lead text-secondary fs-5">
+               Sistem kami menggunakan algoritma Path Ranking untuk memberikan rekomendasi paket wisata yang disesuaikan
+               dengan preferensi dan minat Anda, menawarkan pengalaman unik yang mencakup keberagaman destinasi dari
+               sejarah dan budaya, hingga petualangan alam Yogyakarta.
+            </p>
+         </div>
+      </div>
+   </section>
+
+   <!-- Visi Misi -->
+   <section class="hidden-element mb-5">
+      <div class="row justify-content-center">
+         <div class="col-lg-10 text-center">
+            <h2 class="mb-4">Visi dan Misi</h2>
+            <p class="lead text-secondary fs-5">
+               Kami bercita-cita menjadi platform terdepan yang menghubungkan wisatawan dengan pengalaman wisata terbaik
+               di Yogyakarta melalui rekomendasi yang personal, tepat, dan terpercaya, dengan misi menyediakan sistem
+               rekomendasi paket wisata yang mengintegrasikan penginapan, tempat wisata, dan rumah makan berdasarkan
+               preferensi pengguna.
+            </p>
+         </div>
+      </div>
+   </section>
+</main>
+   <!-- Founder -->
+   <section class="hidden-element mb-5 founder-card no-section-spacing">
+      <div class="card-full" style="background-image: url({{ url_for('static', filename='images/founder.png') }});">
+         <div class="card-content">
+         </div>
+      </div>
+   </section>
+
+
+
+<!-- Animasi Scroll Script -->
+<script>
+   document.addEventListener('DOMContentLoaded', () => {
+      const elements = document.querySelectorAll('.hidden-element');
+      const observer = new IntersectionObserver((entries) => {
+         entries.forEach(entry => {
+            if (entry.isIntersecting) {
+               entry.target.classList.add('show-element');
+            }
+         });
+      }, {
+         threshold: 0.25,
+         rootMargin: '0px 0px -100px 0px'
+      });
+
+      elements.forEach(element => {
+         observer.observe(element);
+      });
+   });
+</script>
+
+{% endblock %}

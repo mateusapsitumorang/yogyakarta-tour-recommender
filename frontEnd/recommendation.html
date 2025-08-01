@@ -1,0 +1,2204 @@
+{% extends "base.html" %}
+
+{% block title %}Rekomendasi Paket Wisata - Yogyakarta Travel{% endblock %}
+
+{% block extra_css %}
+<!-- Leaflet CSS -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+    crossorigin="" />
+
+<!-- Leaflet Routing Machine CSS -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet-routing-machine@3.2.12/dist/leaflet-routing-machine.css" />
+
+<style>
+    .flash-container {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
+        z-index: 9999;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .place-link {
+        color: #000000;
+        text-decoration: none;
+        transition: color 0.3s ease, text-decoration 0.3s ease;
+    }
+
+    .place-link:hover {
+        color: #0056b3;
+        text-decoration: underline;
+    }
+
+    .route-sequence {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+        font-weight: bold;
+        font-size: 1em;
+        margin-left: 36px;
+        margin-bottom: 10px;
+    }
+
+    .route-sequence i {
+        color: #333;
+    }
+
+    .location-koordinat-container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    /* Kelas kustom untuk ikon penginapan */
+    .hotel-icon {
+        color: #F56960;
+        /* Warna sama dengan .hotel-marker */
+    }
+
+    /* Pastikan ikon di peta dan teks konsisten */
+    .hotel-marker {
+        background-color: #F56960;
+        /* Sudah ada, pastikan konsisten */
+        color: white;
+        /* Ikon putih di dalam marker */
+    }
+
+    /* Sama untuk kategori lain jika diperlukan */
+    .attraction-icon {
+        color: #2C75BA;
+        /* Warna untuk tempat wisata */
+    }
+
+    .restaurant-icon {
+        color: #28a745;
+        /* Warna untuk rumah makan */
+    }
+
+    .location-info {
+        gap: 20px;
+    }
+
+    .info-container {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+
+    .location-info,
+    .distance-info,
+    .koordinat-info {
+        flex: 1;
+        min-width: 250px;
+    }
+
+    .flash-popup {
+        position: absolute;
+        top: 180px;
+        left: -100%;
+        max-width: 400px;
+        width: 30%;
+        margin: 0;
+        padding: 15px;
+        border-radius: 6px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        background: #333;
+        color: #fff;
+        opacity: 0;
+        pointer-events: auto;
+        transition: left 0.4s ease, opacity 0.4s ease;
+    }
+
+    .flash-popup.show {
+        left: 20px;
+        opacity: 1;
+    }
+
+    .flash-popup.hiding {
+        left: -100%;
+        opacity: 0;
+    }
+
+    .flash-popup.success {
+        background: #4CAF50;
+    }
+
+    .flash-popup.danger {
+        background: #f44336;
+    }
+
+    .flash-popup.info {
+        background: #2196F3;
+    }
+
+    .flash-popup.warning {
+        background: #ff9800;
+    }
+
+    /* Tombol close */
+    .flash-close {
+        position: absolute;
+        top: 8px;
+        right: 8px;
+        background: none;
+        border: none;
+        color: #fff;
+        font-size: 18px;
+        cursor: pointer;
+        opacity: 0.7;
+        transition: opacity 0.2s;
+    }
+
+    .flash-close:hover {
+        opacity: 1;
+    }
+
+    body {
+        font-family: 'Open Sans', Arial, sans-serif;
+        color: #333;
+    }
+
+    .section-header {
+        text-align: center;
+        padding: 50px 0 30px;
+        margin-bottom: 30px;
+    }
+
+    .section-header h2 {
+        font-size: 2.5rem;
+        font-weight: 700;
+        color: #333;
+        margin-bottom: 15px;
+    }
+
+    .section-header p {
+        color: #666;
+        max-width: 700px;
+        margin: 0 auto;
+        font-size: 1.1rem;
+    }
+
+    .trip-search-inner {
+        background-color: #fff;
+        border-radius: 15px;
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+        padding: 30px;
+        margin-bottom: 50px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .input-group {
+        flex: 0 0 33.333333%;
+        max-width: 33.333333%;
+        padding: 0 15px;
+        margin-bottom: 20px;
+
+    }
+
+    @media (max-width: 992px) {
+        .input-group {
+            flex: 0 0 50%;
+            max-width: 50%;
+        }
+    }
+
+    @media (max-width: 768px) {
+        .input-group {
+            flex: 0 0 100%;
+            max-width: 100%;
+        }
+    }
+
+    .input-group label {
+        display: block;
+        margin-bottom: 8px;
+        font-weight: 600;
+        color: #333;
+    }
+
+    .form-select {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        background-color: #fff;
+        color: #333;
+    }
+
+    .form-select:focus {
+        border-color: #4e73df;
+        box-shadow: 0 0 0 0.2rem rgba(78, 115, 223, 0.25);
+    }
+
+    .recommendation-card {
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        margin-bottom: 30px;
+        overflow: hidden;
+        transition: all 0.3s ease;
+    }
+
+    .recommendation-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    .recommendation-header {
+        background-color: #4e73df;
+        color: white;
+        padding: 15px 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: 8px;
+    }
+
+    .recommendation-body {
+        padding: 20px;
+
+    }
+
+    .location-info {
+        background-color: #f8f9fa;
+        padding: 15px;
+        border-radius: 8px;
+        margin-top: -50px;
+        flex: 1;
+    }
+
+    .rating-stars {
+        color: #ffc107;
+    }
+
+    .price-tag {
+        color: #28a745;
+        font-weight: bold;
+        font-size: 1.2rem;
+    }
+
+    .distance-info {
+        color: #6c757d;
+        font-size: 0.9rem;
+        margin-left: 36px;
+        margin-bottom: 13px;
+    }
+
+    .radio-method-container {
+        width: 100%;
+        text-align: center;
+        margin: 20px 0;
+    }
+
+    .method-title {
+        display: block;
+        margin-bottom: 15px;
+        font-size: 1.1em;
+        color: #333;
+        margin-top: -30px;
+
+    }
+
+    .search-container {
+        width: 100%;
+        text-align: center;
+        margin-top: 10px !important;
+    }
+
+    .btn-search {
+        background-color: #F56960;
+        color: #fff;
+        border: none;
+        border-radius: 8px !important;
+        padding: 12px 40px !important;
+        font-size: 1em !important;
+        font-weight: 600;
+        cursor: pointer;
+        outline: none !important;
+        transition: all 0.3s ease;
+    }
+
+    .btn-search:hover {
+        background-color: #2C75BA;
+        transform: translateY(-1px);
+    }
+
+    @media (max-width: 768px) {
+        .radio-group {
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .btn-search {
+            width: 100% !important;
+            padding: 12px 20px !important;
+        }
+    }
+
+    #loader,
+    #noResult {
+        display: none;
+        text-align: center;
+        padding: 30px;
+    }
+
+    .empty-result-message {
+        padding: 40px 0;
+        text-align: center;
+        color: #6c757d;
+    }
+
+    .empty-result-suggestions {
+        background-color: #f8f9fa;
+        border-radius: 8px;
+        padding: 15px;
+        margin-top: 20px;
+        text-align: left;
+    }
+
+    .trip-search-section {
+        position: relative;
+        z-index: 3;
+        margin-top: -220px;
+        padding-bottom: 100px;
+    }
+
+    .form-overlay-container {
+        position: relative;
+        top: 0;
+        transform: none;
+        margin: 0 auto;
+        /* Properti lainnya tetap sama */
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+        .trip-search-section {
+            margin-top: -80px;
+            padding-bottom: 60px;
+        }
+
+        .form-overlay-container {
+            width: 95%;
+            padding: 20px;
+        }
+    }
+
+    .recommendation-results {
+        margin-top: -100px;
+        /* Naikkan ke atas */
+        position: relative;
+        z-index: 10;
+        /* Pastikan berada di atas elemen lain */
+    }
+
+    .criteria-card {
+        background-color: #ffffff;
+        border-radius: 12px;
+        box-shadow: 0 4px 20px 4px rgba(0, 0, 0, 0.08);
+        padding: 20px;
+        margin: 20px;
+        border: 1px solid #e0e0e0;
+        transition: all 0.3s ease;
+    }
+
+
+    .criteria-card:hover {
+        border-radius: 12px;
+        transform: translateY(-2px);
+    }
+
+
+    /* Untuk header kartu */
+    .criteria-header {
+        border-bottom: 1px solid #f0f0f0;
+        /* Garis pemisah */
+        padding-bottom: 10px;
+        margin-bottom: 15px;
+        font-weight: bold;
+        color: #333;
+        /* Warna teks */
+    }
+
+    /* Responsif */
+    @media (max-width: 768px) {
+        .criteria-card {
+            padding: 15px;
+            /* Padding lebih kecil di layar mobile */
+            margin-bottom: 15px;
+        }
+    }
+
+    h5.m-0 {
+        font-weight: bold;
+        color: #ffffff;
+    }
+
+    .center-input-group {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 200%;
+        margin: 0 auto;
+    }
+
+    .center-input-group .input-group {
+        flex: 0 0 auto;
+        width: auto;
+        min-width: 450px;
+        margin: 0 20px 20px;
+    }
+
+    @media (max-width: 768px) {
+        .center-input-group {
+            width: 100% !important;
+            padding: 0 2px;
+            justify-content: center;
+        }
+
+        .center-input-group .input-group {
+            min-width: 100% !important;
+            width: 100% !important;
+            margin: 0 0 10px;
+        }
+    }
+
+
+    .inner-banner-content {
+        margin-top: -60px;
+    }
+
+    /* CSS Hasil Rekomendasi */
+    .recommendation-section {
+        margin: -100px auto 0;
+        padding: 0px 0;
+        max-width: 1200px;
+    }
+
+
+    /* Header */
+    .criteria-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 20px;
+        border-bottom: 2px solid #eee;
+    }
+
+    /* Body */
+    .criteria-body {
+        padding: 15px 0;
+    }
+
+    /* Card Rekomendasi */
+    .recommendation-card {
+        background: #f8f9fa;
+        border-radius: 10px;
+        padding: 15px;
+        margin: 10px 0;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+        .recommendation-section {
+            padding: 80px 15px;
+            margin-top: -50px;
+        }
+
+        .recommendation-results {
+            padding: 15px;
+        }
+    }
+
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    .recommendation-card {
+        animation: fadeIn 0.6s ease-out;
+        animation-fill-mode: backwards;
+    }
+
+    .recommendation-card:nth-child(1) {
+        animation-delay: 0.1s;
+    }
+
+    .recommendation-card:nth-child(2) {
+        animation-delay: 0.2s;
+    }
+
+    .recommendation-card:nth-child(3) {
+        animation-delay: 0.3s;
+    }
+
+    .recommendation-card:nth-child(4) {
+        animation-delay: 0.4s;
+    }
+
+    .recommendation-card:nth-child(5) {
+        animation-delay: 0.5s;
+    }
+
+    /* Animasi Hover untuk Tombol */
+    .btn-search {
+        transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    }
+
+    .btn-search:hover {
+        transform: scale(1.0) translateY(-1px);
+        box-shadow: 0 7px 14px rgba(50, 50, 93, 0.1), 0 3px 6px rgba(0, 0, 0, 0.08);
+    }
+
+    /* Animasi Loading */
+    @keyframes spin {
+        0% {
+            transform: rotate(0deg);
+        }
+
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+
+    #loader .spinner-border {
+        animation: spin 1s linear infinite;
+    }
+
+    /* Animasi Input Focus */
+    .form-select {
+        transition: all 0.3s ease;
+    }
+
+    .form-select:focus {
+        box-shadow: 0 0 0 0.2rem rgba(78, 115, 223, 0.25);
+        border-color: #4e73df;
+        transform: scale(1.02);
+    }
+
+    /* Animasi Scroll Reveal untuk Rekomendasi */
+    @keyframes slideInUp {
+        from {
+            opacity: 0;
+            transform: translate3d(0, 100%, 0);
+        }
+
+        to {
+            opacity: 1;
+            transform: translate3d(0, 0, 0);
+        }
+    }
+
+    .recommendation-results {
+        overflow: hidden;
+    }
+
+    .recommendation-card {
+        opacity: 0;
+        transform: translateY(50px);
+        transition: all 0.6s ease;
+    }
+
+    .recommendation-card.is-visible {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    /* Animasi untuk Tombol Ekspor */
+    #exportBtn {
+        transition: all 0.3s ease;
+    }
+
+    #exportBtn:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    #initialState,
+    #noResult {
+        animation: pulse 2s infinite;
+    }
+
+    @keyframes slideInFromLeft {
+        0% {
+            opacity: 0;
+            transform: translateX(-100%);
+        }
+
+        100% {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+
+    @keyframes slideInFromRight {
+        0% {
+            opacity: 0;
+            transform: translateX(100%);
+        }
+
+        100% {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+
+    .inner-banner-content .inner-title {
+        animation:
+            slideInFromLeft 0.5s ease-out forwards;
+        animation-delay: 0.3s;
+        opacity: 0;
+        animation-fill-mode: forwards;
+        /* Pastikan elemen tetap pada posisi akhir */
+    }
+
+    .inner-banner-content p {
+        animation:
+            slideInFromRight 0.5s ease-out forwards;
+        animation-delay: 0.6s;
+        opacity: 0;
+        animation-fill-mode: forwards;
+        /* Pastikan elemen tetap pada posisi akhir */
+    }
+
+    /* Hover Effect Ringan */
+    .inner-banner-content .inner-title:hover,
+    .inner-banner-content p:hover {
+        transform: scale(1.02);
+        transition: transform 0.3s ease;
+    }
+
+    /* Responsif untuk layar kecil */
+    @media (max-width: 768px) {
+
+        .inner-banner-content .inner-title,
+        .inner-banner-content p {
+            animation-duration: 0.7s;
+        }
+    }
+
+    /* CSS untuk peta */
+    .map-container {
+        height: 0;
+        overflow: hidden;
+        margin-top: 15px;
+        border-radius: 8px;
+        transition: all 0.3s ease;
+        position: relative;
+    }
+
+    .map-container.active {
+        height: 500px;
+        margin-bottom: 20px;
+        border: 2px solid #e0e0e0;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .map {
+        width: 100%;
+        height: 100%;
+        min-height: 500px;
+        background-color: #f8f9fa;
+    }
+
+    /* Pastikan container memiliki dimensi yang valid */
+    .recommendation-card {
+        position: relative;
+    }
+
+    /* Style untuk marker kustom */
+    .custom-marker {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        border-radius: 50%;
+        width: 30px !important;
+        height: 30px !important;
+        text-align: center;
+    }
+
+    .hotel-marker {
+        background-color: #F56960;
+    }
+
+    .attraction-marker {
+        background-color: #2C75BA;
+    }
+
+    .restaurant-marker {
+        background-color: #28a745;
+    }
+
+    /* Legenda rute */
+    .route-details {
+        background-color: white;
+        padding: 10px;
+        border-radius: 5px;
+        position: absolute;
+        bottom: 10px;
+        left: 10px;
+        z-index: 1000;
+        max-width: 250px;
+        font-size: 12px;
+    }
+
+    .route-legend {
+        display: block;
+        align-items: center;
+        margin-bottom: 5px;
+    }
+
+    .legend-hotel,
+    .legend-attraction,
+    .legend-restaurant {
+        display: inline-block;
+        width: 20px;
+        height: 3px;
+        margin-right: 8px;
+    }
+
+    .legend-hotel {
+        background-color: #F56960;
+    }
+
+    .legend-attraction {
+        background-color: #2C75BA;
+    }
+
+    .legend-restaurant {
+        background-color: #28a745;
+    }
+
+    /* Tombol rute */
+    .route-button {
+        background-color: #F56960;
+        color: white;
+        border: none;
+        padding: 8px 15px;
+        margin-top: 10px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        outline: none !important;
+        border-radius: 8px;
+    }
+
+    .route-button:hover {
+        background-color: #2C75BA;
+        outline: none !important;
+    }
+
+    .koordinat-info {
+        background-color: #f8f9fa;
+        padding: 10px;
+        border-radius: 8px;
+        margin-top: -48px;
+        flex: 1;
+    }
+
+    .koordinat-detail {
+        color: #6c757d;
+        font-size: 0.9rem;
+        margin-left: 34px;
+    }
+
+    /* Container Utama Kabupaten */
+    .kabupaten-selection-container {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    /* Judul Kabupaten */
+    .kabupaten-title {
+        font-size: 18px;
+        /* Ukuran font */
+        font-weight: 600;
+        /* Ketebalan font */
+        color: #333;
+        /* Warna teks */
+        margin-bottom: 15px;
+        /* Jarak bawah */
+        letter-spacing: 0.5px;
+        /* Jarak antar huruf */
+    }
+
+    /* Wrapper Checkbox */
+    .kabupaten-checkbox-wrapper {
+        display: flex;
+        justify-content: center;
+        flex-direction: space-between;
+
+    }
+
+    .kabupaten-checkbox-inner {
+        max-width: 1100px;
+        /* Lebar maksimal */
+        width: 100%;
+        padding: 20px;
+        border: 1px solid #e0e0e0;
+        border-radius: 10px;
+        background-color: #f9f9f9;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    }
+
+
+    .kabupaten-select-all .form-check-label {
+        font-size: 15px;
+        color: #2c3e50;
+    }
+
+    /* Grid Checkbox */
+    .kabupaten-checkbox-grid {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 66px;
+        /* memberikan jarak antar checkbox */
+    }
+
+    /* Styling Checkbox Individual */
+    .kabupaten-checkbox {
+        align-items: center;
+    }
+
+    .selectAllKabupaten-checkbox {
+        align-items: center;
+
+    }
+
+    .kabupaten-checkbox .form-check-input {
+        width: 20px;
+        /* Lebar checkbox */
+        height: 18px;
+        /* Tinggi checkbox */
+        margin-right: 10px;
+        /* Jarak antara checkbox dan label */
+        border-radius: 4px;
+        /* Sudut rounded */
+        border-color: #2C75BA;
+        /* Warna border */
+    }
+
+    .kabupaten-select-all .form-check-input {
+        width: 20px;
+        /* Lebar checkbox */
+        height: 18px;
+        /* Tinggi checkbox */
+        margin-right: 10px;
+        /* Jarak antara checkbox dan label */
+        border-radius: 4px;
+        /* Sudut rounded */
+        border-color: #2C75BA;
+        /* Warna border */
+    }
+
+    .kabupaten-select-all .form-check-label {
+        font-size: 14px;
+        /* Ukuran font label */
+        color: #383838;
+        /* Warna teks */
+        user-select: none;
+        /* Mencegah text selection */
+        cursor: pointer;
+        /* Menunjukkan bisa diklik */
+        transition: color 0.3s ease;
+        /* Transisi warna */
+
+    }
+
+    .kabupaten-checkbox .form-check-label {
+        font-size: 14px;
+        /* Ukuran font label */
+        color: #383838;
+        /* Warna teks */
+        user-select: none;
+        /* Mencegah text selection */
+        cursor: pointer;
+        /* Menunjukkan bisa diklik */
+        transition: color 0.3s ease;
+        margin-right: 8px
+            /* Transisi warna */
+    }
+
+    /* Hover Effect */
+    .kabupaten-checkbox .form-check-input:hover,
+    .kabupaten-checkbox .form-check-label:hover {
+        color: #2C75BA;
+    }
+
+    .kabupaten-select-all .form-check-input:hover,
+    .kabupaten-select-all .form-check-label:hover {
+        color: #2C75BA;
+    }
+
+    /* Checked State */
+    .kabupaten-checkbox .form-check-input:checked {
+        background-color: #2C75BA;
+        border-color: #2C75BA;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+        .kabupaten-checkbox-grid {
+            grid-template-columns: repeat(2, 1fr);
+            /* 2 kolom di layar kecil */
+            gap: 10px;
+        }
+
+        .kabupaten-title {
+            font-size: 16px;
+            /* Ukuran font lebih kecil di mobile */
+        }
+
+        .form-check {
+            margin-right: 100px;
+            /* Jarak antar checkbox */
+        }
+
+
+        .kabupaten-checkbox .form-check-input {
+            width: 16px;
+            height: 16px;
+        }
+
+        .kabupaten-checkbox .form-check-label {
+            font-size: 12px;
+        }
+
+        .kabupaten-select-all .form-check-input {
+            width: 16px;
+            height: 16px;
+        }
+
+        .kabupaten-select-all .form-check-label {
+            font-size: 12px;
+        }
+
+    }
+
+    /* Tablet View */
+    @media (min-width: 769px) and (max-width: 1024px) {
+        .kabupaten-checkbox-grid {
+            grid-template-columns: repeat(3, 1fr);
+            /* 3 kolom di tablet */
+        }
+    }
+
+    /* Animasi untuk checkbox */
+    .kabupaten-checkbox .form-check-input,
+    .kabupaten-select-all .form-check-input {
+        transition: all 0.3s ease;
+        /* Menambahkan transisi untuk smooth animation */
+    }
+
+    /* Hover Effect dengan animasi */
+    .kabupaten-checkbox .form-check-input:hover,
+    .kabupaten-select-all .form-check-input:hover {
+        transform: scale(1.1);
+        /* Membesarkan checkbox saat hover */
+        border-color: #2C75BA;
+        /* Warna border saat hover */
+        background-color: #dbe7f4;
+        /* Warna latar belakang saat hover */
+    }
+
+    /* Label animasi */
+    .kabupaten-checkbox .form-check-label,
+    .kabupaten-select-all .form-check-label {
+        transition: color 0.3s ease, transform 0.3s ease;
+        /* Menambahkan transisi warna dan transform */
+    }
+
+    /* Animasi label saat hover */
+    .kabupaten-checkbox .form-check-label:hover,
+    .kabupaten-select-all .form-check-label:hover {
+        color: #2C75BA;
+        /* Mengubah warna teks pada hover */
+        transform: translateX(5px);
+        /* Memberikan sedikit pergeseran ke kanan */
+    }
+
+    /* Penataan untuk memastikan spinner di tengah */
+    .isi {
+        display: flex;
+        justify-content: center;
+        /* Untuk meratakan secara horizontal */
+        align-items: center;
+        /* Untuk meratakan secara vertikal */
+        height: 100px;
+        /* Tinggi dari spinner */
+        width: 100px;
+        /* Lebar dari spinner */
+        position: relative;
+        animation: spin 1.0s infinite;
+        top: 50%;
+        left: 45%;
+    }
+
+    /* Animasi spin untuk elemen */
+    @keyframes spin {
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+
+    /* Dot pertama */
+    .isi>div:nth-child(1) {
+        height: 30px;
+        width: 30px;
+        background-image: linear-gradient(45deg, #f7d000, #e6970e);
+        position: absolute;
+        top: 10%;
+        /* Posisi lebih terkontrol */
+        left: 10%;
+        box-shadow: 0 0 3px #f7d000;
+        border-radius: 50%;
+        animation: move1 1.5s infinite;
+    }
+
+    /* Animasi gerakan dot pertama */
+    @keyframes move1 {
+        50% {
+            transform: translate(-10px, -10px) scale(0.3);
+        }
+    }
+
+    /* Dot kedua */
+    .isi>div:nth-child(2) {
+        height: 25px;
+        width: 25px;
+        background-image: linear-gradient(45deg, #00d7f7, #04c0f5);
+        position: absolute;
+        top: 15%;
+        right: 15%;
+        box-shadow: 0 0 2px #00d7f7;
+        border-radius: 50%;
+        animation: move2 1.5s infinite;
+    }
+
+    /* Animasi gerakan dot kedua */
+    @keyframes move2 {
+        50% {
+            transform: translate(5px, -10px) scale(0.3);
+        }
+    }
+
+    /* Dot ketiga */
+    .isi>div:nth-child(3) {
+        height: 30px;
+        width: 30px;
+        background-image: linear-gradient(45deg, #f60180, #f7014f);
+        position: absolute;
+        bottom: 10%;
+        right: 10%;
+        box-shadow: 0 0 3px #f60180;
+        border-radius: 50%;
+        animation: move3 1.5s infinite;
+    }
+
+    /* Animasi gerakan dot ketiga */
+    @keyframes move3 {
+        50% {
+            transform: translate(10px, 10px) scale(0.3);
+        }
+    }
+
+    /* Dot keempat */
+    .isi>div:nth-child(4) {
+        height: 25px;
+        width: 25px;
+        background-image: linear-gradient(45deg, #da00f7, #b501f6);
+        position: absolute;
+        bottom: 15%;
+        left: 15%;
+        border-radius: 50%;
+        animation: move4 1.5s infinite;
+    }
+
+    /* Animasi gerakan dot keempat */
+    @keyframes move4 {
+        50% {
+            transform: translate(-5px, 10px) scale(0.3);
+        }
+    }
+
+    /* Untuk layar kecil */
+    @media screen and (max-width: 768px) {
+        .isi {
+            top: 40%;
+            left: 40%;
+        }
+    }
+
+    /* Untuk layar sangat kecil */
+    @media screen and (max-width: 480px) {
+        .isi {
+            top: 30%;
+            left: 35%;
+        }
+    }
+
+    @media screen and (max-width: 420px) {
+        .isi {
+            top: 30%;
+            left: 25%;
+        }
+    }
+
+    .like-dislike-buttons {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        margin-top: 4px;
+    }
+
+    .like-button,
+    .dislike-button {
+        background: none;
+        border: none !important;
+        /* Tambahkan !important untuk memastikan */
+        outline: none !important;
+        box-shadow: none !important;
+        -webkit-appearance: none;
+        /* Untuk browser berbasis webkit */
+        -moz-appearance: none;
+        /* Untuk Firefox */
+        appearance: none;
+        /* Standard syntax */
+        cursor: pointer;
+        font-size: 1.1em;
+        padding: 5px 10px;
+        color: inherit;
+        transition: all 0.3s ease;
+    }
+
+    .like-button:focus,
+    .dislike-button:focus {
+        outline: none !important;
+        box-shadow: none !important;
+        border: none !important;
+    }
+
+    .like-button:active,
+    .dislike-button:active {
+        outline: none !important;
+        box-shadow: none !important;
+        border: none !important;
+    }
+
+    .like-button:hover,
+    .dislike-button:hover {
+        opacity: 0.7;
+        border: none;
+    }
+
+    .like-button.liked {
+        color: green;
+    }
+
+    .dislike-button.disliked {
+        color: red;
+    }
+
+    .like-button i,
+    .dislike-button i {
+        margin-right: 5px;
+    }
+
+    .recommendation-body .card {
+        height: 100%;
+        background: none;
+        border: 0;
+        box-shadow: none;
+    }
+
+    .recommendation-body .rating-stars {
+        margin-top: auto;
+    }
+
+    .location-koordinat-container {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+        width: 100%;
+        align-items: flex-start;
+    }
+
+    .location-info h6,
+    .koordinat-info h6 {
+        margin-bottom: 10px;
+        display: flex;
+        align-items: center;
+        color: #007bff;
+        font-weight: bold;
+        margin-left: 20px;
+    }
+
+    .location-info h6 i,
+    .koordinat-info h6 i {
+        margin-right: 5px;
+    }
+
+    @media (max-width: 768px) {
+        .location-koordinat-container {
+            flex-direction: column;
+            gap: 15px;
+        }
+    }
+
+    .bg-info {
+        background-color: #F56960 !important;
+        color: #FFFFFF;
+    }
+</style>
+{% endblock %}
+
+{% block content %}
+<!-- Breadcrumb Banner Section Start -->
+<section class="inner-banner-wrap">
+    <div class="inner-baner-container"
+        style="background-image: url({{ url_for('static', filename='images/BgSisrekPage.png') }});">
+        <div class="container">
+            <div class="inner-banner-content">
+                <h2 class="inner-title">Sistem Rekomendasi Paket Wisata Daerah Istimewa Yogyakarta</h2>
+                <p style="color: #ffffff;"><strong>Tentukan kriteria wisata ideal Anda dan dapatkan rekomendasi paket
+                        wisata terbaik yang sesuai dengan preferensi Anda.</strong></p>
+            </div>
+        </div>
+    </div>
+    <div class="inner-shape"></div>
+</section>
+<!-- Breadcrumb Banner Section End -->
+
+<section class="recommendation-section" style="position: relative; z-index: 2; margin-top: -100px; padding-top: 120px;">
+    <div class="container">
+        <div class="trip-search-section">
+            <form id="criteriaForm" aria-label="Formulir Pencarian Paket Wisata">
+                <div class="trip-search-inner">
+                    <!-- Input Kabupaten -->
+                    <div class="kabupaten-selection-container">
+                        <label class="form-label"
+                            style="text-align: center; display: block; font-weight: 600; color: #333; width: 100%; margin-bottom: 10px;">Kabupaten/Kota*</label>
+                        <div class="kabupaten-checkbox-wrapper">
+                            <div class="kabupaten-checkbox-inner">
+                                <div class="kabupaten-checkbox-grid d-flex flex-wrap align-items-center">
+                                    <!-- Checkbox "Semua Kabupaten" -->
+                                    <div class="form-check kabupaten-select-all me-3">
+                                        <input type="checkbox" class="form-check-input" id="selectAllKabupaten">
+                                        <label class="form-check-label fw-bold" for="selectAllKabupaten">
+                                            &nbsp;&nbsp;Semua Kabupaten
+                                        </label>
+                                    </div>
+                                    <!-- Daftar Checkbox Kabupaten -->
+                                    {% for kab in kabupaten %}
+                                    <div class="form-check kabupaten-checkbox me-3">
+                                        <input type="checkbox" class="form-check-input" name="kabupaten[]"
+                                            id="kab_{{ loop.index }}" value="{{ kab }}">
+                                        <label class="form-check-label" for="kab_{{ loop.index }}">
+                                            &nbsp;&nbsp;{{ kab }}
+                                        </label>
+                                    </div>
+                                    {% endfor %}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Input Rating (3 kolom sejajar) -->
+                    {% for input in ['min_rating_tempat_wisata', 'min_rating_penginapan', 'min_rating_rumah_makan']
+                    %}
+                    <div class="input-group">
+                        <label for="{{ input }}">{{ input.replace('_', ' ')|title }}*</label>
+                        <select class="form-select" id="{{ input }}" name="{{ input }}" aria-required="true">
+                            <option value="1">1 ⭐</option>
+                            <option value="2">2 ⭐</option>
+                            <option value="3" selected>3 ⭐</option>
+                            <option value="4">4 ⭐</option>
+                            <option value="4.5">5 ⭐</option>
+                        </select>
+                    </div>
+                    {% endfor %}
+                    <!-- Input Kategori Wisata dan Harga Penginapan (dalam satu baris) -->
+                    <div class="center-input-group">
+                        <div class="input-group">
+                            <label for="kategori_wisata">Kategori Wisata*</label>
+                            <select class="form-select" id="kategori_wisata" name="kategori_wisata"
+                                aria-required="true">
+                                <option value="all" selected>Semua Kategori</option>
+                                {% for kat in kategori_wisata %}
+                                <option value="{{ kat }}">{{ kat }}</option>
+                                {% endfor %}
+                            </select>
+                        </div>
+                        <div class="input-group">
+                            <label for="max_harga_penginapan">Rentang Harga Penginapan*</label>
+                            <select class="form-select" id="max_harga_penginapan" name="max_harga_penginapan"
+                                aria-required="true">
+                                <option value="all" selected>Semua Rentang Harga</option>
+                                {% for kategori, rentang in harga_penginapan.items() %}
+                                <option value="{{ kategori }}">{{ kategori }}</option>
+                                {% endfor %}
+                            </select>
+                        </div>
+                    </div>
+
+
+                    <div class="center-input-group">
+                        <!-- Metode Pencarian -->
+                        <div class="input-group">
+                            <label for="use_reviews">Metode Pencarian*</label>
+                            <select class="form-select" id="use_reviews" name="use_reviews" aria-required="true">
+                                <option value="false" selected>Rating Saja</option>
+                                <option value="true">Rating dan Ulasan</option>
+                            </select>
+                        </div>
+
+                        <!-- Jumlah Rekomendasi -->
+                        <div class="input-group">
+                            <label for="jumlah_rekomendasi">Jumlah Rekomendasi*</label>
+                            <select class="form-select" id="jumlah_rekomendasi" name="jumlah_rekomendasi"
+                                aria-required="true">
+                                <option value="3" selected>3 Rekomendasi</option>
+                                <option value="5">5 Rekomendasi</option>
+                                <option value="10">10 Rekomendasi</option>
+                                <option value="15">15 Rekomendasi</option>
+                                <option value="20">20 Rekomendasi</option>
+                                <option value="30">30 Rekomendasi</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="search-container">
+                        <button type="submit" class="btn-search">Cari Rekomendasi</button>
+                    </div>
+            </form>
+        </div>
+    </div>
+    <!-- Hasil Rekomendasi -->
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="recommendation-results" id="hasilRekomendasi">
+                <div class="criteria-card">
+                    <div class="criteria-header d-flex justify-content-between align-items-center">
+                        <div>
+                            <i class="fas fa-list-alt me-2"></i> Hasil Rekomendasi
+                        </div>
+                        <button id="exportBtn" class="btn btn-sm btn-success" style="display: none;">
+                            <i class="fas fa-file-csv me-2"></i> Ekspor ke CSV
+                        </button>
+                    </div>
+                    <div class="criteria-body">
+                        <div id="loader" class="text-center">
+                            <div class="isi">
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                            </div>
+                            <br>
+                            <p class="mt-2">Mencari rekomendasi terbaik...</p>
+                        </div>
+                        <div id="noResult" class="empty-result-message">
+                            <i class="fas fa-search"></i>
+                            <h5>Tidak ada hasil yang ditemukan</h5>
+                            <p class="text-muted">Coba longgarkan kriteria pencarian Anda</p>
+                            <div class="empty-result-suggestions">
+                                <h6><i class="fas fa-lightbulb me-2"></i> Saran:</h6>
+                                <ul>
+                                    <li>Menurunkan minimum rating tempat wisata</li>
+                                    <li>Memperluas rentang harga penginapan</li>
+                                    <li>Memilih semua kabupaten atau semua kategori</li>
+                                    <li>Menurunkan minimum rating penginapan atau rumah makan</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div id="initialState" class="text-center py-5">
+                            <i class="fas fa-map-marked-alt fa-3x text-muted mb-3"></i>
+                            <h5>Tentukan Kriteria Pencarian</h5>
+                            <p class="text-muted">Pilih kriteria di atas dan klik tombol Cari Rekomendasi untuk
+                                mendapatkan rekomendasi paket wisata</p>
+                        </div>
+                        <div id="recommendationResults"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock %}
+
+{% block extra_js %}
+<!-- Leaflet dan Routing Machine -->
+<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+    crossorigin=""></script>
+<script src="https://unpkg.com/leaflet-routing-machine@3.2.12/dist/leaflet-routing-machine.js"></script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const form = document.getElementById('criteriaForm');
+        const recommendationResults = document.getElementById('recommendationResults');
+        const loader = document.getElementById('loader');
+        const noResult = document.getElementById('noResult');
+        const initialState = document.getElementById('initialState');
+        const exportBtn = document.getElementById('exportBtn');
+        const selectAllCheckbox = document.getElementById('selectAllKabupaten');
+        const kabupatenCheckboxes = document.querySelectorAll('.kabupaten-checkbox input[type="checkbox"]');
+
+
+        let currentRecommendations = [];
+        let useReviews = false;
+        const maps = {};
+        const savedCoordinates = {};
+        let criteriaId = null;
+
+        // Fungsi simpan kriteria
+        async function simpanKriteria(kriteria) {
+            const res = await fetch('/save_user_criteria', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(kriteria)
+            });
+            // Pastikan respons JSON
+            const ct = res.headers.get('content-type') || '';
+            if (!ct.includes('application/json')) {
+                throw new Error('Response bukan JSON (mungkin server error)');
+            }
+
+            const j = await res.json();
+            if (!j.success) {
+                throw new Error(j.error || 'Gagal simpan kriteria');
+            }
+            // Tangkap criteria_id dari server
+            criteriaId = j.criteria_id;
+            console.log('Sukses simpan kriteria, criteriaId =', criteriaId);
+        }
+
+        // Handle Select All functionality
+        selectAllCheckbox.addEventListener('change', function () {
+            const isChecked = this.checked;
+            kabupatenCheckboxes.forEach(checkbox => {
+                checkbox.checked = isChecked;
+                checkbox.disabled = isChecked;
+            });
+
+            // Toggle visual state
+            document.querySelectorAll('.kabupaten-checkbox label').forEach(label => {
+                label.style.opacity = isChecked ? '0.5' : '1';
+            });
+        });
+
+        // Handle individual checkbox changes
+        kabupatenCheckboxes.forEach(checkbox => {
+            checkbox.addEventListener('change', () => {
+                // Enable/disable select all based on selection
+                const allChecked = [...kabupatenCheckboxes].every(c => c.checked);
+                selectAllCheckbox.checked = allChecked;
+
+                // Update visual state
+                checkbox.parentElement.querySelector('label').style.opacity = checkbox.checked ? '0.5' : '1';
+            });
+        });
+
+        // Fungsi untuk animasi scroll reveal
+        function checkVisibility() {
+            const recommendationCards = document.querySelectorAll('.recommendation-card');
+            recommendationCards.forEach(card => {
+                const cardTop = card.getBoundingClientRect().top;
+                const windowHeight = window.innerHeight;
+                if (cardTop < windowHeight * 0.8) {
+                    card.classList.add('is-visible');
+                }
+            });
+        }
+
+        // Tambahkan event listener untuk resize window
+        window.addEventListener('resize', function () {
+            Object.keys(maps).forEach(recId => {
+                const map = maps[recId];
+                const mapContainer = document.getElementById(`map-container-${recId}`);
+                if (map && mapContainer && mapContainer.classList.contains('active')) {
+                    setTimeout(() => {
+                        try {
+                            map.invalidateSize();
+                        } catch (e) {
+                            console.warn(`Error saat resize peta #${recId}:`, e);
+                        }
+                    }, 100);
+                }
+            });
+        });
+
+        // Panggil saat scroll dan saat load
+        window.addEventListener('scroll', checkVisibility);
+        window.addEventListener('load', checkVisibility);
+
+        // Listener form utama
+        form.addEventListener('submit', async function (e) {
+            e.preventDefault();
+            const hasilRekomendasi = document.getElementById('hasilRekomendasi');
+            window.scrollTo({
+                top: hasilRekomendasi.getBoundingClientRect().top + window.pageYOffset - 70, // Offset 50px
+                behavior: 'smooth'
+            });
+            // Ambil kabupaten terpilih
+            const selectedKab = Array.from(kabupatenCheckboxes)
+                .filter(c => c.checked).map(c => c.value);
+            if (selectedKab.length === 0) {
+                alert('Silakan pilih minimal satu kabupaten!');
+                return;
+            }
+            function parseHargaInput(raw) {
+                // Jika kosong, ambil rentang penuh
+                if (!raw) {
+                    return { minHarga: 0, maxHarga: 1500000 };
+                }
+                // Hapus spasi dan titik
+                raw = raw.replace(/\s+/g, '').replace(/\./g, '');
+
+                let minHarga = 0;
+                let maxHarga = 1500000;
+
+                if (raw.includes('-')) {
+                    const [min, max] = raw.split('-');
+                    minHarga = parseInt(min.replace(/\D/g, ''), 10) || 0;
+                    maxHarga = parseInt(max.replace(/\D/g, ''), 10) || 1500000;
+                } else {
+                    maxHarga = parseInt(raw.replace(/\D/g, ''), 10) || 1500000;
+                }
+
+                if (maxHarga < minHarga) {
+                    [minHarga, maxHarga] = [maxHarga, minHarga];
+                }
+
+                return { minHarga, maxHarga };
+            }
+
+            // Penggunaan
+            const { minHarga, maxHarga } = parseHargaInput(
+                document.getElementById('max_harga_penginapan').value
+            );
+
+            // Build payload kriteria
+            const kriteria = {
+                kabupaten: selectedKab,
+                min_rating_tempat_wisata: +document.getElementById('min_rating_tempat_wisata').value,
+                min_rating_penginapan: +document.getElementById('min_rating_penginapan').value,
+                min_rating_rumah_makan: +document.getElementById('min_rating_rumah_makan').value,
+                kategori_wisata: document.getElementById('kategori_wisata').value,
+                min_harga_penginapan: minHarga,
+                max_harga_penginapan: maxHarga,
+                use_reviews: document.getElementById('use_reviews').value === 'true',
+                jumlah_rekomendasi: +document.getElementById('jumlah_rekomendasi').value
+            };
+            try {
+                // 1) Simpan kriteria
+                await simpanKriteria(kriteria);
+
+                // 2) Request rekomendasi
+                initialState.style.display = 'none';
+                loader.style.display = 'block';
+                recommendationResults.innerHTML = '';
+                noResult.style.display = 'none';
+                exportBtn.style.display = 'none';
+
+
+                const resp = await fetch('/recommendations', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(kriteria)
+                });
+                const result = await resp.json();
+
+                loader.style.display = 'none';
+                if (!result.success) {
+                    throw new Error(result.error || 'Terjadi kesalahan');
+                }
+                currentRecommendations = result.recommendations || [];
+                window.rekomendasiList = currentRecommendations;
+                useReviews = kriteria.use_reviews;
+
+                if (currentRecommendations.length === 0) {
+                    noResult.style.display = 'block';
+                } else {
+                    exportBtn.style.display = 'block';
+                    displayRecommendations(currentRecommendations);
+                }
+                // Scroll ke hasil rekomendasi dengan animasi smooth
+                const hasilRekomendasi = document.getElementById('hasilRekomendasi');
+                setTimeout(() => {
+                    hasilRekomendasi.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }, 100); // Delay kecil untuk memastikan DOM diperbarui
+
+            } catch (err) {
+                loader.style.display = 'none';
+                console.error(err);
+                alert('Error: ' + err.message);
+                noResult.style.display = 'block';
+                // Scroll ke hasil rekomendasi meskipun terjadi error
+                const hasilRekomendasi = document.getElementById('hasilRekomendasi');
+                window.scrollTo({
+                    top: hasilRekomendasi.getBoundingClientRect().top + window.pageYOffset - 70, // Offset 50px
+                    behavior: 'smooth'
+                });
+            }
+        });
+
+        exportBtn.addEventListener('click', function () {
+            if (currentRecommendations.length === 0) {
+                alert('Tidak ada rekomendasi untuk diekspor');
+                return;
+            }
+
+            loader.style.display = 'block';
+            exportBtn.disabled = true;
+            exportBtn.innerHTML = '<i class="fas fa-spinner fa-spin me-2"></i>Mengekspor...';
+
+            fetch('/export', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({
+                    recommendations: currentRecommendations,
+                    use_reviews: useReviews
+                })
+            })
+                .then(response => {
+                    loader.style.display = 'none';
+                    exportBtn.disabled = false;
+                    exportBtn.innerHTML = '<i class="fas fa-file-csv me-2"></i>Ekspor ke CSV';
+
+                    if (response.ok) {
+                        return response.blob();
+                    }
+                    return response.json().then(data => {
+                        throw new Error(data.error || 'Error exporting data');
+                    });
+                })
+                .then(blob => {
+                    const url = window.URL.createObjectURL(blob);
+                    const a = document.createElement('a');
+                    a.style.display = 'none';
+                    a.href = url;
+                    a.download = 'rekomendasi_paket_wisata.csv';
+                    document.body.appendChild(a);
+                    a.click();
+                    window.URL.revokeObjectURL(url);
+                })
+                .catch(error => {
+                    alert('Error: ' + error);
+                });
+        });
+
+        function displayRecommendations(recommendations, showReviews) {
+            recommendationResults.innerHTML = '';
+
+            recommendations.forEach((rec, index) => {
+                const recDiv = document.createElement('div');
+                const showReviews = useReviews;
+                recDiv.className = 'recommendation-card';
+
+                const formattedPrice = new Intl.NumberFormat('id-ID', {
+                    style: 'currency',
+                    currency: 'IDR',
+                    minimumFractionDigits: 0
+                }).format(rec.penginapan.harga).replace(/\s+/g, '');
+
+                function getStars(rating) {
+                    const fullStars = Math.floor(rating);
+                    const halfStar = rating % 1 >= 0.5;
+                    let starsHtml = '';
+
+                    for (let i = 0; i < fullStars; i++) {
+                        starsHtml += '<i class="fas fa-star"></i>';
+                    }
+
+                    if (halfStar) {
+                        starsHtml += '<i class="fas fa-star-half-alt"></i>';
+                    }
+
+                    const emptyStars = 5 - fullStars - (halfStar ? 1 : 0);
+                    for (let i = 0; i < emptyStars; i++) {
+                        starsHtml += '<i class="far fa-star"></i>';
+                    }
+
+                    starsHtml += ` <span class="rating-number">(${rating.toFixed(1)})</span>`;
+
+                    return starsHtml;
+                }
+
+                function getReviewCount(entity, field) {
+                    return entity && entity[field] !== undefined ? entity[field] : 0;
+                }
+
+                // Menambahkan feedback like button
+                const likeButton = document.createElement('button');
+                likeButton.classList.add('like-button');
+                likeButton.innerHTML = '<i class="far fa-thumbs-up"></i> Like';
+                likeButton.dataset.recId = index; // Set unique id for each recommendation
+                likeButton.addEventListener('click', function () {
+                    toggleLikeDislike(index, 'like', likeButton, dislikeButton);
+                });
+
+                const dislikeButton = document.createElement('button');
+                dislikeButton.classList.add('dislike-button');
+                dislikeButton.innerHTML = '<i class="far fa-thumbs-down"></i> Dislike';
+                dislikeButton.dataset.recId = index; // Set unique id for each recommendation
+                dislikeButton.addEventListener('click', function () {
+                    toggleLikeDislike(index, 'dislike', dislikeButton, likeButton);
+                });
+                const penginapanReviews = showReviews ? `<small>(${getReviewCount(rec.penginapan, 'jumlah_ulasan')} ulasan)</small>` : '';
+                const wisata1Reviews = showReviews ? `<small>(${getReviewCount(rec.tempat_wisata_1, 'jumlah_ulasan')} ulasan)</small>` : '';
+                const wisata2Reviews = showReviews ? `<small>(${getReviewCount(rec.tempat_wisata_2, 'jumlah_ulasan')} ulasan)</small>` : '';
+                const rumahMakanReviews = showReviews ? `<small>(${getReviewCount(rec.rumah_makan, 'jumlah_ulasan')} ulasan)</small>` : '';
+
+                const totalScore = rec.total_score !== undefined ? rec.total_score.toFixed(2) : "0.00";
+
+                recDiv.innerHTML = `
+                    <div class="recommendation-header">
+                        <h5 class="m-0">Rekomendasi ${index + 1}</h5>
+                        <span class="badge bg-light text-primary">Skor: ${totalScore}</span>
+                    </div>
+                    
+                    <div class="recommendation-body">  
+                        <div class="row mb-3">  
+                            <div class="col-12">  
+                                <strong>Kabupaten/Kota: ${rec.kabupaten_penginapan}</strong>
+                            </div>  
+                        </div>  
+                        
+                        <div class="row mb-3">  
+                                <div class="col-md-6">  
+                                    <div class="card mb-3">  
+                                        <div class="card-body">  
+                                            <h4><i class="fas fa-hotel hotel-icon me-2"></i> Penginapan</h4>  
+                                            <div class="d-flex justify-content-between">  
+                                                <strong>
+                                                    ${rec.penginapan.google_maps_link ?
+                        `<a href="${rec.penginapan.google_maps_link}" target="_blank" class="place-link">${rec.penginapan.nama}</a>` :
+                        rec.penginapan.nama}
+                                                </strong> 
+                                            </div> 
+                                            <div class="price-container mb-2">  
+                                                <span class="place-tag">${formattedPrice}</span>  
+                                            </div>   
+                                            <div>  
+                                                <span class="rating-stars">${getStars(rec.penginapan.rating)}</span>  
+                                                ${penginapanReviews}  
+                                            </div>  
+                                        </div>  
+                                    </div>  
+                                </div>  
+                                
+                                <div class="col-md-6">  
+                                    <div class="card mb-3">  
+                                        <div class="card-body">  
+                                            <h4><i class="fas fa-landmark attraction-icon me-2"></i> Tempat Wisata 1</h4>  
+                                            <div>  
+                                                <strong>
+                                                    ${rec.tempat_wisata_1.google_maps_link ?
+                        `<a href="${rec.tempat_wisata_1.google_maps_link}" target="_blank" class="place-link">${rec.tempat_wisata_1.nama}</a>` :
+                        rec.tempat_wisata_1.nama}
+                                                </strong>  
+                                            </div>  
+                                            <div>  
+                                                <span class="badge bg-info">${rec.tempat_wisata_1.kategori}</span>  
+                                            </div>  
+                                            <div>  
+                                                <span class="rating-stars">${getStars(rec.tempat_wisata_1.rating)}</span>  
+                                                ${wisata1Reviews}  
+                                            </div>  
+                                        </div>  
+                                    </div>  
+                                </div>  
+                            </div>  
+                            
+                            <div class="row mb-3">  
+                                <div class="col-md-6">  
+                                    <div class="card mb-3">  
+                                        <div class="card-body">  
+                                            <h4><i class="fas fa-landmark attraction-icon me-2"></i> Tempat Wisata 2</h4>  
+                                            <div>  
+                                                <strong>
+                                                    ${rec.tempat_wisata_2.google_maps_link ?
+                        `<a href="${rec.tempat_wisata_2.google_maps_link}" target="_blank" class="place-link">${rec.tempat_wisata_2.nama}</a>` :
+                        rec.tempat_wisata_2.nama}
+                                                </strong>  
+                                            </div>  
+                                            <div>  
+                                                <span class="badge bg-info">${rec.tempat_wisata_2.kategori}</span>  
+                                            </div>  
+                                            <div>  
+                                                <span class="rating-stars">${getStars(rec.tempat_wisata_2.rating)}</span>  
+                                                ${wisata2Reviews}  
+                                            </div>  
+                                        </div>  
+                                    </div>  
+                                </div>  
+                                
+                                <div class="col-md-6">  
+                                    <div class="card mb-3">  
+                                        <div class="card-body">  
+                                            <h4><i class="fas fa-utensils restaurant-icon me-2"></i> Rumah Makan</h4>  
+                                            <div>  
+                                                <strong>
+                                                    ${rec.rumah_makan.google_maps_link ?
+                        `<a href="${rec.rumah_makan.google_maps_link}" target="_blank" class="place-link">${rec.rumah_makan.nama}</a>` :
+                        rec.rumah_makan.nama}
+                                                </strong>  
+                                            </div>  
+                                            <div>  
+                                                <span class="rating-stars">${getStars(rec.rumah_makan.rating)}</span>  
+                                                ${rumahMakanReviews}  
+                                            </div>  
+                                        </div>  
+                                    </div>  
+                                </div>  
+                            </div>  
+                        </div>
+                        <div class="location-koordinat-container">  
+                            <div class="location-info">  
+                                <h6><i class="fas fa-info-circle text-primary"></i> Informasi Urutan Rute</h6>
+                                <div class="route-sequence">
+                                    <span>Penginapan</span>
+                                    <i class="fas fa-arrow-right"></i>
+                                    <span>Tempat Wisata 1</span>
+                                    <i class="fas fa-arrow-right"></i>
+                                    <span>Tempat Wisata 2</span>
+                                    <i class="fas fa-arrow-right"></i>
+                                    <span>Rumah Makan</span>
+                                </div>
+                                <h6><i class="fas fa-route text-primary"></i>Informasi Jarak</h6>  
+                                <div class="distance-info">  
+                                    <div>Penginapan ke Tempat Wisata 1: ${rec.jarak_penginapan_tempatwisata.toFixed(2)} km</div>  
+                                    <div>Tempat Wisata 1 ke Rumah Makan: ${rec.jarak_tempatwisata_rumahmakan.toFixed(2)} km</div>  
+                                    <div>Penginapan ke Rumah Makan: ${rec.jarak_penginapan_rumahmakan.toFixed(2)} km</div>  
+                                    <div class="mt-2"><strong>Total Jarak: ${rec.total_jarak.toFixed(2)} km</strong></div>  
+                                </div>  
+                                <h6><i class="fas fa-map-pin text-primary"></i>Koordinat</h6>  
+                                <div class="koordinat-detail">  
+                                    <div>Penginapan: Lat: ${rec.penginapan.latitude.toFixed(6)}, Lon: ${rec.penginapan.longitude.toFixed(6)}</div>  
+                                    <div>Tempat Wisata 1: Lat: ${rec.tempat_wisata_1.latitude.toFixed(6)}, Lon: ${rec.tempat_wisata_1.longitude.toFixed(6)}</div>  
+                                    <div>Tempat Wisata 2: Lat: ${rec.tempat_wisata_2.latitude.toFixed(6)}, Lon: ${rec.tempat_wisata_2.longitude.toFixed(6)}</div>  
+                                    <div>Rumah Makan: Lat: ${rec.rumah_makan.latitude.toFixed(6)}, Lon: ${rec.rumah_makan.longitude.toFixed(6)}</div>  
+                                </div>  
+                                </div>
+                            </div>  
+                        </div>
+                        <button class="route-button" id="map-button-${index}" data-rec-id="${index}">
+                            <i></i> Lihat Rute
+                        </button>
+                        <div class="map-container" id="map-container-${index}">
+                            <div class="route-details">
+                                <h6>Keterangan Rute:</h6>
+                                <div class="route-legend">
+                                    <span class="legend-hotel"></span> Penginapan: ${rec.penginapan.nama}
+                                </div>
+                                <div class="route-legend">
+                                    <span class="legend-attraction"></span> Tempat Wisata: ${rec.tempat_wisata_1.nama} & ${rec.tempat_wisata_2.nama}
+                                </div>
+                                <div class="route-legend">
+                                    <span class="legend-restaurant"></span> Rumah Makan: ${rec.rumah_makan.nama}
+                                </div>
+                            </div>
+                            <div class="map" id="map-${index}" style="width: 100%; height: 400px; position: relative;"></div>
+                        </div>
+                    </div>
+                `;
+                // Add like button at the bottom of the recommendation card
+                const buttonsDiv = document.createElement('div');
+                buttonsDiv.classList.add('like-dislike-buttons');
+                buttonsDiv.appendChild(likeButton);
+                buttonsDiv.appendChild(dislikeButton);
+                recDiv.appendChild(buttonsDiv);
+                recommendationResults.appendChild(recDiv);
+            });
+            setupRouteButtons(recommendations);
+        }
+        function toggleLikeDislike(recId, action, buttonToUpdate, buttonToDisable) {
+            // Validasi: pastikan criteriaId sudah di-set
+            if (criteriaId === null) {
+                alert('Anda belum menyimpan kriteria. Silakan submit form kriteria terlebih dahulu.');
+                return;
+            }
+
+            // Ambil data rekomendasi dari global list
+            const rec = window.rekomendasiList?.[recId];
+            if (!rec) {
+                alert('Data rekomendasi tidak tersedia.');
+                return;
+            }
+
+            // Cek status tombol (sudah like/dislike?)
+            const isLiked = buttonToUpdate.classList.contains('liked');
+            const isDisliked = buttonToUpdate.classList.contains('disliked');
+
+            // Bangun payload
+            const payload = {
+                id_criteria: criteriaId,
+                packageId: rec.recommendationId,
+                action: action,
+                recommendation: rec
+            };
+
+            // Fungsi kirim ke server
+            const sendFeedback = (overrideAction = null) => {
+                const body = { ...payload };
+                if (overrideAction) body.action = overrideAction;
+
+                return fetch('/save_like_dislike', {
+                    method: 'POST',
+                    credentials: 'same-origin',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(body)
+                })
+                    .then(r => {
+                        // Pastikan response JSON
+                        const ct = r.headers.get('content-type') || '';
+                        if (!ct.includes('application/json')) {
+                            throw new Error('Server error atau sesi login sudah expired');
+                        }
+                        return r.json();
+                    })
+                    .then(data => {
+                        if (!data.success) {
+                            throw new Error(data.error || 'Gagal menyimpan feedback');
+                        }
+                    });
+            };
+
+            // Jika klik ulang tombol yang sama → reset
+            if ((action === 'like' && isLiked) || (action === 'dislike' && isDisliked)) {
+                // Reset UI
+                buttonToUpdate.classList.remove('liked', 'disliked');
+                buttonToUpdate.innerHTML = action === 'like'
+                    ? '<i class="far fa-thumbs-up"></i> Like'
+                    : '<i class="far fa-thumbs-down"></i> Dislike';
+
+                // Kirim reset ke server
+                sendFeedback('reset').catch(err => alert(err.message));
+                return;
+            }
+
+            // Bersihkan status tombol lawan
+            buttonToDisable.classList.remove('liked', 'disliked');
+            // Bersihkan status tombol ini dulu
+            buttonToUpdate.classList.remove('liked', 'disliked');
+
+            // Set UI baru
+            if (action === 'like') {
+                buttonToUpdate.classList.add('liked');
+                buttonToUpdate.innerHTML = '<i class="fas fa-thumbs-up"></i> Liked';
+                buttonToDisable.innerHTML = '<i class="far fa-thumbs-down"></i> Dislike';
+            } else {
+                buttonToUpdate.classList.add('disliked');
+                buttonToUpdate.innerHTML = '<i class="fas fa-thumbs-down"></i> Disliked';
+                buttonToDisable.innerHTML = '<i class="far fa-thumbs-up"></i> Like';
+            }
+
+            // Kirim feedback ke server
+            sendFeedback().catch(err => {
+                console.error(err);
+                alert('Error sending feedback: ' + err.message);
+            });
+        }
+
+        // Contoh cara attach ke tombol setelah rekomendasi ditampilkan
+        function setupLikeDislikeButtons() {
+            document.querySelectorAll('.recommendation-card').forEach((card, idx) => {
+                const likeBtn = card.querySelector('.like-button');
+                const dislikeBtn = card.querySelector('.dislike-button');
+                likeBtn.addEventListener('click', () => {
+                    toggleLikeDislike(idx, 'like', likeBtn, dislikeBtn);
+                });
+                dislikeBtn.addEventListener('click', () => {
+                    toggleLikeDislike(idx, 'dislike', dislikeBtn, likeBtn);
+                });
+            });
+        }
+        function setupRouteButtons(recommendations) {
+            const routeButtons = document.querySelectorAll('.route-button');
+
+            routeButtons.forEach(button => {
+                button.addEventListener('click', function () {
+                    const recId = parseInt(this.getAttribute('data-rec-id'));
+                    toggleMap(recId, recommendations[recId]);
+                });
+            });
+        }
+
+        function toggleMap(recId, recommendation) {
+            const mapContainer = document.getElementById(`map-container-${recId}`);
+            const mapButton = document.getElementById(`map-button-${recId}`);
+
+            if (!mapContainer || !mapButton) {
+                console.error(`Map container atau button untuk #${recId} tidak ditemukan`);
+                return;
+            }
+
+            if (mapContainer.classList.contains('active')) {
+                mapContainer.classList.remove('active');
+                mapButton.innerHTML = '<i></i> Lihat Rute';
+
+                if (maps[recId]) {
+                    try {
+                        maps[recId].remove();
+                        delete maps[recId];
+                    } catch (e) {
+                        console.warn("Error saat menghapus peta:", e);
+                    }
+                }
+            } else {
+                document.querySelectorAll('.map-container.active').forEach(container => {
+                    const otherId = container.id.split('-').pop();
+                    if (otherId !== recId.toString()) {
+                        container.classList.remove('active');
+                        const otherButton = document.getElementById(`map-button-${otherId}`);
+                        if (otherButton) {
+                            otherButton.innerHTML = '<i></i> Lihat Rute';
+                        }
+
+                        if (maps[otherId]) {
+                            try {
+                                maps[otherId].remove();
+                                delete maps[otherId];
+                            } catch (e) {
+                                console.warn(`Error saat menghapus peta #${otherId}:`, e);
+                            }
+                        }
+                    }
+                });
+
+                mapButton.innerHTML = '<i></i>Tutup Rute';
+
+                mapContainer.classList.add('active');
+
+                setTimeout(() => {
+                    showMap(recId, recommendation);
+                }, 300);
+            }
+        }
+
+        function showMap(recId, recommendation) {
+            const mapElement = document.getElementById(`map-${recId}`);
+            if (!mapElement) {
+                console.error(`Map element #map-${recId} tidak ditemukan`);
+                return;
+            }
+
+            mapElement.innerHTML = '<div class="text-center p-3"><br><br><br><br><br><br><br><br><br><div class="spinner-border text-primary" role="status"></div><p class="mt-2">Memuat peta...</p></div>';
+
+            try {
+                // Atur opsi peta dengan zoom dan kontrol yang lebih baik
+                const map = L.map(mapElement.id, {
+                    center: [recommendation.penginapan.latitude, recommendation.penginapan.longitude],
+                    zoom: 12,
+                    zoomControl: true,
+                    attributionControl: true
+                });
+
+                L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                    attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+                }).addTo(map);
+
+                maps[recId] = map;
+
+                // Koordinat untuk marker dan rute
+                const coords = {
+                    penginapan: [recommendation.penginapan.latitude, recommendation.penginapan.longitude],
+                    wisata1: [recommendation.tempat_wisata_1.latitude, recommendation.tempat_wisata_1.longitude],
+                    wisata2: [recommendation.tempat_wisata_2.latitude, recommendation.tempat_wisata_2.longitude],
+                    rumahMakan: [recommendation.rumah_makan.latitude, recommendation.rumah_makan.longitude]
+                };
+
+                // Marker dengan icon kustom
+                const penginapanIcon = L.divIcon({ className: 'custom-marker hotel-marker', html: '<i class="fas fa-hotel"></i>' });
+                const wisata1Icon = L.divIcon({ className: 'custom-marker attraction-marker', html: '<i class="fas fa-landmark"></i>' });
+                const wisata2Icon = L.divIcon({ className: 'custom-marker attraction-marker', html: '<i class="fas fa-landmark"></i>' });
+                const rumahMakanIcon = L.divIcon({ className: 'custom-marker restaurant-marker', html: '<i class="fas fa-utensils"></i>' });
+
+                // Tambahkan marker
+                L.marker(coords.penginapan, { icon: penginapanIcon }).addTo(map).bindPopup(recommendation.penginapan.nama);
+                L.marker(coords.wisata1, { icon: wisata1Icon }).addTo(map).bindPopup(recommendation.tempat_wisata_1.nama);
+                L.marker(coords.wisata2, { icon: wisata2Icon }).addTo(map).bindPopup(recommendation.tempat_wisata_2.nama);
+                L.marker(coords.rumahMakan, { icon: rumahMakanIcon }).addTo(map).bindPopup(recommendation.rumah_makan.nama);
+
+                // Tambahkan polyline untuk rute
+                const routeStyles = [
+                    { color: '#FF5733', weight: 4, opacity: 0.7 },  // Warna untuk penginapan ke wisata 1
+                    { color: '#2C75BA', weight: 4, opacity: 0.7 },  // Warna untuk wisata 1 ke wisata 2
+                    { color: '#28a745', weight: 4, opacity: 0.7 },  // Warna untuk wisata 2 ke rumah makan
+                    { color: '#F56960', weight: 4, opacity: 0.7 }   // Warna untuk rumah makan ke penginapan
+                ];
+
+                L.polyline([coords.penginapan, coords.wisata1], routeStyles[0]).addTo(map);
+                L.polyline([coords.wisata1, coords.wisata2], routeStyles[1]).addTo(map);
+                L.polyline([coords.wisata2, coords.rumahMakan], routeStyles[2]).addTo(map);
+                L.polyline([coords.rumahMakan, coords.penginapan], routeStyles[3]).addTo(map);
+
+                // Sesuaikan tampilan peta agar semua marker terlihat
+                const bounds = L.latLngBounds([
+                    coords.penginapan,
+                    coords.wisata1,
+                    coords.wisata2,
+                    coords.rumahMakan
+                ]);
+                map.fitBounds(bounds, { padding: [50, 50] });
+
+            } catch (error) {
+                console.error('Error saat menampilkan peta:', error);
+                mapElement.innerHTML = `
+                    <div class="alert alert-danger">
+                        <i class="fas fa-exclamation-triangle"></i>
+                        Gagal menampilkan peta: ${error.message}
+                    </div>
+                `;
+            }
+        }
+    });
+</script>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        // Periksa status login saat halaman dimuat
+        fetch('/check_login')
+            .then(response => response.json())
+            .then(data => {
+                if (!data.is_logged_in) {
+                    // Redirect ke halaman login
+                    window.location.href = '/login';
+
+                    // Tampilkan pesan
+                    alert('Anda harus login terlebih dahulu untuk mengakses halaman rekomendasi');
+                }
+            })
+            .catch(error => {
+                console.error('Error:', error);
+            });
+    });
+</script>
+
+
+
+{% endblock %}

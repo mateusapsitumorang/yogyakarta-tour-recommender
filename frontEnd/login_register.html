@@ -1,0 +1,631 @@
+{% extends 'base.html' %}
+
+{% block title %}Home | Register and Login Sistem Rekomendasi Paket Wisata Yogyakarta{% endblock %}
+
+{% block extra_css %}
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+<style>
+    .login-register-page * {
+        box-sizing: border-box;
+    }
+
+    .auth-wrapper {
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        overflow: hidden;
+        background-image: url("{{ url_for('static', filename='images/LoginRegisterPage.png') }}");
+        background-size: cover;
+        background-position: center;
+        margin-top: -150px;
+    }
+
+    .login-register-page {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        font-family: "Poppins", sans-serif;
+        height: 100vh;
+        min-height: 100vh;
+
+        /* Opsional */
+    }
+
+    html,
+    body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .login-register-page h1 {
+        font-weight: 700;
+        letter-spacing: -1.5px;
+        margin: 0 0 15px 0;
+        color: #fff;
+    }
+
+    .login-register-page h1.title {
+        font-size: 45px;
+        line-height: 45px;
+        margin: 0;
+        text-shadow: 0 0 10px rgba(16, 64, 74, 0.5);
+    }
+
+    .login-register-page p {
+        font-size: 14px;
+        font-weight: 100;
+        line-height: 20px;
+        letter-spacing: 0.5px;
+        margin: -20px 0 -30px;
+        text-shadow: 0 0 10px rgba(16, 64, 74, 0.5);
+    }
+
+    .login-register-page span {
+        font-size: 14px;
+        margin-top: 25px;
+    }
+
+    .login-register-page a {
+        color: #333;
+        font-size: 14px;
+        text-decoration: none;
+        margin: 15px 0;
+        transition: 0.3s ease-in-out;
+    }
+
+    .login-register-page a:hover {
+        color: #4bb6b7;
+    }
+
+    .login-register-page .content {
+        display: flex;
+        width: 100%;
+        height: 50px;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .login-register-page .content.checkbox {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .login-register-page .content input {
+        accent-color: #333;
+        width: 12px;
+        height: 12px;
+    }
+
+    .login-register-page .content label {
+        font-size: 14px;
+        user-select: none;
+        padding-left: 5px;
+    }
+
+    .login-register-page button {
+        position: relative;
+        border-radius: 20px;
+        border: 1px solid #F56960;
+        background-color: #F56960;
+        color: #fff;
+        font-size: 15px;
+        font-weight: 700;
+        margin: 10px;
+        padding: 12px 80px;
+        letter-spacing: 1px;
+        text-transform: capitalize;
+        transition: 0.3s ease-in-out;
+        cursor: pointer;
+    }
+
+    .login-register-page button:hover {
+        letter-spacing: 3px;
+    }
+
+    .login-register-page button:active {
+        transform: scale(0.95);
+    }
+
+    .login-register-page button:focus {
+        outline: none;
+    }
+
+    .login-register-page button.ghost {
+        border: 2px solid #fff;
+        color: #fff;
+        background-color: transparent;
+        margin-top: 60px;
+    }
+
+    .login-register-page button.ghost i {
+        position: absolute;
+        opacity: 0;
+        transition: 0.3s ease-in-out;
+    }
+
+    .login-register-page button.ghost i.register {
+        right: -70px;
+    }
+
+    .login-register-page button.ghost i.login {
+        left: 70px;
+    }
+
+    .login-register-page button.ghost:hover i.register {
+        right: 40px;
+        opacity: 1;
+    }
+
+    .login-register-page button.ghost:hover i.login {
+        left: 40px;
+        opacity: 1;
+    }
+
+    .login-register-page form {
+        background-color: #ffffff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 0 50px;
+        height: 100%;
+        text-align: center;
+    }
+
+    .login-register-page input {
+        background-color: #eee;
+        border-radius: 10px;
+        border: none;
+        padding: 12px 15px;
+        margin: 8px 0;
+        width: 100%;
+    }
+
+    .login-register-page .container {
+        background-color: #fff;
+        border-radius: 25px;
+        box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+        position: relative;
+        overflow: hidden;
+        width: 900px;
+        max-width: 100%;
+        min-height: 540px;
+    }
+
+    .login-register-page .form-container {
+        position: absolute;
+        top: 0;
+        height: 100%;
+        transition: all 0.6s ease-in-out;
+    }
+
+    .login-register-page .login-container {
+        left: 0;
+        width: 50%;
+        z-index: 2;
+    }
+
+    .login-register-page .container.right-panel-active .login-container {
+        transform: translateX(100%);
+    }
+
+    .login-register-page .register-container {
+        left: 0;
+        width: 50%;
+        opacity: 0;
+        z-index: 1;
+    }
+
+    .login-register-page .container.right-panel-active .register-container {
+        transform: translateX(100%);
+        opacity: 1;
+        z-index: 5;
+        animation: show 0.6s;
+    }
+
+    @keyframes show {
+        0% {
+            opacity: 0;
+            z-index: 1;
+        }
+
+        50% {
+            opacity: 0;
+            z-index: 1;
+        }
+
+        51% {
+            opacity: 1;
+            z-index: 5;
+        }
+
+        100% {
+            opacity: 1;
+            z-index: 5;
+        }
+    }
+
+    .login-register-page .overlay-container {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        width: 50%;
+        height: 100%;
+        overflow: hidden;
+        transition: transform 0.6s ease-in-out;
+        z-index: 100;
+
+    }
+
+    .login-register-page .overlay {
+        position: relative;
+        z-index: 1000;
+    }
+
+    header#masthead {
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+    }
+
+    .login-register-page .container.right-panel-active .overlay-container {
+        transform: translateX(-100%);
+    }
+
+    .login-register-page {
+        margin-top: 80px;
+        /* Menambahkan margin untuk mendorong halaman ke bawah */
+    }
+
+    .login-register-page .overlay {
+        background-image: url("{{ url_for('static', filename='images/background-login.gif') }}");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 0 0;
+        color: #fff;
+        position: relative;
+        left: -100%;
+        height: 100%;
+        width: 200%;
+        transform: translateX(0);
+        transition: transform 0.6s ease-in-out;
+    }
+
+    .login-register-page .overlay::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        background: linear-gradient(to top, rgba(46, 94, 109, 0.4) 40%, rgba(46, 94, 109, 0));
+    }
+
+    .login-register-page .container.right-panel-active .overlay {
+        transform: translateX(50%);
+    }
+
+    .login-register-page .overlay-panel {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 0 40px;
+        text-align: center;
+        top: 0;
+        height: 100%;
+        width: 50%;
+        transform: translateX(0);
+        transition: transform 0.6s ease-in-out;
+    }
+
+    .login-register-page .overlay-left {
+        transform: translateX(-20%);
+    }
+
+    .login-register-page .container.right-panel-active .overlay-left {
+        transform: translateX(0);
+    }
+
+    .login-register-page .overlay-right {
+        right: 0;
+        transform: translateX(0);
+    }
+
+    .login-register-page .container.right-panel-active .overlay-right {
+        transform: translateX(20%);
+    }
+
+    .login-register-page .social-container {
+        margin: 20px 8px;
+    }
+
+    .login-register-page .social-container a {
+        border: 1px solid #dddddd;
+        border-radius: 50%;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        margin: 5px;
+        height: 50px;
+        width: 50px;
+        transition: 0.3s ease-in-out;
+    }
+
+    .login-register-page .social-container a:hover {
+        border: 1px solid #F56960;
+    }
+
+    #page.full-page {
+        margin: 0;
+        padding: 0;
+        position: static;
+        /* Jika ada properti position yang mengganggu */
+        height: auto;
+        /* Atur tinggi sesuai kebutuhan */
+        overflow: visible;
+        /* Memastikan tidak ada area yang terpotong */
+    }
+</style>
+{% endblock %}
+
+{% block content %}
+<!-- Flash messages container -->
+{% with messages = get_flashed_messages(with_categories=true) %}
+{% if messages %}
+<div id="flash-container" class="flash-container">
+    {% for category, message in messages %}
+    <div class="flash-popup {{ category }}">
+        <div class="flash-content">
+            <span class="flash-message">{{ message }}</span>
+            <button class="flash-close">&times;</button>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+{% endif %}
+{% endwith %}
+<div class="auth-wrapper">
+    <div class="login-register-page">
+        <div class="container" id="container">
+            <div class="form-container login-container">
+                <form action="{{ url_for('login') }}" method="POST">
+                    <h1 class="title" style="color: black;">Masuk</h1>
+                    <span></span>
+                    <input type="email" name="email" placeholder="Masukkan Email Anda" required autocomplete="email" />
+                    <div class="password-container">
+                        <input type="password" name="password" placeholder="Masukkan Password Anda" required
+                            autocomplete="current-password" />
+                        <span class="password-toggle">
+                            <i class="fas fa-eye" onclick="togglePassword(this)"></i>
+                        </span>
+                    </div>
+                    <button type="submit">Masuk</button>
+                </form>
+            </div>
+
+            <div class="form-container register-container">
+                <form action="{{ url_for('register') }}" method="POST">
+                    <h1 class="title" style="color: black;">Buat Akun</h1>
+                    <span></span>
+                    <input type="text" name="username" placeholder="Masukkan Nama Anda" required
+                        autocomplete="username" />
+                    <input type="email" name="email" placeholder="Masukkan Email Anda" required autocomplete="email" />
+                    <div class="password-container">
+                        <input type="password" name="password" placeholder="Masukkan Password Anda" required
+                            autocomplete="new-password" />
+                        <span class="password-toggle">
+                            <i class="fas fa-eye" onclick="togglePassword(this)"></i>
+                        </span>
+                    </div>
+                    <button type="submit">Daftar</button>
+                </form>
+            </div>
+
+            <div class="overlay-container">
+                <div class="overlay">
+                    <div class="overlay-panel overlay-left">
+                        <h1>Monggo, Sugeng Rawuh!</h1>
+                        <p>Masuk dengan data diri kamu supaya tetap terkoneksi dengan kami.</p>
+                        <button class="ghost" id="loginBtn">
+                            Masuk
+                            <i class="fas fa-sign-in-alt login"></i>
+                        </button>
+                    </div>
+                    <div class="overlay-panel overlay-right">
+                        <h1>Halo, Kanca!</h1>
+                        <p>Lengkapi data diri kamu, dan ayo bergabung untuk mulai petualangan baru bersama kami!</p>
+                        <button class="ghost" id="registerBtn">
+                            Daftar
+                            <i class="fas fa-user-plus register"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block extra_js %}
+<script>
+    const container = document.getElementById('container');
+    const loginBtn = document.getElementById('loginBtn');
+    const registerBtn = document.getElementById('registerBtn');
+
+    registerBtn.addEventListener('click', () => {
+        container.classList.add('right-panel-active');
+    });
+
+    loginBtn.addEventListener('click', () => {
+        container.classList.remove('right-panel-active');
+    });
+
+    function togglePassword(icon) {
+        const passwordInput = icon.parentElement.previousElementSibling;
+        if (passwordInput.type === 'password') {
+            passwordInput.type = 'text';
+            icon.classList.remove('fa-eye');
+            icon.classList.add('fa-eye-slash');
+        } else {
+            passwordInput.type = 'password';
+            icon.classList.remove('fa-eye-slash');
+            icon.classList.add('fa-eye');
+        }
+    }  
+</script>
+
+<script>document.addEventListener('DOMContentLoaded', function () {
+        console.log('DOM loaded, checking flash messages');
+        const flashContainer = document.getElementById('flash-container');
+
+        if (flashContainer) {
+            console.log('Flash container found');
+            const flashPopups = flashContainer.querySelectorAll('.flash-popup');
+
+            console.log(`Number of flash popups: ${flashPopups.length}`);
+
+            flashPopups.forEach(popup => {
+                console.log('Processing popup:', popup);
+
+                // Tampilkan popup dengan animasi
+                setTimeout(() => {
+                    popup.classList.add('show');
+                    console.log('Popup shown');
+                }, 100);
+
+                // Tutup popup setelah beberapa detik
+                const closeTimeout = setTimeout(() => {
+                    hidePopup(popup);
+                }, 5000);
+
+                // Tambahkan event listener untuk tombol close
+                const closeButton = popup.querySelector('.flash-close');
+                closeButton.addEventListener('click', () => {
+                    clearTimeout(closeTimeout);
+                    hidePopup(popup);
+                });
+            });
+
+            // Fungsi untuk menyembunyikan popup
+            function hidePopup(popup) {
+                popup.classList.remove('show');
+                popup.classList.add('hiding');
+
+                setTimeout(() => {
+                    popup.remove();
+                    // Hapus container jika tidak ada popup lagi
+                    if (flashContainer.children.length === 0) {
+                        flashContainer.remove();
+                    }
+                }, 500);
+            }
+        } else {
+            console.log('No flash container found');
+        }
+    });</script>
+
+<style>
+    .password-container {
+        position: relative;
+        width: 100%;
+    }
+
+    .password-toggle {
+        position: absolute;
+        right: 10px;
+        top: 10%;
+        transform: translateY(-50%);
+        cursor: pointer;
+        color: #999;
+    }
+
+    .password-container input {
+        padding-right: -40px;
+    }
+
+    .flash-container {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 9999;
+        pointer-events: none;
+    }
+
+    .flash-popup {
+        max-width: 400px;
+        width: 90%;
+        padding: 20px;
+        margin: 0 auto;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        position: absolute;
+        top: -200px;
+        opacity: 0;
+        transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        pointer-events: auto;
+        text-align: center;
+    }
+
+    .flash-popup.show {
+        top: 148px;
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    .flash-popup.hiding {
+        top: -200px;
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+
+    .flash-popup.success {
+        background-color: #4CAF50;
+        color: white;
+    }
+
+    .flash-popup.danger {
+        background-color: #f44336;
+        color: white;
+    }
+
+    .flash-popup.info {
+        background-color: #2196F3;
+        color: white;
+    }
+
+    .flash-popup.warning {
+        background-color: #ff9800;
+        color: white;
+    }
+
+    .flash-close {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        background: none;
+        border: none;
+        color: white;
+        font-size: 20px;
+        cursor: pointer;
+        opacity: 0.7;
+        transition: opacity 0.3s ease;
+    }
+
+    .flash-close:hover {
+        opacity: 1
+    }
+</style>
+{% endblock %}

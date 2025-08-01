@@ -1,0 +1,546 @@
+id_penginapan,kabupaten,nama_penginapan,rating,harga,jumlah_ulasan,latitude,longitude,google_maps_link
+71GA,Kota Yogyakarta,Cordela Kartika Dewi Malioboro Yogyakarta,4.0,328000,4006,-7.79836,110.36189,https://www.google.com/maps/search/Cordela%20Kartika%20Dewi%20Malioboro%20Yogyakarta
+CBGP,Kota Yogyakarta,D'Salvatore Art & Boutique Hotel,4.0,266000,2628,-7.783526,110.42571,https://www.google.com/maps/search/D%27Salvatore%20Art%20%26%20Boutique%20Hotel
+F858,Kota Yogyakarta,Yellow Star Hotel Ambarrukmo,4.0,313000,3943,-7.783408,110.39769,https://www.google.com/maps/search/Yellow%20Star%20Hotel%20Ambarrukmo
+FYXT,Kota Yogyakarta,Malioboro Prime Hotel,4.0,375000,2788,-7.790097,110.36539,https://www.google.com/maps/search/Malioboro%20Prime%20Hotel
+5WR4,Kota Yogyakarta,HOM Platinum,3.5,484000,2132,-7.787695,110.3637,https://www.google.com/maps/search/HOM%20Platinum
+H92O,Kota Yogyakarta,@HOM Premiere Timoho Jogjakarta,4.5,328000,2132,-7.798264,110.392555,https://www.google.com/maps/search/%40HOM%20Premiere%20Timoho%20Jogjakarta
+3MMT,Kota Yogyakarta,Patra Malioboro Hotel,5.0,547000,1512,-7.791959,110.36389,https://www.google.com/maps/search/Patra%20Malioboro%20Hotel
+XO9Q,Kota Yogyakarta,Kotta GO Yogyakarta,5.0,281000,1051,-7.782847974,110.3629154,https://www.google.com/maps/search/Kotta%20GO%20Yogyakarta
+2X74,Kota Yogyakarta,Hotel Diana Jogja,4.0,266000,800,-7.817791,110.363556,https://www.google.com/maps/search/Hotel%20Diana%20Jogja
+AQ9S,Sleman,D'Kaliurang Resort & Convention,4.5,391000,1793,-7.607222,110.41918,https://www.google.com/maps/search/D%27Kaliurang%20Resort%20%26%20Convention
+PTNC,Kota Yogyakarta,Yellow Star Hotel Gejayan,4.0,313000,3721,-7.771337,110.38988,https://www.google.com/maps/search/Yellow%20Star%20Hotel%20Gejayan
+82DI,Sleman,The Kharma Villas Yogyakarta,4.6,578000,1281,-7.739588,110.36883,https://www.google.com/maps/search/The%20Kharma%20Villas%20Yogyakarta
+OF2C,Kota Yogyakarta,Aveta Hotel Malioboro,4.0,391000,3227,-7.793897,110.3658,https://www.google.com/maps/search/Aveta%20Hotel%20Malioboro
+D46H,Kota Yogyakarta,Crystal Lotus Yogyakarta,3.5,609000,8095,-7.759364,110.36228,https://www.google.com/maps/search/Crystal%20Lotus%20Yogyakarta
+A2R7,Kota Yogyakarta,Grand Senyum Hotel,4.5,328000,2288,-7.782988,110.36539,https://www.google.com/maps/search/Grand%20Senyum%20Hotel
+Z85F,Sleman,Griya Persada Convention Hotel & Resort Kaliurang Sleman Yogyakarta,4.0,281000,2997,-7.607022,110.421715,https://www.google.com/maps/search/Griya%20Persada%20Convention%20Hotel%20%26%20Resort%20Kaliurang%20Sleman%20Yogyakarta
+4Y1H,Kota Yogyakarta,Paku Mas Hotel,4.0,438000,2412,-7.783692,110.40351,https://www.google.com/maps/search/Paku%20Mas%20Hotel
+ZU69,Kota Yogyakarta,Cavinton Hotel,4.0,781000,6745,-7.800629,110.35611,https://www.google.com/maps/search/Cavinton%20Hotel
+VT9H,Sleman,Sofia Boutique Residence,4.5,188000,908,-7.741354,110.37059,https://www.google.com/maps/search/Sofia%20Boutique%20Residence
+EFMU,Kota Yogyakarta,Hotel Kusuma,4.0,281000,636,-7.754056,110.40897,https://www.google.com/maps/search/Hotel%20Kusuma
+V9I3,Kota Yogyakarta,Nueve Malioboro Hotel Yogyakarta,4.0,375000,2209,-7.795935,110.368614,https://www.google.com/maps/search/Nueve%20Malioboro%20Hotel%20Yogyakarta
+LH83,Kulon Progo,Cordia Hotel Yogyakarta,4.5,359000,1317,-7.897905,110.05975,https://www.google.com/maps/search/Cordia%20Hotel%20Yogyakarta
+P3MY,Kota Yogyakarta,Arte Hotel Malioboro Yogyakarta,4.5,781000,2302,-7.789978,110.36232,https://www.google.com/maps/search/Arte%20Hotel%20Malioboro%20Yogyakarta
+6CI3,Kota Yogyakarta,ÃÂl Hotel Royale Yogyakarta Malioboro,5.0,313000,3282,-7.793795,110.364914,https://www.google.com/maps/search/%C3%83%C2%83%C3%82%C2%89l%20Hotel%20Royale%20Yogyakarta%20Malioboro
+6U9C,Kota Yogyakarta,Grand Malioboro Yogyakarta,3.5,281000,2838,-7.793856,110.36219,https://www.google.com/maps/search/Grand%20Malioboro%20Yogyakarta
+KU5V,Kota Yogyakarta,Cakra Kusuma Hotel,3.5,297000,3303,-7.76006,110.38089,https://www.google.com/maps/search/Cakra%20Kusuma%20Hotel
+RT68,Kota Yogyakarta,Forriz Hotel Yogyakarta,4.0,359000,4360,-7.795434,110.35351,https://www.google.com/maps/search/Forriz%20Hotel%20Yogyakarta
+K8FO,Kota Yogyakarta,Ayaartta Hotel Malioboro,4.0,344000,3255,-7.801556,110.35693,https://www.google.com/maps/search/Ayaartta%20Hotel%20Malioboro
+M356,Kota Yogyakarta,Peti Mas Hotel,3.5,203000,1142,-7.794339,110.364174,https://www.google.com/maps/search/Peti%20Mas%20Hotel
+66Z5,Kota Yogyakarta,Front One Cabin Malioboro Jogja,4.5,281000,699,-7.79755,110.37058,https://www.google.com/maps/search/Front%20One%20Cabin%20Malioboro%20Jogja
+CB6R,Kota Yogyakarta,Amaris Hotel Sagan Jogja,4.0,734000,2660,-7.780237,110.37922,https://www.google.com/maps/search/Amaris%20Hotel%20Sagan%20Jogja
+CPOX,Kota Yogyakarta,Royal Malioboro Yogyakarta by Aston,4.5,375000,3643,-7.790012,110.3642,https://www.google.com/maps/search/Royal%20Malioboro%20Yogyakarta%20by%20Aston
+I0FJ,Kota Yogyakarta,Aveon Hotel Yogyakarta by Daphna International,4.5,203000,2022,-7.764008,110.42263,https://www.google.com/maps/search/Aveon%20Hotel%20Yogyakarta%20by%20Daphna%20International
+AA9G,Kota Yogyakarta,Front One Resort Yogyakarta,4.0,297000,2725,-7.762336,110.416016,https://www.google.com/maps/search/Front%20One%20Resort%20Yogyakarta
+L1CV,Kota Yogyakarta,Ros-In Hotel,4.0,234000,4400,-7.835804,110.367836,https://www.google.com/maps/search/Ros-In%20Hotel
+1ZH0,Kota Yogyakarta,Bueno Colombo Hotel and Resorts,3.5,300000,995,-7.768143,110.469894,https://www.google.com/maps/search/Bueno%20Colombo%20Hotel%20and%20Resorts
+7VJN,Kota Yogyakarta,Tulips Hotel & Restaurant,4.0,188000,192,-7.818936,110.36603,https://www.google.com/maps/search/Tulips%20Hotel%20%26%20Restaurant
+VSUR,Kota Yogyakarta,RedDoorz near Seasons City Mall 3,3.0,219000,75,-6.15875026,106.7920827,https://www.google.com/maps/search/RedDoorz%20near%20Seasons%20City%20Mall%203
+ERJM,Kota Yogyakarta,The Grand Palace Hotel Yogyakarta,3.5,766000,2608,-7.82178,110.36433,https://www.google.com/maps/search/The%20Grand%20Palace%20Hotel%20Yogyakarta
+Q8SU,Kota Yogyakarta,Royal Darmo Malioboro,4.0,328000,4192,-7.792344,110.35871,https://www.google.com/maps/search/Royal%20Darmo%20Malioboro
+K8TK,Kota Yogyakarta,Grand Omah Sastro,4.5,344000,315,-7.771002,110.395,https://www.google.com/maps/search/Grand%20Omah%20Sastro
+0T3L,Sleman,Java Village Resort,4.5,281000,3029,-7.711021,110.370415,https://www.google.com/maps/search/Java%20Village%20Resort
+H1R8,Kota Yogyakarta,Sahid Raya Hotel & Convention Yogyakarta,3.5,375000,9155,-7.780026,110.41414,https://www.google.com/maps/search/Sahid%20Raya%20Hotel%20%26%20Convention%20Yogyakarta
+DP34,Sleman,The Atrium Hotel & Resort,3.5,266000,3813,-7.747619,110.36051,https://www.google.com/maps/search/The%20Atrium%20Hotel%20%26%20Resort
+RZ5X,Kota Yogyakarta,Cakra Kembang Hotel,3.5,891000,2310,-7.758546,110.38218,https://www.google.com/maps/search/Cakra%20Kembang%20Hotel
+HINO,Sleman,Cangkringan Jogja Villas & Spa,3.5,266000,178,-7.626136,110.445076,https://www.google.com/maps/search/Cangkringan%20Jogja%20Villas%20%26%20Spa
+YFXM,Kota Yogyakarta,Zodiak @ Cokroaminoto Yogyakarta,3.5,500000,111,-7.791244,110.35326,https://www.google.com/maps/search/Zodiak%20%40%20Cokroaminoto%20Yogyakarta
+LM01,Kota Yogyakarta,Hotel Mutiara Malioboro,3.5,406000,108,-7.794869,110.365616,https://www.google.com/maps/search/Hotel%20Mutiara%20Malioboro
+VOUN,Sleman,Omkara Resort,4.0,344000,1099,-7.674429,110.37749,https://www.google.com/maps/search/Omkara%20Resort
+NPHD,Sleman,The Cabin Apartment Uttara,3.0,172000,54,-7.740279,110.391884,https://www.google.com/maps/search/The%20Cabin%20Apartment%20Uttara
+HUPM,Bantul,Wisma Sanggrahan Syariah Yogyakarta RedPartner,3.0,156000,125,-7.894825,110.32266,https://www.google.com/maps/search/Wisma%20Sanggrahan%20Syariah%20Yogyakarta%20RedPartner
+OLH7,Sleman,OYO 1593 Pondok Garini Syariah,3.0,172000,117,7.754473,110.38457,https://www.google.com/maps/search/OYO%201593%20Pondok%20Garini%20Syariah
+GWJF,Kota Yogyakarta,RedDoorz Yogya Kembali Malioboro Hotel,3.0,156000,356,-7.80153,110.363,https://www.google.com/maps/search/RedDoorz%20Yogya%20Kembali%20Malioboro%20Hotel
+8ZOK,Kota Yogyakarta,OYO 1046 Omah Pathok,3.0,156000,212,-7.797474,110.358,https://www.google.com/maps/search/OYO%201046%20Omah%20Pathok
+7X4Q,Kota Yogyakarta,OYO 90496 Izzi Ekslusif,3.0,234000,189,-7.766861,110.39607,https://www.google.com/maps/search/OYO%2090496%20Izzi%20Ekslusif
+T1CJ,Kota Yogyakarta,OYO 250 De'gadri Ndalem,3.0,281000,320,-7.819843,110.323875,https://www.google.com/maps/search/OYO%20250%20De%27gadri%20Ndalem
+IL0D,Kota Yogyakarta,All Nite & Day Yogyakarta - Gejayan,3.5,156000,3487,-7.780216,110.38797,https://www.google.com/maps/search/All%20Nite%20%26%20Day%20Yogyakarta%20-%20Gejayan
+SLAM,Kota Yogyakarta,Ki Agung Prestise Hotel,3.0,297000,288,-7.820544,110.36828,https://www.google.com/maps/search/Ki%20Agung%20Prestise%20Hotel
+GS5P,Kota Yogyakarta,Royal Brongto Hotel,3.0,172000,444,-7.81782,110.36034,https://www.google.com/maps/search/Royal%20Brongto%20Hotel
+MF9Y,Kota Yogyakarta,Indoluxe Rent Apartment,3.0,156000,745,-7.767307,110.41211,https://www.google.com/maps/search/Indoluxe%20Rent%20Apartment
+7BHH,Kota Yogyakarta,Hotel Popi,2.5,234000,6037,-7.76452,110.37925,https://www.google.com/maps/search/Hotel%20Popi
+320R,Kota Yogyakarta,Ceria Boutique Hotel,3.0,188000,1056,-7.775058,110.41605,https://www.google.com/maps/search/Ceria%20Boutique%20Hotel
+R5OH,Kota Yogyakarta,OYO 1626 Alena Residence,5.0,234000,175,-7.793042,110.35848,https://www.google.com/maps/search/OYO%201626%20Alena%20Residence
+ICET,Kota Yogyakarta,S5 Guest House,5.0,188000,193,-7.8043,110.37624,https://www.google.com/maps/search/S5%20Guest%20House
+6CQG,Kota Yogyakarta,Prime Cailendra Hotel,4.0,250000,428,-7.81026,110.3772,https://www.google.com/maps/search/Prime%20Cailendra%20Hotel
+SG74,Gunungkidul,Omah Sundak Homestay,3.5,219000,171,-8.14654,110.60695,https://www.google.com/maps/search/Omah%20Sundak%20Homestay
+HOO5,Kota Yogyakarta,D'paragon Cherry,5.0,300000,328,-7.78301,110.40123,https://www.google.com/maps/search/D%27paragon%20Cherry
+CRYB,Kota Yogyakarta,Maple Tree Homestay,5.0,344000,47,-7.781564,110.41414,https://www.google.com/maps/search/Maple%20Tree%20Homestay
+K0F6,Kota Yogyakarta,Summer Quest,3.5,156000,862,-7.791899,110.364555,https://www.google.com/maps/search/Summer%20Quest
+VAI8,Sleman,Paviliun Bu Sinta RedPartner,3.0,172000,47,-7.744784,110.39194,https://www.google.com/maps/search/Paviliun%20Bu%20Sinta%20RedPartner
+S48Z,Sleman,OYO 1855 Elise Exclusive Residence,3.0,172000,94,-7.698685,110.40536,https://www.google.com/maps/search/OYO%201855%20Elise%20Exclusive%20Residence
+LSZT,Kota Yogyakarta,Guest House B Fren Syariah Yogya RedPartner,3.0,200000,25,-7.755243,110.400734,https://www.google.com/maps/search/Guest%20House%20B%20Fren%20Syariah%20Yogya%20RedPartner
+8FPX,Kota Yogyakarta,OYO 2061 Rizki Dhira Guest House,3.0,156000,23,-7.757294,110.41007,https://www.google.com/maps/search/OYO%202061%20Rizki%20Dhira%20Guest%20House
+5UKK,Kota Yogyakarta,RedDoorz Plus @ Jalan Parangtritis 2,3.0,156000,166,-7.83176,110.3673,https://www.google.com/maps/search/RedDoorz%20Plus%20%40%20Jalan%20Parangtritis%202
+2140,Kota Yogyakarta,OYO 90778 River inn Malioboro,3.0,156000,180,-7.789872,110.35738,https://www.google.com/maps/search/OYO%2090778%20River%20inn%20Malioboro
+FRLH,Kota Yogyakarta,OYO 2394 Hotel Brosta,3.0,156000,97,-7.803434,110.353645,https://www.google.com/maps/search/OYO%202394%20Hotel%20Brosta
+VTZ6,Kota Yogyakarta,RedDoorz Plus Near Taman Sari 2,3.0,156000,72,-7.81714,110.3637,https://www.google.com/maps/search/RedDoorz%20Plus%20Near%20Taman%20Sari%202
+BKXW,Kota Yogyakarta,Reddoorz Plus Near Alun Alun Selatan,3.0,156000,208,-7.81694,110.3681,https://www.google.com/maps/search/Reddoorz%20Plus%20Near%20Alun%20Alun%20Selatan
+Q11O,Kota Yogyakarta,RedDoorz near RS Sarjito Yogyakarta 2,3.0,188000,128,-7.76079,110.3819,https://www.google.com/maps/search/RedDoorz%20near%20RS%20Sarjito%20Yogyakarta%202
+ODKN,Kota Yogyakarta,RedDoorz Plus Syariah @ Puri Cempaka,3.0,156000,167,-7.748065,110.48114,https://www.google.com/maps/search/RedDoorz%20Plus%20Syariah%20%40%20Puri%20Cempaka
+VLHF,Kota Yogyakarta,Homestay Damandiri Prambanan,3.0,172000,5,-7.751242,110.48477,https://www.google.com/maps/search/Homestay%20Damandiri%20Prambanan
+1YVI,Sleman,OYO 1277 Pondok Damai Syariah,3.0,156000,127,-7.694054,110.41716,https://www.google.com/maps/search/OYO%201277%20Pondok%20Damai%20Syariah
+8YOD,Kota Yogyakarta,OYO 3467 White Residence,3.0,172000,77,-7.758498,110.40473,https://www.google.com/maps/search/OYO%203467%20White%20Residence
+LMXQ,Kota Yogyakarta,OYO 1072 Kampung Condro Wulan Guesthouse,3.0,156000,67,-7.751228,110.40595,https://www.google.com/maps/search/OYO%201072%20Kampung%20Condro%20Wulan%20Guesthouse
+UDIW,Kota Yogyakarta,OYO 1196 Hotel Pura Puspa Rosa,3.0,156000,235,-7.776232,110.39534,https://www.google.com/maps/search/OYO%201196%20Hotel%20Pura%20Puspa%20Rosa
+NU3R,Kota Yogyakarta,OYO 1319 88 Exclusive Guesthouse,3.0,203000,177,-7.762321,110.396484,https://www.google.com/maps/search/OYO%201319%2088%20Exclusive%20Guesthouse
+VKN9,Kota Yogyakarta,OYO Life 2807 Nusa Indah Kost Putri,3.0,750000,2,-7.752304,110.4094,https://www.google.com/maps/search/OYO%20Life%202807%20Nusa%20Indah%20Kost%20Putri
+RR6N,Kota Yogyakarta,Diva Residence,3.0,609000,139,-7.762171,110.39754,https://www.google.com/maps/search/Diva%20Residence
+8OSO,Kota Yogyakarta,Swiss-Belboutique Yogyakarta,5.0,563000,9009,-7.782883,110.37415,https://www.google.com/maps/search/Swiss-Belboutique%20Yogyakarta
+ANUG,Kota Yogyakarta,Hotel Tentrem Yogyakarta,4.5,656000,15478,-7.773843,110.36865,https://www.google.com/maps/search/Hotel%20Tentrem%20Yogyakarta
+SAG0,Kota Yogyakarta,Grand Zuri Malioboro Yogyakarta,4.5,469000,16244,-7.787693,110.36669,https://www.google.com/maps/search/Grand%20Zuri%20Malioboro%20Yogyakarta
+A2AZ,Kota Yogyakarta,The Manohara Hotel Yogyakarta,5.0,328000,2087,-7.774481,110.388985,https://www.google.com/maps/search/The%20Manohara%20Hotel%20Yogyakarta
+2JE7,Kota Yogyakarta,Horison Ultima Riss Yogyakarta,4.5,547000,4606,-7.787736,110.36434,https://www.google.com/maps/search/Horison%20Ultima%20Riss%20Yogyakarta
+S5J3,Kota Yogyakarta,Abadi Hotel Malioboro Yogyakarta,4.0,406000,3724,-7.790257,110.36331,https://www.google.com/maps/search/Abadi%20Hotel%20Malioboro%20Yogyakarta
+789P,Kota Yogyakarta,Bedhot Homestay,5.0,844000,411,-7.839432,110.35799,https://www.google.com/maps/search/Bedhot%20Homestay
+MK8W,Kota Yogyakarta,Gallery Prawirotaman Hotel,4.5,500000,3661,-7.820366,110.37139,https://www.google.com/maps/search/Gallery%20Prawirotaman%20Hotel
+3K6M,Kota Yogyakarta,KHAS Tugu Hotel,5.0,250000,4894,-7.78323,110.36311,https://www.google.com/maps/search/KHAS%20Tugu%20Hotel
+C4W4,Kota Yogyakarta,Grand Ambarrukmo Hotel,4.5,391000,4632,-7.783364,110.40052,https://www.google.com/maps/search/Grand%20Ambarrukmo%20Hotel
+NWF4,Kota Yogyakarta,Royal Ambarrukmo Yogyakarta,4.5,906000,18473,-7.782404,110.40281,https://www.google.com/maps/search/Royal%20Ambarrukmo%20Yogyakarta
+TWTZ,Kota Yogyakarta,Kimaya Sudirman Yogyakarta by Harris,4.5,641000,6575,-7.782685,110.377846,https://www.google.com/maps/search/Kimaya%20Sudirman%20Yogyakarta%20by%20Harris
+S0GJ,Kota Yogyakarta,Grand Kangen Hotel Urip Sumoharjo,4.5,438000,1480,-7.782904,110.38694,https://www.google.com/maps/search/Grand%20Kangen%20Hotel%20Urip%20Sumoharjo
+I6JO,Kota Yogyakarta,KHAS Malioboro Hotel,4.5,547000,4887,-7.798167,110.363335,https://www.google.com/maps/search/KHAS%20Malioboro%20Hotel
+290P,Kota Yogyakarta,Eastparc Hotel Yogyakarta,4.5,766000,14812,-7.781834,110.40849,https://www.google.com/maps/search/Eastparc%20Hotel%20Yogyakarta
+NM4L,Kota Yogyakarta,GAIA Cosmo Hotel,4.5,359000,5698,-7.798904,110.39246,https://www.google.com/maps/search/GAIA%20Cosmo%20Hotel
+AL6A,Kota Yogyakarta,Grand Tjokro Yogyakarta,4.5,609000,5666,-7.766919,110.39153,https://www.google.com/maps/search/Grand%20Tjokro%20Yogyakarta
+BMTG,Kota Yogyakarta,Grand Rohan Jogja,4.5,969000,9622,-7.798358,110.404755,https://www.google.com/maps/search/Grand%20Rohan%20Jogja
+52D9,Sleman,"Alamanda Villas, Pool & Adventure",5.0,547000,333,-7.747883,110.350555,https://www.google.com/maps/search/Alamanda%20Villas%2C%20Pool%20%26%20Adventure
+F0ZA,Kota Yogyakarta,Yogyakarta Marriott Hotel,4.5,375000,11753,-7.7616,110.39828,https://www.google.com/maps/search/Yogyakarta%20Marriott%20Hotel
+TDJP,Kota Yogyakarta,Jogja Village,4.5,438000,970,-7.824353,110.3687,https://www.google.com/maps/search/Jogja%20Village
+16VD,Kota Yogyakarta,Porta by The Ambarrukmo,5.0,406000,2701,-7.776622,110.382034,https://www.google.com/maps/search/Porta%20by%20The%20Ambarrukmo
+Q24Z,Sleman,Hyatt Regency Yogyakarta,4.5,734000,9295,-7.74046,110.373566,https://www.google.com/maps/search/Hyatt%20Regency%20Yogyakarta
+TAH0,Kota Yogyakarta,Hotel Santika Premiere Jogja,4.5,266000,6733,-7.78257,110.36972,https://www.google.com/maps/search/Hotel%20Santika%20Premiere%20Jogja
+7GKC,Kota Yogyakarta,Grand Serela Hotel Yogyakarta,4.5,406000,3996,-7.768841,110.36124,https://www.google.com/maps/search/Grand%20Serela%20Hotel%20Yogyakarta
+V58V,Kota Yogyakarta,Grand Keisha Yogyakarta,4.5,656000,6677,-7.759267,110.3955,https://www.google.com/maps/search/Grand%20Keisha%20Yogyakarta
+Z88N,Kota Yogyakarta,KJ Hotel Yogyakarta,4.5,656000,4951,-7.822418,110.36728,https://www.google.com/maps/search/KJ%20Hotel%20Yogyakarta
+T9VP,Sleman,The Alana Yogyakarta Hotel and Convention Center,4.5,719000,24671,-7.739619,110.37704,https://www.google.com/maps/search/The%20Alana%20Yogyakarta%20Hotel%20and%20Convention%20Center
+RFLP,Kota Yogyakarta,Tjokro Style Yogyakarta,4.5,516000,4406,-7.816475,110.38036,https://www.google.com/maps/search/Tjokro%20Style%20Yogyakarta
+WKKQ,Kota Yogyakarta,Satoria Hotel Yogyakarta,4.5,484000,6288,-7.783713,110.4221,https://www.google.com/maps/search/Satoria%20Hotel%20Yogyakarta
+P51T,Kota Yogyakarta,INNSIDE By MeliÃÂ¡ Yogyakarta,4.5,969000,7906,-7.767198,110.43163,https://www.google.com/maps/search/INNSIDE%20By%20Meli%C3%83%C2%83%C3%82%C2%A1%20Yogyakarta
+VPR7,Kota Yogyakarta,Haer Malioboro,4.0,500000,15238,-7.784842,110.367226,https://www.google.com/maps/search/Haer%20Malioboro
+L5AF,Kota Yogyakarta,THE 1O1 Yogyakarta Tugu,4.5,734000,12896,-7.78407,110.366615,https://www.google.com/maps/search/THE%201O1%20Yogyakarta%20Tugu
+KSOK,Kota Yogyakarta,YATS Colony,4.5,344000,3356,-7.807967,110.34765,https://www.google.com/maps/search/YATS%20Colony
+2Q24,Kota Yogyakarta,Artotel Yogyakarta,4.5,750000,5441,-7.756689,110.3822,https://www.google.com/maps/search/Artotel%20Yogyakarta
+WCEQ,Kota Yogyakarta,Melia Purosani,4.5,594000,12581,-7.797035,110.36902,https://www.google.com/maps/search/Melia%20Purosani
+XJFN,Sleman,Rumah Mertua Boutique Hotel & Garden Restaurant & Spa,4.5,500000,557,-7.741051,110.36897,https://www.google.com/maps/search/Rumah%20Mertua%20Boutique%20Hotel%20%26%20Garden%20Restaurant%20%26%20Spa
+TIR3,Bantul,dOmah Hotel and Village Resort,4.5,625000,1000,-7.871516,110.35331,https://www.google.com/maps/search/dOmah%20Hotel%20and%20Village%20Resort
+VOUA,Kota Yogyakarta,Grage Ramayana Hotel,3.5,609000,2662,-7.791862,110.363884,https://www.google.com/maps/search/Grage%20Ramayana%20Hotel
+YCN0,Kota Yogyakarta,The Phoenix Hotel Yogyakarta - MGallery Collection,4.5,313000,6345,-7.782678,110.36848,https://www.google.com/maps/search/The%20Phoenix%20Hotel%20Yogyakarta%20-%20MGallery%20Collection
+4S4Z,Kota Yogyakarta,Grand Mercure Yogyakarta Adi Sucipto,4.5,313000,23204,-7.783364,110.392204,https://www.google.com/maps/search/Grand%20Mercure%20Yogyakarta%20Adi%20Sucipto
+KM5Z,Kota Yogyakarta,Hotel Neo Malioboro,4.0,438000,12252,-7.790074,110.36456,https://www.google.com/maps/search/Hotel%20Neo%20Malioboro
+Q60C,Sleman,The Westlake Resort Yogyakarta,4.5,547000,8849,-7.747959,110.33738,https://www.google.com/maps/search/The%20Westlake%20Resort%20Yogyakarta
+X1WD,Kota Yogyakarta,Artotel Suites Bianti Yogyakarta,5.0,531000,9133,-7.782832,110.38184,https://www.google.com/maps/search/Artotel%20Suites%20Bianti%20Yogyakarta
+VUOD,Kota Yogyakarta,favehotel Malioboro Yogyakarta,4.5,391000,5141,-7.785724,110.36983,https://www.google.com/maps/search/favehotel%20Malioboro%20Yogyakarta
+O0LB,Kota Yogyakarta,Hotel 1001 Malam,4.5,156000,447,-7.790534,110.36421,https://www.google.com/maps/search/Hotel%201001%20Malam
+LSKJ,Kota Yogyakarta,Greenhost Boutique Hotel,4.0,156000,4846,-7.820128,110.36911,https://www.google.com/maps/search/Greenhost%20Boutique%20Hotel
+OD8Y,Kota Yogyakarta,Ibis Styles Yogyakarta,4.0,156000,6638,-7.793691,110.361465,https://www.google.com/maps/search/Ibis%20Styles%20Yogyakarta
+QO59,Kota Yogyakarta,Ibis Yogyakarta Adi Sucipto,4.5,766000,4767,-7.783872,110.39201,https://www.google.com/maps/search/Ibis%20Yogyakarta%20Adi%20Sucipto
+Q4NA,Kota Yogyakarta,RedDoorz Plus near Amplaz Yogyakarta,3.0,344000,138,-7.78603,110.39961,https://www.google.com/maps/search/RedDoorz%20Plus%20near%20Amplaz%20Yogyakarta
+HVJE,Kota Yogyakarta,SPOT ON 2107 Ijo Pupus Syariah Residence,3.0,594000,122,-7.802224,110.40066,https://www.google.com/maps/search/SPOT%20ON%202107%20Ijo%20Pupus%20Syariah%20Residence
+XTBO,Kota Yogyakarta,Madina Inn,3.0,531000,261,-7.807235,110.37736,https://www.google.com/maps/search/Madina%20Inn
+DH8S,Kota Yogyakarta,RedDoorz near XT Square 3,3.0,531000,90,-7.82176,110.3857,https://www.google.com/maps/search/RedDoorz%20near%20XT%20Square%203
+Z260,Kota Yogyakarta,Novotel Suites Yogyakarta Malioboro,4.5,453000,3657,-7.792902,110.36699,https://www.google.com/maps/search/Novotel%20Suites%20Yogyakarta%20Malioboro
+Y5BG,Kota Yogyakarta,Student Park Hotel,4.0,484000,1765,-7.771996,110.40994,https://www.google.com/maps/search/Student%20Park%20Hotel
+EEPS,Sleman,The Rich Jogja Hotel,4.0,516000,16328,-7.752576,110.36097,https://www.google.com/maps/search/The%20Rich%20Jogja%20Hotel
+LTM3,Kota Yogyakarta,Ibis Yogyakarta Malioboro Hotel,4.0,625000,6638,-7.793226,110.36632,https://www.google.com/maps/search/Ibis%20Yogyakarta%20Malioboro%20Hotel
+D02S,Kota Yogyakarta,Grand Inna Malioboro,4.0,313000,16175,-7.790251,110.36624,https://www.google.com/maps/search/Grand%20Inna%20Malioboro
+NM7H,Sleman,Hotel Dafam Fortuna Malioboro,3.9,547000,221,-7.793525,110.36294,https://www.google.com/maps/search/Hotel%20Dafam%20Fortuna%20Malioboro
+05EF,Kota Yogyakarta,Duta Garden Hotel,4.0,281000,551,-7.816747,110.36953,https://www.google.com/maps/search/Duta%20Garden%20Hotel
+1T9I,Kota Yogyakarta,The Alana Hotel & Conference Center Malioboro Yogyakarta by ASTON,4.5,406000,29072,-7.815372,110.36568,https://www.google.com/maps/search/The%20Alana%20Hotel%20%26%20Conference%20Center%20Malioboro%20Yogyakarta%20by%20ASTON
+FQOB,Kota Yogyakarta,POP! Hotel Sangaji Yogyakarta,4.0,297000,6037,-7.781406,110.36751,https://www.google.com/maps/search/POP%21%20Hotel%20Sangaji%20Yogyakarta
+DJFA,Kota Yogyakarta,Indies Heritage Hotel,4.0,279000,293,-7.820624,110.36952,https://www.google.com/maps/search/Indies%20Heritage%20Hotel
+O9JU,Sleman,Indoluxe Hotel Jogjakarta,4.0,234000,6100,-7.750331,110.37264,https://www.google.com/maps/search/Indoluxe%20Hotel%20Jogjakarta
+GDQU,Kota Yogyakarta,POP! Hotel Malioboro,4.0,250000,4082,-7.790646,110.362045,https://www.google.com/maps/search/POP%21%20Hotel%20Malioboro
+WM91,Kota Yogyakarta,Platinum Adisucipto Hotel & Conference Center,4.0,797000,8092,-7.783377,110.43711,https://www.google.com/maps/search/Platinum%20Adisucipto%20Hotel%20%26%20Conference%20Center
+2XSS,Kota Yogyakarta,Puri Artha Hotel,4.0,547000,1562,-7.77992,110.39104,https://www.google.com/maps/search/Puri%20Artha%20Hotel
+RSGX,Bantul,Rajaklana Resort Villa & Spa,4.5,313000,1018,-7.839917,110.28714,https://www.google.com/maps/search/Rajaklana%20Resort%20Villa%20%26%20Spa
+L2W0,Kota Yogyakarta,Zest Hotel Yogyakarta,4.0,344000,5085,-7.79915,110.373276,https://www.google.com/maps/search/Zest%20Hotel%20Yogyakarta
+GTPC,Kota Yogyakarta,favehotel Kusumanegara,4.0,250000,10822,-7.801358,110.38829,https://www.google.com/maps/search/favehotel%20Kusumanegara
+JWMN,Kota Yogyakarta,Sheraton Mustika Yogyakarta Resort & Spa,4.0,250000,7898,-7.779258,110.428604,https://www.google.com/maps/search/Sheraton%20Mustika%20Yogyakarta%20Resort%20%26%20Spa
+W0B4,Kota Yogyakarta,Jambuluwuk Malioboro Yogyakarta Hotel,4.0,172000,6763,-7.797726,110.37263,https://www.google.com/maps/search/Jambuluwuk%20Malioboro%20Yogyakarta%20Hotel
+84DN,Kota Yogyakarta,Lynn Hotel by Horison,4.0,266000,3680,-7.824502,110.36698,https://www.google.com/maps/search/Lynn%20Hotel%20by%20Horison
+XFOK,Kota Yogyakarta,Hotel Dafam Fortuna Seturan,4.0,375000,4907,-7.765658,110.41082,https://www.google.com/maps/search/Hotel%20Dafam%20Fortuna%20Seturan
+P65Q,Kota Yogyakarta,POP! Hotel Timoho,4.5,328000,3599,-7.798888,110.39218,https://www.google.com/maps/search/POP%21%20Hotel%20Timoho
+JUJV,Kota Yogyakarta,Pandanaran Prawirotaman Yogyakarta,4.0,281000,3718,-7.81945,110.37238,https://www.google.com/maps/search/Pandanaran%20Prawirotaman%20Yogyakarta
+65XE,Kota Yogyakarta,Villa Pondok Terra,4.5,750000,199,-7.817,110.365555,https://www.google.com/maps/search/Villa%20Pondok%20Terra
+XZH9,Kota Yogyakarta,D'kayon Hotel,4.0,156000,1377,-7.780164,110.390785,https://www.google.com/maps/search/D%27kayon%20Hotel
+YGPE,Kota Yogyakarta,Aveon Express Hotel Yogyakarta by Daphna International,4.5,156000,2022,-7.792976,110.39464,https://www.google.com/maps/search/Aveon%20Express%20Hotel%20Yogyakarta%20by%20Daphna%20International
+19CW,Kota Yogyakarta,Whiz Hotel Malioboro,3.5,359000,4170,-7.793938,110.36543,https://www.google.com/maps/search/Whiz%20Hotel%20Malioboro
+TX8K,Kota Yogyakarta,Prima In Hotel Malioboro,4.0,344000,3320,-7.791182,110.361496,https://www.google.com/maps/search/Prima%20In%20Hotel%20Malioboro
+0XWM,Kota Yogyakarta,Hotel Horaios Malioboro Yogyakarta,4.5,234000,5285,-7.787497,110.36362,https://www.google.com/maps/search/Hotel%20Horaios%20Malioboro%20Yogyakarta
+UX3M,Kota Yogyakarta,Lafayette Boutique Hotel,4.5,219000,3371,-7.759432,110.38733,https://www.google.com/maps/search/Lafayette%20Boutique%20Hotel
+3KWX,Sleman,RedDoorz near Jombor Bus Station,3.0,203000,107,-7.735389,110.364426,https://www.google.com/maps/search/RedDoorz%20near%20Jombor%20Bus%20Station
+KHB9,Kota Yogyakarta,RedDoorz near Affandi Gejayan 2,3.0,344000,320,-7.76831,110.3959,https://www.google.com/maps/search/RedDoorz%20near%20Affandi%20Gejayan%202
+JF40,Kota Yogyakarta,Atrium Premiere Hotel Yogyakarta,4.0,484000,2163,-7.782972,110.39293,https://www.google.com/maps/search/Atrium%20Premiere%20Hotel%20Yogyakarta
+UHU7,Kota Yogyakarta,Hotel Arjuna,4.0,422000,175,-7.784851,110.36701,https://www.google.com/maps/search/Hotel%20Arjuna
+52HM,Kota Yogyakarta,The Cube Hotel,4.0,156000,2907,-7.815827,110.36829,https://www.google.com/maps/search/The%20Cube%20Hotel
+K06M,Kota Yogyakarta,Duta Guest House,4.0,406000,491,-7.81951,110.37101,https://www.google.com/maps/search/Duta%20Guest%20House
+96IM,Kota Yogyakarta,Kalya Hotel,4.0,266000,3268,-7.813511,110.40175,https://www.google.com/maps/search/Kalya%20Hotel
+ZCNS,Kota Yogyakarta,Sakanti Malioboro Hotel,4.0,297000,2045,-7.787444,110.36573,https://www.google.com/maps/search/Sakanti%20Malioboro%20Hotel
+UMRU,Kota Yogyakarta,Next Hotel Yogyakarta,5.0,250000,1153,-7.781515,110.3994,https://www.google.com/maps/search/Next%20Hotel%20Yogyakarta
+IYYK,Kota Yogyakarta,D'Senopati Malioboro Grand Hotel,4.5,297000,4838,-7.801654,110.37009,https://www.google.com/maps/search/D%27Senopati%20Malioboro%20Grand%20Hotel
+R68M,Kota Yogyakarta,RedDoorz Plus @ Hotel Wijaya Kusuma Yogyakarta,3.0,688000,489,-7.797568,110.38571,https://www.google.com/maps/search/RedDoorz%20Plus%20%40%20Hotel%20Wijaya%20Kusuma%20Yogyakarta
+1T2K,Kota Yogyakarta,the Amartya Jogjakarta Hotel,4.5,484000,1358,-7.798235,110.33018,https://www.google.com/maps/search/the%20Amartya%20Jogjakarta%20Hotel
+HE3F,Kota Yogyakarta,Allstay Hotel Yogyakarta,4.0,281000,3076,-7.773264,110.4015,https://www.google.com/maps/search/Allstay%20Hotel%20Yogyakarta
+UHIB,Kota Yogyakarta,Burza Hotel Yogyakarta,4.0,406000,4639,-7.824013,110.3666,https://www.google.com/maps/search/Burza%20Hotel%20Yogyakarta
+JRWQ,Kota Yogyakarta,Amaranta Prambanan,4.5,188000,1693,-7.769853,110.5045,https://www.google.com/maps/search/Amaranta%20Prambanan
+TAD0,Kota Yogyakarta,Hotel Citradream Yogyakarta,4.3,156000,3314,-7.780103,110.367645,https://www.google.com/maps/search/Hotel%20Citradream%20Yogyakarta
+8C4X,Kota Yogyakarta,H Boutique Hotel Jogja,4.0,156000,3030,-7.7818,110.379166,https://www.google.com/maps/search/H%20Boutique%20Hotel%20Jogja
+REUN,Bantul,Queen Of The South Resort,4.0,234000,6242,-8.028363,110.34079,https://www.google.com/maps/search/Queen%20Of%20The%20South%20Resort
+ID6O,Kota Yogyakarta,Hotel New Saphir Yogyakarta,3.5,297000,5684,-7.783539,110.391235,https://www.google.com/maps/search/Hotel%20New%20Saphir%20Yogyakarta
+D5Q7,Kota Yogyakarta,The Victoria Hotel Yogyakarta,4.0,234000,3429,-7.782166,110.40177,https://www.google.com/maps/search/The%20Victoria%20Hotel%20Yogyakarta
+CG7X,Kota Yogyakarta,The Jayakarta Yogyakarta Hotel & Spa,3.5,156000,4048,-7.783624,110.41935,https://www.google.com/maps/search/The%20Jayakarta%20Yogyakarta%20Hotel%20%26%20Spa
+L2XV,Kota Yogyakarta,Grand Quality (GQ) Yogyakarta,4.0,281000,1,-7.782754,110.42333,https://www.google.com/maps/search/Grand%20Quality%20%28GQ%29%20Yogyakarta
+6FXA,Sleman,Djuragan Kamar Nogotirto,4.5,156000,36,-7.757301344,110.3455819,https://www.google.com/maps/search/Djuragan%20Kamar%20Nogotirto
+OVS8,Sleman,RSA Medical Syariah RedPartner,4.0,172000,11,-7.742455,110.34803,https://www.google.com/maps/search/RSA%20Medical%20Syariah%20RedPartner
+BI3C,Kota Yogyakarta,RedDoorz Plus near Jogja City Mall 5,3.0,156000,190,-7.76362,110.3638,https://www.google.com/maps/search/RedDoorz%20Plus%20near%20Jogja%20City%20Mall%205
+6E4Q,Kota Yogyakarta,OYO 2347 Griya Patran,3.0,156000,74,-7.78253,110.34046,https://www.google.com/maps/search/OYO%202347%20Griya%20Patran
+6SNQ,Kota Yogyakarta,RedDoorz @ Demangan Sari Residence,3.0,156000,58,-7.77881,110.3944,https://www.google.com/maps/search/RedDoorz%20%40%20Demangan%20Sari%20Residence
+OI89,Gunungkidul,Baron Hill Resort Gunung Kidul RedPartner,3.0,156000,184,-8.131454,110.54901,https://www.google.com/maps/search/Baron%20Hill%20Resort%20Gunung%20Kidul%20RedPartner
+FT2L,Kota Yogyakarta,Sky Hotel Jogja,3.5,203000,955,-7.79176,110.37364,https://www.google.com/maps/search/Sky%20Hotel%20Jogja
+CCY2,Kota Yogyakarta,Tickle Hotel,3.5,234000,2056,-7.783053,110.38528,https://www.google.com/maps/search/Tickle%20Hotel
+KUIR,Kota Yogyakarta,Tara Hotel,3.5,234000,4552,-7.771648,110.36114,https://www.google.com/maps/search/Tara%20Hotel
+9W62,Kota Yogyakarta,Sriwedari Hotel,4.0,172000,965,-7.783345,110.43364,https://www.google.com/maps/search/Sriwedari%20Hotel
+VZZ1,Sleman,Rumah Palagan Yogyakarta,4.0,422000,409,-7.732744,110.38338,https://www.google.com/maps/search/Rumah%20Palagan%20Yogyakarta
+M4OE,Kota Yogyakarta,University Club Hotel,3.5,500000,2946,-7.772797,110.37756,https://www.google.com/maps/search/University%20Club%20Hotel
+CDKO,Kota Yogyakarta,Merapi Merbabu Hotel Yogyakarta,3.5,156000,5697,-7.771729,110.41002,https://www.google.com/maps/search/Merapi%20Merbabu%20Hotel%20Yogyakarta
+8K9K,Sleman,Palagan Huis,5.0,313000,144,-7.676647,110.40477,https://www.google.com/maps/search/Palagan%20Huis
+94OB,Sleman,Kampoeng Joglo Boutique Hotel,5.0,172000,208,-7.715871,110.40565,https://www.google.com/maps/search/Kampoeng%20Joglo%20Boutique%20Hotel
+6SX9,Kota Yogyakarta,Hotel Agung Mas,3.5,156000,991,-7.791337,110.35392,https://www.google.com/maps/search/Hotel%20Agung%20Mas
+6Z8G,Kota Yogyakarta,Kristina Hotel,3.5,156000,425,-7.79353,110.36207,https://www.google.com/maps/search/Kristina%20Hotel
+89BJ,Kota Yogyakarta,Cabin Hotel Bhayangkara,4.0,172000,698,-7.80003,110.36196,https://www.google.com/maps/search/Cabin%20Hotel%20Bhayangkara
+8HLS,Kota Yogyakarta,Grage Jogja Hotel,3.5,156000,2948,-7.790967,110.36231,https://www.google.com/maps/search/Grage%20Jogja%20Hotel
+B18P,Kota Yogyakarta,Hotel Graha Kinasih Kotabaru,4.0,281000,502,-7.787068,110.370636,https://www.google.com/maps/search/Hotel%20Graha%20Kinasih%20Kotabaru
+S9R3,Kulon Progo,Super OYO Collection O 92363 Kp Inn,4.1,515000,89,-7.8877883,110.073405,https://www.google.com/maps/search/Super%20OYO%20Collection%20O%2092363%20Kp%20Inn
+7HQZ,Kulon Progo,Lumintu Guest House,4.7,166000,223,-7.9046464,110.0787984,https://www.google.com/maps/search/Lumintu%20Guest%20House
+1E8V,Kulon Progo,Wisma Pancoeran,4.7,350000,513,-7.773608,110.1796793,https://www.google.com/maps/search/Wisma%20Pancoeran
+L3DL,Kulon Progo,HOTEL DEWATA YIA KULONPROGO,4.9,215000,71,-7.8819046,110.0588693,https://www.google.com/maps/search/HOTEL%20DEWATA%20YIA%20KULONPROGO
+0L7L,Kulon Progo,Menoreh Farm Stay,4.9,550000,74,-7.6746301,110.1417404,https://www.google.com/maps/search/Menoreh%20Farm%20Stay
+KZMO,Kulon Progo,OYO 92101 Elma Guesthouse,4.6,63000,42,-7.8849797,110.0648726,https://www.google.com/maps/search/OYO%2092101%20Elma%20Guesthouse
+59AG,Kulon Progo,Hotel Omah Soemantri,4.7,115000,122,-7.8825812,110.0463661,https://www.google.com/maps/search/Hotel%20Omah%20Soemantri
+02GJ,Kulon Progo,Griya Tetirah Syariah Mitra RedDoorz,3.5,499000,55,-7.8929495,110.1345138,https://www.google.com/maps/search/Griya%20Tetirah%20Syariah%20Mitra%20RedDoorz
+0FDH,Kulon Progo,SUPER OYO Collection O Andono Hotel by GWA,4.1,70000,155,-7.8867171,110.0790372,https://www.google.com/maps/search/SUPER%20OYO%20Collection%20O%20Andono%20Hotel%20by%20GWA
+UZ3P,Kulon Progo,Homestay Wibisono 4,5.0,70000,6,-7.8193332,110.1219035,https://www.google.com/maps/search/Homestay%20Wibisono%204
+C3JN,Kulon Progo,Joglo Menoreh Resto,4.6,80000,74,-7.7523794,110.2055448,https://www.google.com/maps/search/Joglo%20Menoreh%20Resto
+W1LG,Kulon Progo,Uanview keTemon Hotel & Resto YIA,4.6,638000,34,-7.8863571,110.0672842,https://www.google.com/maps/search/Uanview%20keTemon%20Hotel%20%26%20Resto%20YIA
+QBAB,Kulon Progo,Hotel Andono near YIA Mitra RedDoorz,3.8,110000,6,-7.8866985,110.0790385,https://www.google.com/maps/search/Hotel%20Andono%20near%20YIA%20Mitra%20RedDoorz
+EOQK,Kulon Progo,RedDoorz Syariah Near Stasiun Wates,4.1,118000,8,-7.8555808,110.1606144,https://www.google.com/maps/search/RedDoorz%20Syariah%20Near%20Stasiun%20Wates
+TFNL,Kulon Progo,Skye Nest,4.5,105000,9,-7.7490326,110.2077147,https://www.google.com/maps/search/Skye%20Nest
+HB6I,Kulon Progo,Hotel Simply Homy dekat Bandara YIA,5.0,117000,6,-7.903669,110.078645,https://www.google.com/maps/search/Hotel%20Simply%20Homy%20dekat%20Bandara%20YIA
+8RVD,Kulon Progo,Hotel King's,3.5,63000,697,-7.865055,110.1509639,https://www.google.com/maps/search/Hotel%20King%27s
+FCTK,Kulon Progo,Elma Guesthouse YIA KulonProgo Yogyakarta mitra RedDoorz,4.9,147000,8,-7.8849956,110.0649356,https://www.google.com/maps/search/Elma%20Guesthouse%20YIA%20KulonProgo%20Yogyakarta%20mitra%20RedDoorz
+6LS3,Kulon Progo,Morazen Aiort Yogyakarta,4.8,105000,1493,-7.8861807,110.0655355,https://www.google.com/maps/search/Morazen%20Aiort%20Yogyakarta
+YPYY,Kulon Progo,The Swantari Terrace View Villa,5.0,116000,28,-7.7501092,110.1933464,https://www.google.com/maps/search/The%20Swantari%20Terrace%20View%20Villa
+6SGS,Kulon Progo,RedDoorz Syariah near Bandara YIA Kulon Progo,4.8,81200,78,-7.8716463,110.0536171,https://www.google.com/maps/search/RedDoorz%20Syariah%20near%20Bandara%20YIA%20Kulon%20Progo
+TVQO,Kulon Progo,Ndalem Resto & Homestay,5.0,79000,44,-7.653032,110.141499,https://www.google.com/maps/search/Ndalem%20Resto%20%26%20Homestay
+0LXR,Kulon Progo,NEW CITRA Hotel,4.3,111000,139,-7.8870243,110.076931,https://www.google.com/maps/search/NEW%20CITRA%20Hotel
+C4OD,Kulon Progo,Q-Five Guest House YIA Kulon Progo Mitra RedDoorz,4.6,200000,11,-7.886201,110.0658242,https://www.google.com/maps/search/Q-Five%20Guest%20House%20YIA%20Kulon%20Progo%20Mitra%20RedDoorz
+8AQA,Kulon Progo,Modern House YIA,4.5,88900,87,-7.8861445,110.0628589,https://www.google.com/maps/search/Modern%20House%20YIA
+5XFE,Kulon Progo,Ibis Yogyakarta International Aiort Kulon Progo,4.8,101000,989,-7.8868192,110.0727265,https://www.google.com/maps/search/Ibis%20Yogyakarta%20International%20Aiort%20Kulon%20Progo
+TIE4,Kulon Progo,Uanview Hotel Syariah Hapsari YIA,5.0,97600,1,-7.8904449,110.0774523,https://www.google.com/maps/search/Uanview%20Hotel%20Syariah%20Hapsari%20YIA
+S0G9,Kulon Progo,Omah Betakan Homestay & Cafe,4.8,114000,135,-7.7837571,110.2412138,https://www.google.com/maps/search/Omah%20Betakan%20Homestay%20%26%20Cafe
+Q6AE,Kulon Progo,Nabhan Homestay,4.5,148000,33,-7.668244,110.132187,https://www.google.com/maps/search/Nabhan%20Homestay
+84ZX,Kulon Progo,Swiss-belhotel Aiort Yogyakarta,4.9,125000,694,-7.8870638,110.0698989,https://www.google.com/maps/search/Swiss-belhotel%20Aiort%20Yogyakarta
+ETH2,Kulon Progo,Homestay Jio,4.5,89300,2,-7.7984894,110.1177528,https://www.google.com/maps/search/Homestay%20Jio
+QHLO,Kulon Progo,Homestay Jemakir,4.6,122000,7,-7.7987666,110.1178487,https://www.google.com/maps/search/Homestay%20Jemakir
+NE07,Kulon Progo,Novotel Yogyakarta Aiort Kulon Progo,4.8,101000,635,-7.8868192,110.0727265,https://www.google.com/maps/search/Novotel%20Yogyakarta%20Aiort%20Kulon%20Progo
+SQ3S,Kulon Progo,Kulonprogo Guesthouse RedPartner,1.0,142000,1,-7.8881875,110.0730625,https://www.google.com/maps/search/Kulonprogo%20Guesthouse%20RedPartner
+S8MF,Kulon Progo,Homestay Jemiran,1.0,84100,1,-7.8067443,110.1112234,https://www.google.com/maps/search/Homestay%20Jemiran
+3YGU,Kulon Progo,Dandaman Villa,5.0,101000,26,-7.8242746,110.2511778,https://www.google.com/maps/search/Dandaman%20Villa
+VOQA,Kulon Progo,Homestay Mbah parni(segajih),5.0,119000,1,-7.7994375,110.1159509,https://www.google.com/maps/search/Homestay%20Mbah%20parni%28segajih%29
+K54X,Kota Yogyakarta,Hotel Penak Malioboro,4.2,105000,520,-7.77603,110.3577,https://www.google.com/maps/search/Hotel%20Penak%20Malioboro
+1QND,Sleman,Griya Fazza Thani Reddoorz Syariah near RS Hermina Yogyakarta,3.6,176000,69,-7.7709346,110.4287204,https://www.google.com/maps/search/Griya%20Fazza%20Thani%20Reddoorz%20Syariah%20near%20RS%20Hermina%20Yogyakarta
+C1ZV,Sleman,Alam Jogja Resort Mitra RedDoorz,4.3,94700,512,-7.7452852,110.4204119,https://www.google.com/maps/search/Alam%20Jogja%20Resort%20Mitra%20RedDoorz
+MIE4,Sleman,RedDoorz near Hartono Mall 3,3.8,131000,235,-7.7608562,110.4034464,https://www.google.com/maps/search/RedDoorz%20near%20Hartono%20Mall%203
+WT2P,Sleman,MASHBROW HOSTEL & HOTEL BUDGET,4.4,119000,474,-7.764837,110.4018554,https://www.google.com/maps/search/MASHBROW%20HOSTEL%20%26%20HOTEL%20BUDGET
+VP7L,Sleman,Koolkost near Stadion Maguwoharjo,4.2,69200,62,-7.744926,110.4142293,https://www.google.com/maps/search/Koolkost%20near%20Stadion%20Maguwoharjo
+L3YT,Sleman,Nirvana Inn Gejayan Yogyakarta mitra RedDoorz,4.0,237000,561,-7.7640193,110.3959732,https://www.google.com/maps/search/Nirvana%20Inn%20Gejayan%20Yogyakarta%20mitra%20RedDoorz
+LVTH,Sleman,Kusuma Syariah Hotel Yogyakarta,4.5,146000,1519,-7.7540805,110.4088862,https://www.google.com/maps/search/Kusuma%20Syariah%20Hotel%20Yogyakarta
+L88X,Sleman,Griya Sakina Syariah near JIH Yogyakarta Mitra RedDoorz,4.6,153000,41,-7.7510192,110.397905,https://www.google.com/maps/search/Griya%20Sakina%20Syariah%20near%20JIH%20Yogyakarta%20Mitra%20RedDoorz
+6BG1,Sleman,RedDoorz @ Savitri Hotel,4.1,225000,318,-7.735733,110.3873302,https://www.google.com/maps/search/RedDoorz%20%40%20Savitri%20Hotel
+30PB,Sleman,Urbanview Hotel Pondok Anggun Yogyakarta by RedDoorz,3.7,114000,451,-7.761303,110.411419,https://www.google.com/maps/search/Urbanview%20Hotel%20Pondok%20Anggun%20Yogyakarta%20by%20RedDoorz
+2O9W,Sleman,Tatti Inn Syariah Seturan RedPartner,4.5,131000,12,-7.7663668,110.4086832,https://www.google.com/maps/search/Tatti%20Inn%20Syariah%20Seturan%20RedPartner
+24D5,Sleman,RedDoorz @ Gentan Jakal,4.9,110000,66,-7.7194375,110.4065625,https://www.google.com/maps/search/RedDoorz%20%40%20Gentan%20Jakal
+9769,Sleman,The Doctor Guest House Syariah Mitra RedDoorz Pakuwon Mall Yogyakarta,3.1,174000,14,-7.7547347,110.3929891,https://www.google.com/maps/search/The%20Doctor%20Guest%20House%20Syariah%20Mitra%20RedDoorz%20Pakuwon%20Mall%20Yogyakarta
+OVDR,Sleman,Halona Residence near Pakuwon Mall Jogja,4.1,107000,102,-7.7557886,110.3982928,https://www.google.com/maps/search/Halona%20Residence%20near%20Pakuwon%20Mall%20Jogja
+AFDN,Sleman,RedDoorz @ Shabrina Homestay Syariah Maguwo,5.0,161000,1,-7.7664353,110.4321684,https://www.google.com/maps/search/RedDoorz%20%40%20Shabrina%20Homestay%20Syariah%20Maguwo
+ANX5,Sleman,Reddoorz @ Griya Athaya Maguwoharjo Yogyakarta,3.9,230000,8,-7.7790685,110.4247147,https://www.google.com/maps/search/Reddoorz%20%40%20Griya%20Athaya%20Maguwoharjo%20Yogyakarta
+TVU6,Sleman,Nirvana Inn Wahid Hasyim Mitra RedDoorz,4.0,199000,402,-7.7624528,110.4037169,https://www.google.com/maps/search/Nirvana%20Inn%20Wahid%20Hasyim%20Mitra%20RedDoorz
+F7D7,Sleman,Nathania exclusive,4.0,227000,52,-7.7584805,110.3780123,https://www.google.com/maps/search/Nathania%20exclusive
+JCOX,Sleman,RedDoorz near Rumah Sakit Condong Catur,4.3,120000,89,-7.7538205,110.4061306,https://www.google.com/maps/search/RedDoorz%20near%20Rumah%20Sakit%20Condong%20Catur
+NGXH,Sleman,Royal Homy Syariah,4.7,107000,322,-7.7789391,110.4112824,https://www.google.com/maps/search/Royal%20Homy%20Syariah
+8A20,Sleman,OYO 94365 Pelem Kecut Lively Family,1.0,114000,2,-7.7624184,110.3918045,https://www.google.com/maps/search/OYO%2094365%20Pelem%20Kecut%20Lively%20Family
+UKVM,Sleman,Hotel O Sleman Near Bandara Adi Sutjipto Formerly Joglo Sorogenen,3.3,153000,16,-7.780299,110.442848,https://www.google.com/maps/search/Hotel%20O%20Sleman%20Near%20Bandara%20Adi%20Sutjipto%20Formerly%20Joglo%20Sorogenen
+0DKW,Sleman,RedDoorz Syariah near Universitas Mercu Buana Kampus 2 Yogyakarta,4.2,130000,17,-7.7703213,110.3989209,https://www.google.com/maps/search/RedDoorz%20Syariah%20near%20Universitas%20Mercu%20Buana%20Kampus%202%20Yogyakarta
+UW4W,Sleman,RedDoorz near Condongcatur Bus Station,3.9,132000,74,-7.756649,110.390285,https://www.google.com/maps/search/RedDoorz%20near%20Condongcatur%20Bus%20Station
+57ZG,Sleman,Hartono Inn Seturan RedPartner,4.3,278000,195,-7.7598078,110.4040243,https://www.google.com/maps/search/Hartono%20Inn%20Seturan%20RedPartner
+YR4K,Sleman,OYO 1718 Homestay Wak Gobenk,3.4,250000,79,-7.7458025,110.4210074,https://www.google.com/maps/search/OYO%201718%20Homestay%20Wak%20Gobenk
+R7Z0,Sleman,Cornel Homestay,4.6,95200,326,-7.754129,110.4064026,https://www.google.com/maps/search/Cornel%20Homestay
+DNEF,Sleman,Janti Transit kost harian/ bulanan,3.9,76600,179,-7.7814464,110.4121288,https://www.google.com/maps/search/Janti%20Transit%20kost%20harian/%20bulanan
+60SF,Sleman,Rumah Kandjani,4.5,127000,437,-7.7616763,110.3907455,https://www.google.com/maps/search/Rumah%20Kandjani
+1FEZ,Sleman,RedDoorz Maleo,3.0,92000,43,-7.7657238,110.3911301,https://www.google.com/maps/search/RedDoorz%20Maleo
+TEMO,Sleman,RedDoorz @ Seturan Raya (Setrahouse),3.9,120000,189,-7.7709134,110.4097482,https://www.google.com/maps/search/RedDoorz%20%40%20Seturan%20Raya%20%28Setrahouse%29
+KD1R,Sleman,SM exclusive guesthouse jogja,4.2,224000,201,-7.7541948,110.399534,https://www.google.com/maps/search/SM%20exclusive%20guesthouse%20jogja
+THIH,Sleman,Champaka Kostel Yogyakarta,4.6,116000,9,-7.7535934,110.4066611,https://www.google.com/maps/search/Champaka%20Kostel%20Yogyakarta
+VJUM,Sleman,Kost Eksklusif Griya Jasmine,3.8,166000,140,-7.7727951,110.4161948,https://www.google.com/maps/search/Kost%20Eksklusif%20Griya%20Jasmine
+K6YX,Sleman,Urbanview Hotel Syariah Casa Azmya Yogyakarta by RedDoorz,4.6,396000,404,-7.752467,110.381173,https://www.google.com/maps/search/Urbanview%20Hotel%20Syariah%20Casa%20Azmya%20Yogyakarta%20by%20RedDoorz
+SZKT,Sleman,The Eco Village Homestay RedPartner,3.7,89000,68,-7.7418344,110.4431603,https://www.google.com/maps/search/The%20Eco%20Village%20Homestay%20RedPartner
+VQV7,Sleman,WISMA ARYA 2,4.1,102000,212,-7.7884304,110.405244,https://www.google.com/maps/search/WISMA%20ARYA%202
+C2J9,Sleman,EKOST VILLA CANDI GEBANG,4.1,97800,99,-7.7479435,110.4125321,https://www.google.com/maps/search/EKOST%20VILLA%20CANDI%20GEBANG
+8JAV,Sleman,Wisma Garuda Syariah Condongcatur Mitra RedDoorz,4.0,158000,33,-7.7453214,110.3973256,https://www.google.com/maps/search/Wisma%20Garuda%20Syariah%20Condongcatur%20Mitra%20RedDoorz
+QYN3,Sleman,Griya Lathifah Homestay,4.8,111000,50,-7.7782847,110.4320433,https://www.google.com/maps/search/Griya%20Lathifah%20Homestay
+64NZ,Sleman,RedDoorz @ Raya Janti Yogyakarta,4.0,144000,64,-7.7894463,110.410043,https://www.google.com/maps/search/RedDoorz%20%40%20Raya%20Janti%20Yogyakarta
+PQJS,Sleman,Residence Duksina 2 By SHM,4.1,599000,238,-7.7571072,110.379316,https://www.google.com/maps/search/Residence%20Duksina%202%20By%20SHM
+IYF7,Sleman,KOST GRAHA SEHAT,4.5,200000,23,-7.803719,110.4075871,https://www.google.com/maps/search/KOST%20GRAHA%20SEHAT
+EMN0,Sleman,RedDoorz Syariah near Pascasarjana UGM 3,4.9,105000,248,-7.7541078,110.3833506,https://www.google.com/maps/search/RedDoorz%20Syariah%20near%20Pascasarjana%20UGM%203
+88WL,Sleman,Java Village Resort By Homee Yogyakarta,4.5,129000,3029,-7.7107874,110.3704785,https://www.google.com/maps/search/Java%20Village%20Resort%20By%20Homee%20Yogyakarta
+A0AN,Sleman,NATASHA GUESTHOUSE,4.7,97800,87,-7.7549519,110.4019657,https://www.google.com/maps/search/NATASHA%20GUESTHOUSE
+0NAG,Sleman,RedDoorz @ Jakal Atas KM 7,3.4,116000,15,-7.7484909,110.3868835,https://www.google.com/maps/search/RedDoorz%20%40%20Jakal%20Atas%20KM%207
+E5ZW,Sleman,Jogja Lodge - Kost Eksklusif,4.9,95000,64,-7.7650726,110.4006294,https://www.google.com/maps/search/Jogja%20Lodge%20-%20Kost%20Eksklusif
+G1S7,Sleman,My Cafe Hotel near UGM Yogyakarta Mitra RedDoorz,3.7,133000,27,-7.7517472,110.3771275,https://www.google.com/maps/search/My%20Cafe%20Hotel%20near%20UGM%20Yogyakarta%20Mitra%20RedDoorz
+ZUTO,Sleman,SPOT ON 2881 Nabila Homestay,1.8,89700,224,-7.742432,110.3942901,https://www.google.com/maps/search/SPOT%20ON%202881%20Nabila%20Homestay
+5X91,Sleman,Grand Inga Guest House,4.5,224000,103,-7.7562007,110.3828474,https://www.google.com/maps/search/Grand%20Inga%20Guest%20House
+XM42,Sleman,HOMESTAY Jogja Palagan / hotel / hotel terdekat / kost terdekat / kost terdekat / homestay murah / kost bebas,4.0,136000,16,-7.7399923,110.3805683,https://www.google.com/maps/search/HOMESTAY%20Jogja%20Palagan%20/%20hotel%20/%20hotel%20terdekat%20/%20kost%20terdekat%20/%20kost%20terdekat%20/%20homestay%20murah%20/%20kost%20bebas
+9D7S,Sleman,Maita Homestay Ringroad Utara,4.7,135000,58,-7.752392,110.380956,https://www.google.com/maps/search/Maita%20Homestay%20Ringroad%20Utara
+RN1E,Sleman,Diva Residence Yogyakarta,4.6,682000,139,-7.7622323,110.3973765,https://www.google.com/maps/search/Diva%20Residence%20Yogyakarta
+YBN8,Sleman,d'WF Hotel,4.2,133000,32,-7.7849026,110.4464438,https://www.google.com/maps/search/d%27WF%20Hotel
+WSMM,Sleman,Omah Njonja Bed & Brasserie,4.6,61000,1020,-7.7551695,110.3887521,https://www.google.com/maps/search/Omah%20Njonja%20Bed%20%26%20Brasserie
+Z007,Sleman,King Puntodewo Guesthouse RedPartner,2.7,107000,3,-7.7952754,110.3983441,https://www.google.com/maps/search/King%20Puntodewo%20Guesthouse%20RedPartner
+B1FZ,Sleman,RedDoorz Syariah @ Babadan Baru Jakal,4.5,105000,309,-7.7485638,110.3906123,https://www.google.com/maps/search/RedDoorz%20Syariah%20%40%20Babadan%20Baru%20Jakal
+PQUF,Sleman,Trihakso Guest House near Kaliurang RedPartner,3.2,140000,129,-7.7534547,110.3828449,https://www.google.com/maps/search/Trihakso%20Guest%20House%20near%20Kaliurang%20RedPartner
+H7L3,Sleman,Ndliman House near UGM Jogja RedPartner,4.7,133000,113,-7.7481798,110.3859391,https://www.google.com/maps/search/Ndliman%20House%20near%20UGM%20Jogja%20RedPartner
+HUOG,Sleman,RedDoorz @ Mahameru Residence Yogyakarta,4.1,113000,182,-7.7451536,110.394935,https://www.google.com/maps/search/RedDoorz%20%40%20Mahameru%20Residence%20Yogyakarta
+W7XT,Sleman,Tamadara Guesthouse,4.6,207000,60,-7.7574148,110.4014319,https://www.google.com/maps/search/Tamadara%20Guesthouse
+C0UB,Sleman,OYO 90210 Kenari House Syariah,4.1,300000,109,-7.764423,110.4373518,https://www.google.com/maps/search/OYO%2090210%20Kenari%20House%20Syariah
+7UM7,Sleman,Urbanview Stay @H jakal By RedDoorz,4.6,119000,104,-7.7506813,110.3779919,https://www.google.com/maps/search/Urbanview%20Stay%20%40H%20jakal%20By%20RedDoorz
+FM34,Sleman,Hotel Alana Yogyakarta Hotel & Convention Center,4.8,352000,24671,-7.7393398,110.3771959,https://www.google.com/maps/search/Hotel%20Alana%20Yogyakarta%20Hotel%20%26%20Convention%20Center
+O9RK,Sleman,Homestay Joglo Seruni,4.8,260000,122,-7.7330306,110.3969187,https://www.google.com/maps/search/Homestay%20Joglo%20Seruni
+KSFS,Sleman,Sunrise Hotel Jombor Yogyakarta,4.0,96500,662,-7.7469797,110.3621864,https://www.google.com/maps/search/Sunrise%20Hotel%20Jombor%20Yogyakarta
+0WSR,Sleman,Omahkoe Guesthouse Yogyakarta,3.9,80000,116,-7.7852272,110.4272092,https://www.google.com/maps/search/Omahkoe%20Guesthouse%20Yogyakarta
+1SB0,Sleman,Omah Jaban Jogja RedPartner,4.2,181000,81,-7.733073,110.38895,https://www.google.com/maps/search/Omah%20Jaban%20Jogja%20RedPartner
+Q3U0,Sleman,RedDoorz near Adisucipto Airport 2,4.2,175000,250,-7.7843308,110.4330336,https://www.google.com/maps/search/RedDoorz%20near%20Adisucipto%20Airport%202
+8HO2,Sleman,Mirza Maguwoharjo RedPartner,2.5,151000,2,-7.7489842,110.4439419,https://www.google.com/maps/search/Mirza%20Maguwoharjo%20RedPartner
+B9MS,Sleman,LestInn Homestay Monjali Mitra Reddoorz,4.3,103000,30,-7.7517409,110.3731916,https://www.google.com/maps/search/LestInn%20Homestay%20Monjali%20Mitra%20Reddoorz
+3YAS,Sleman,RedDoorz Plus @ Timoho,3.7,537000,115,-7.7900422,110.3932034,https://www.google.com/maps/search/RedDoorz%20Plus%20%40%20Timoho
+QILE,Sleman,Dasinem Family Homestay,4.7,600000,440,-7.7606247,110.3737476,https://www.google.com/maps/search/Dasinem%20Family%20Homestay
+2NWP,Sleman,Griya Gayatri Monjali,4.0,275000,261,-7.7519776,110.3716739,https://www.google.com/maps/search/Griya%20Gayatri%20Monjali
+X9I4,Sleman,RedDoorz Syariah @ Wisma Arya 2,3.6,341000,69,-7.7884652,110.4052765,https://www.google.com/maps/search/RedDoorz%20Syariah%20%40%20Wisma%20Arya%202
+8T89,Sleman,BeMa Homestay Murah di Jogja,5.0,300000,51,-7.7651434,110.4139167,https://www.google.com/maps/search/BeMa%20Homestay%20Murah%20di%20Jogja
+9R36,Sleman,GUEST HOUSE GEBANG ASRI,4.3,600000,124,-7.7474914,110.4122862,https://www.google.com/maps/search/GUEST%20HOUSE%20GEBANG%20ASRI
+ONST,Sleman,RedDoorz near Sleman City Hall 2,4.4,718000,167,-7.7215095,110.3620941,https://www.google.com/maps/search/RedDoorz%20near%20Sleman%20City%20Hall%202
+ZT02,Sleman,RedDoorz Plus near Universitas Negeri Yogyakarta 2,2.4,500000,74,-7.7770315,110.3817791,https://www.google.com/maps/search/RedDoorz%20Plus%20near%20Universitas%20Negeri%20Yogyakarta%202
+P157,Sleman,OYO 91601 Double-Degree Syariah (Female & Family),3.9,114000,47,-7.762391,110.3917595,https://www.google.com/maps/search/OYO%2091601%20Double-Degree%20Syariah%20%28Female%20%26%20Family%29
+UZGY,Sleman,Kebon Krapyak Cottage Syariah RedPartner near Stadion Maguwoharjo,4.4,100000,177,-7.7281594,110.4166441,https://www.google.com/maps/search/Kebon%20Krapyak%20Cottage%20Syariah%20RedPartner%20near%20Stadion%20Maguwoharjo
+XI8H,Sleman,RedDoorz near Galeria Mall 2,3.9,990000,43,-7.7822919,110.3858996,https://www.google.com/maps/search/RedDoorz%20near%20Galeria%20Mall%202
+97SH,Sleman,The Satu Stay Kayen,4.7,125000,385,-7.7424092,110.3879258,https://www.google.com/maps/search/The%20Satu%20Stay%20Kayen
+3EZF,Sleman,Griya Inap Moeslem KEMALA,4.2,361000,127,-7.7685101,110.4137331,https://www.google.com/maps/search/Griya%20Inap%20Moeslem%20KEMALA
+AHBJ,Sleman,Dom Hotel Jogja,4.1,122000,628,-7.7330936,110.3959549,https://www.google.com/maps/search/Dom%20Hotel%20Jogja
+2CHT,Sleman,Hotel Arilla Eclat,4.3,400000,389,-7.7278658,110.3989188,https://www.google.com/maps/search/Hotel%20Arilla%20Eclat
+OXH1,Sleman,RedDoorz near Gembira Loka Zoo 3,4.0,230000,67,-7.8096359,110.4023289,https://www.google.com/maps/search/RedDoorz%20near%20Gembira%20Loka%20Zoo%203
+CRE5,Sleman,Collection O 550 Kebon Krapyak Cottage Syariah,4.4,430000,229,-7.7285087,110.416804,https://www.google.com/maps/search/Collection%20O%20550%20Kebon%20Krapyak%20Cottage%20Syariah
+83AL,Bantul,Bahagia Sederhana Homestay,4.7,220000,165,-7.8859472,110.3211835,https://www.google.com/maps/search/Bahagia%20Sederhana%20Homestay
+4RYQ,Bantul,Homestay Rumah Bahagia Cepor,4.9,225000,60,-7.9036742,110.3249896,https://www.google.com/maps/search/Homestay%20Rumah%20Bahagia%20Cepor
+GRAI,Bantul,OYO 465 Alam Citra Bed & Breakfast,4.2,100000,224,-7.8605128,110.3556836,https://www.google.com/maps/search/OYO%20465%20Alam%20Citra%20Bed%20%26%20Breakfast
+GRYE,Bantul,Alam Citra BnB Mitra RedDoorz,4.7,200000,14,-7.8604795,110.355764,https://www.google.com/maps/search/Alam%20Citra%20BnB%20Mitra%20RedDoorz
+9M9R,Bantul,Kos putra/putri Liaolin,4.0,300000,12,-7.8907556,110.3288578,https://www.google.com/maps/search/Kos%20putra/putri%20Liaolin
+D8F3,Bantul,Omah Tembi Homestay,4.6,500000,1156,-7.8727455,110.3545642,https://www.google.com/maps/search/Omah%20Tembi%20Homestay
+OSMZ,Bantul,Homestay Omah Putih,3.9,300000,7,-7.9048704,110.3450796,https://www.google.com/maps/search/Homestay%20Omah%20Putih
+KSFD,Bantul,Omah Cepit,4.5,200000,294,-7.8670012,110.340901,https://www.google.com/maps/search/Omah%20Cepit
+QY8O,Bantul,EDHOST D'CASTILLO,5.0,220000,14,-7.8792545,110.3368749,https://www.google.com/maps/search/EDHOST%20D%27CASTILLO
+QSX1,Bantul,Wisma Sanggrahan Syariah Yogyakarta,4.7,500000,125,-7.8947763,110.3224785,https://www.google.com/maps/search/Wisma%20Sanggrahan%20Syariah%20Yogyakarta
+XBKY,Bantul,Yukke Tembi Homestay,4.7,600000,60,-7.8737054,110.35389,https://www.google.com/maps/search/Yukke%20Tembi%20Homestay
+TYHZ,Bantul,dOmah Yogya Hotel,4.5,700000,1040,-7.8714954,110.3534843,https://www.google.com/maps/search/dOmah%20Yogya%20Hotel
+NUMV,Bantul,D Bamboo House,4.9,200000,34,-7.8632866,110.3492777,https://www.google.com/maps/search/D%20Bamboo%20House
+ZFF3,Bantul,Omah Tengah Sawah Guest HOUSE,4.7,100000,44,-7.8666463,110.3441878,https://www.google.com/maps/search/Omah%20Tengah%20Sawah%20Guest%20HOUSE
+LINJ,Bantul,Yabbiekayu Eco-Bungalows,4.8,290000,317,-7.8709712,110.3548653,https://www.google.com/maps/search/Yabbiekayu%20Eco-Bungalows
+YU72,Bantul,Kenka_Homestay,5.0,230000,7,-7.8851303,110.360547,https://www.google.com/maps/search/Kenka_Homestay
+EC32,Bantul,Wisma Mairatu,3.9,650000,85,-7.8671736,110.3409045,https://www.google.com/maps/search/Wisma%20Mairatu
+FQC2,Bantul,Rumah Budaya Tembi,4.5,290000,3305,-7.8700932,110.3562056,https://www.google.com/maps/search/Rumah%20Budaya%20Tembi
+Z983,Bantul,Amartha Indotama Guest House,4.9,290000,11,-7.8671923,110.3170448,https://www.google.com/maps/search/Amartha%20Indotama%20Guest%20House
+U2VJ,Bantul,Kusuma Homestay,4.4,214000,398,-7.8539494,110.3570712,https://www.google.com/maps/search/Kusuma%20Homestay
+Z00K,Bantul,Arsya Homestay,4.6,450000,17,-7.8892234,110.3497004,https://www.google.com/maps/search/Arsya%20Homestay
+6XNO,Bantul,Homestay Demangan,4.6,550000,56,-7.8551182,110.36082,https://www.google.com/maps/search/Homestay%20Demangan
+0JA5,Bantul,Pak Dhe Homestay,4.7,650000,187,-7.8783401,110.357026,https://www.google.com/maps/search/Pak%20Dhe%20Homestay
+8S9D,Bantul,JOGLOPARI Guesthouse (Bukan utk pasangan non-pasutri),4.8,330000,36,-7.8612973,110.3310348,https://www.google.com/maps/search/JOGLOPARI%20Guesthouse%20%28Bukan%20utk%20pasangan%20non-pasutri%29
+E7YB,Bantul,Suwuk Homestay,4.3,230000,132,-7.8639182,110.3492677,https://www.google.com/maps/search/Suwuk%20Homestay
+J38G,Bantul,Dapur Ethnic Homestay,4.6,430000,122,-7.8579151,110.3424377,https://www.google.com/maps/search/Dapur%20Ethnic%20Homestay
+Y6ID,Bantul,Kampung Tembi Guest House,4.8,540000,16,-7.8727428,110.3544645,https://www.google.com/maps/search/Kampung%20Tembi%20Guest%20House
+HF9C,Bantul,Huni Homestay Tembi,4.8,433000,61,-7.8752015,110.354374,https://www.google.com/maps/search/Huni%20Homestay%20Tembi
+NEX6,Bantul,The Zenn by Villa kitta jogja,4.8,322000,60,-7.8602475,110.3497066,https://www.google.com/maps/search/The%20Zenn%20by%20Villa%20kitta%20jogja
+3UII,Bantul,Omahkoe House Stay,5.0,250000,4,-7.8565772,110.3155661,https://www.google.com/maps/search/Omahkoe%20House%20Stay
+JYVN,Bantul,Pajangan Homestay,4.9,94500,10,-7.8714184,110.2924898,https://www.google.com/maps/search/Pajangan%20Homestay
+IHOS,Bantul,Villa Kania,5.0,144000,4,-7.8601522,110.3482052,https://www.google.com/maps/search/Villa%20Kania
+CKK9,Bantul,Rumah Pajangan Jogja,4.9,113000,8,-7.869278,110.307528,https://www.google.com/maps/search/Rumah%20Pajangan%20Jogja
+X75G,Bantul,Villa Rosseno,4.7,141000,103,-7.8641894,110.3600306,https://www.google.com/maps/search/Villa%20Rosseno
+3XV2,Bantul,BNB VILLA JOGJA unit GREECE,4.8,103000,14,-7.8643283,110.3495896,https://www.google.com/maps/search/BNB%20VILLA%20JOGJA%20unit%20GREECE
+ASQ1,Bantul,Dewisri Homestay,4.5,101000,10,-7.8606717,110.2978994,https://www.google.com/maps/search/Dewisri%20Homestay
+58YH,Bantul,Villa Namastay by Suasana Villa,5.0,98300,61,-7.8602254,110.3495002,https://www.google.com/maps/search/Villa%20Namastay%20by%20Suasana%20Villa
+6M8E,Bantul,Homestay Pak Buang,3.0,116000,1,-7.8601623,110.293647,https://www.google.com/maps/search/Homestay%20Pak%20Buang
+026N,Bantul,OYO 91987 Archery Residence Syariah,1.7,230000,12,-7.8563767,110.3528536,https://www.google.com/maps/search/OYO%2091987%20Archery%20Residence%20Syariah
+YUWC,Bantul,"RM Ingkung ""Griya Pandan Sari""",3.0,83400,14,-7.894696,110.3024861,https://www.google.com/maps/search/RM%20Ingkung%20%22Griya%20Pandan%20Sari%22
+JQK1,Bantul,OYO 94153 Bantul Syariah Homestay,2.3,170000,6,-7.8849046,110.3238815,https://www.google.com/maps/search/OYO%2094153%20Bantul%20Syariah%20Homestay
+ZG6W,Gunungkidul,Omah NgGunung,4.2,259000,105,-7.968984,110.5986406,https://www.google.com/maps/search/Omah%20NgGunung
+57F6,Gunungkidul,Orchid Inn Hotel,4.0,116000,426,-8.0481889,110.5846026,https://www.google.com/maps/search/Orchid%20Inn%20Hotel
+TRTA,Gunungkidul,Amini Guest House,4.3,284000,7,-7.9284493,110.6871364,https://www.google.com/maps/search/Amini%20Guest%20House
+WLLC,Gunungkidul,RedDoorz Syariah near Alun Alun Wonosari,3.6,164000,9,-7.9721627,110.6022846,https://www.google.com/maps/search/RedDoorz%20Syariah%20near%20Alun%20Alun%20Wonosari
+PUZL,Gunungkidul,Penginapan Rudi,4.7,308000,126,-7.8775176,110.4551504,https://www.google.com/maps/search/Penginapan%20Rudi
+RCV0,Gunungkidul,Wisma Handayani Syariah,3.0,763000,20,-7.9601523,110.6032528,https://www.google.com/maps/search/Wisma%20Handayani%20Syariah
+1SAK,Gunungkidul,"""nGGon Toeroe"" Kost & Homestay Syariah",4.0,59900,3,-7.9409327,110.5890326,https://www.google.com/maps/search/%22nGGon%20Toeroe%22%20Kost%20%26%20Homestay%20Syariah
+SM4Y,Gunungkidul,Homestay Arva komplek pindul(Nyamplung),2.2,417000,13,-7.9264375,110.6460625,https://www.google.com/maps/search/Homestay%20Arva%20komplek%20pindul%28Nyamplung%29
+1CRQ,Gunungkidul,OYO Homes 91154 Desa Wisata Wayang Manyaran Wonogiri,2.9,181000,8,-7.8573768,110.7933401,https://www.google.com/maps/search/OYO%20Homes%2091154%20Desa%20Wisata%20Wayang%20Manyaran%20Wonogiri
+VOJ6,Gunungkidul,SPOT ON 94116,5.0,500000,34,-7.9341938,110.6521896,https://www.google.com/maps/search/SPOT%20ON%2094116
+3Y95,Gunungkidul,WISMA HN,5.0,200000,25,-7.9567721,110.6211557,https://www.google.com/maps/search/WISMA%20HN
+Y51K,Gunungkidul,Homestay Segitiga,5.0,383000,6,-7.8753909,110.49117,https://www.google.com/maps/search/Homestay%20Segitiga
+I4S5,Gunungkidul,Hotel Syariah Sakimaro,4.7,638000,35,-7.8348259,110.4770202,https://www.google.com/maps/search/Hotel%20Syariah%20Sakimaro
+V9UP,Gunungkidul,Draman Homestay,3.8,137000,10,-7.8269138,110.4868551,https://www.google.com/maps/search/Draman%20Homestay
+BVAA,Gunungkidul,Dea Lokha HOTEL,4.5,268000,483,-7.9563827,110.5918885,https://www.google.com/maps/search/Dea%20Lokha%20HOTEL
+86JU,Gunungkidul,Homestay Joglo Beji,4.8,300000,91,-7.9141674,110.5656427,https://www.google.com/maps/search/Homestay%20Joglo%20Beji
+GIDO,Gunungkidul,VIKI [Villa KLENGKONG INDAH],4.8,485000,10,-7.8703035,110.4607715,https://www.google.com/maps/search/VIKI%20%5BVilla%20KLENGKONG%20INDAH%5D
+7FRF,Gunungkidul,Villa Gunung Purba View,4.5,220000,6,-7.83956,110.5201994,https://www.google.com/maps/search/Villa%20Gunung%20Purba%20View
+ITT8,Gunungkidul,Jaya Motel,4.5,125000,97,-7.9718746,110.5956142,https://www.google.com/maps/search/Jaya%20Motel
+1NI4,Gunungkidul,Kopilimo,4.3,245000,432,-7.8406406,110.4931382,https://www.google.com/maps/search/Kopilimo
+SUVH,Gunungkidul,Tanjung Inn,4.4,400000,124,-7.9663533,110.6029511,https://www.google.com/maps/search/Tanjung%20Inn
+TII5,Gunungkidul,Hotel Cyka Raya,4.2,142000,573,-7.9758425,110.5989016,https://www.google.com/maps/search/Hotel%20Cyka%20Raya
+G71E,Gunungkidul,Kenewae Living Near Alun-alun Wonosari Mitra RedDoorz,4.6,290000,21,-7.9691094,110.6045372,https://www.google.com/maps/search/Kenewae%20Living%20Near%20Alun-alun%20Wonosari%20Mitra%20RedDoorz
+6NH3,Gunungkidul,Griya Limasan Hotel,4.3,500000,440,-7.9648727,110.6089885,https://www.google.com/maps/search/Griya%20Limasan%20Hotel
+MCG8,Gunungkidul,OYO 2634 Griya Birowo Syariah,4.0,100000,177,-7.9721689,110.6021518,https://www.google.com/maps/search/OYO%202634%20Griya%20Birowo%20Syariah
+JWUP,Gunungkidul,The Mulyo - Homestay,4.6,230000,213,-7.9942725,110.5920867,https://www.google.com/maps/search/The%20Mulyo%20-%20Homestay
+1497,Gunungkidul,Pendopo Kayuwanan Homestay Syariah near terminal Giwangan,4.5,80000,164,-7.8570086,110.4012011,https://www.google.com/maps/search/Pendopo%20Kayuwanan%20Homestay%20Syariah%20near%20terminal%20Giwangan
+NZDI,Gunungkidul,Semar Homestay,5.0,249000,203,-7.8472623,110.4815391,https://www.google.com/maps/search/Semar%20Homestay
+N20I,Gunungkidul,Tilamsari Hotel,3.9,230000,120,-7.967017,110.6060936,https://www.google.com/maps/search/Tilamsari%20Hotel
+HEM8,Gunungkidul,Homee Glamping Wunung Giri,5.0,627000,8,-8.0264566,110.57427,https://www.google.com/maps/search/Homee%20Glamping%20Wunung%20Giri
+LND9,Gunungkidul,OYO 93396 Pondok Wisata Sri Mulyo,3.4,450000,5,-7.870036,110.390963,https://www.google.com/maps/search/OYO%2093396%20Pondok%20Wisata%20Sri%20Mulyo
+IONR,Gunungkidul,Rumpal Cafe dan Vila Patuk Gunungkidul,4.4,520000,27,-7.8472682,110.4793568,https://www.google.com/maps/search/Rumpal%20Cafe%20dan%20Vila%20Patuk%20Gunungkidul
+DNFL,Gunungkidul,Contana Hotel Glamping,4.9,90000,58,-7.8494521,110.4775963,https://www.google.com/maps/search/Contana%20Hotel%20Glamping
+XZLZ,Gunungkidul,D'TRUST HOMESTAY WONOSARI GUNUNGKIDUL,4.9,100000,84,-7.9537162,110.5933675,https://www.google.com/maps/search/D%27TRUST%20HOMESTAY%20WONOSARI%20GUNUNGKIDUL
+MWRR,Gunungkidul,Calida Hotel RedPartner near Alun Alun Wonosari,4.0,200000,194,-7.9638477,110.5984187,https://www.google.com/maps/search/Calida%20Hotel%20RedPartner%20near%20Alun%20Alun%20Wonosari
+TCGK,Gunungkidul,Giri Wanara Glamping Resort,4.6,900000,155,-8.0262399,110.5741935,https://www.google.com/maps/search/Giri%20Wanara%20Glamping%20Resort
+NC6F,Gunungkidul,Joglo Manggisan Syariah Kotagede Mitra RedDoorz,4.7,51400,439,-7.8325212,110.4124306,https://www.google.com/maps/search/Joglo%20Manggisan%20Syariah%20Kotagede%20Mitra%20RedDoorz
+UI5S,Gunungkidul,Bina Karya Guesthouse Syariah,4.9,500000,205,-7.8573967,110.4519828,https://www.google.com/maps/search/Bina%20Karya%20Guesthouse%20Syariah
+FDQ5,Gunungkidul,D'Ninetysix Inn Hotel Gunungkidul,4.8,145000,36,-7.9386619,110.5756093,https://www.google.com/maps/search/D%27Ninetysix%20Inn%20Hotel%20Gunungkidul
+S7ZH,Gunungkidul,Alzara Hotel,4.4,300000,708,-7.9679073,110.5923987,https://www.google.com/maps/search/Alzara%20Hotel
+92WV,Gunungkidul,The New Orlinds Guest House,4.4,450000,75,-7.9261418,110.6464141,https://www.google.com/maps/search/The%20New%20Orlinds%20Guest%20House
+T2N6,Gunungkidul,Homestay Pak Ibnu,4.7,231000,40,-8.0112708,110.6366489,https://www.google.com/maps/search/Homestay%20Pak%20Ibnu
+3GRM,Gunungkidul,OYO 92290 Hotel Permata Sari,3.5,540000,146,-8.0018048,110.591455,https://www.google.com/maps/search/OYO%2092290%20Hotel%20Permata%20Sari
+X20N,Gunungkidul,RedDoorz near Candi Prambanan 3 Yogyakarta,5.0,500000,12,-7.810063,110.483813,https://www.google.com/maps/search/RedDoorz%20near%20Candi%20Prambanan%203%20Yogyakarta
+6ZEW,Gunungkidul,Maryam Homestay,4.9,300000,127,-7.8496925,110.4856749,https://www.google.com/maps/search/Maryam%20Homestay
+0C4M,Gunungkidul,Homestay Rusmiyati,5.0,200000,7,-8.0111951,110.6357149,https://www.google.com/maps/search/Homestay%20Rusmiyati
+RSKO,Gunungkidul,RedDoorz near Candi Prambanan,4.4,163000,5,-7.8009692,110.4854892,https://www.google.com/maps/search/RedDoorz%20near%20Candi%20Prambanan
+BGL2,Gunungkidul,Omah Artho Moro,4.4,200000,98,-7.9672658,110.6039922,https://www.google.com/maps/search/Omah%20Artho%20Moro
+NSKF,Gunungkidul,Wisma Joglo,4.5,100000,280,-7.967426,110.6075775,https://www.google.com/maps/search/Wisma%20Joglo
+IMNE,Gunungkidul,Blarak Villa,4.6,108000,26,-7.9772636,110.4160182,https://www.google.com/maps/search/Blarak%20Villa
+TQKT,Gunungkidul,Penginapan Dewi Ratih Inn,4.1,500000,51,-7.9725756,110.6028671,https://www.google.com/maps/search/Penginapan%20Dewi%20Ratih%20Inn
+N6YF,Gunungkidul,VILLA OPA DOEL,4.9,600000,53,-7.8718886,110.4608612,https://www.google.com/maps/search/VILLA%20OPA%20DOEL
+FLVD,Gunungkidul,Joglo Ndalem Sabine Syariah,4.1,700000,138,-7.837629,110.4419926,https://www.google.com/maps/search/Joglo%20Ndalem%20Sabine%20Syariah
+ZRDY,Gunungkidul,Kos & Penginapan 'Kasur Sare',4.6,171000,54,-7.9639957,110.5943386,https://www.google.com/maps/search/Kos%20%26%20Penginapan%20%27Kasur%20Sare%27
+4CIV,Gunungkidul,SPOT ON 93199 Bunda Family Homestay Syariah,5.0,173000,2,-7.9495061,110.680354,https://www.google.com/maps/search/SPOT%20ON%2093199%20Bunda%20Family%20Homestay%20Syariah
+G8BD,Gunungkidul,Hotel Santika Gunungkidul - Jogja,4.7,122000,1051,-7.9386531,110.5759683,https://www.google.com/maps/search/Hotel%20Santika%20Gunungkidul%20-%20Jogja
+EM0T,Gunungkidul,BeGe HOMESTAY,4.4,120000,286,-7.9688165,110.6003059,https://www.google.com/maps/search/BeGe%20HOMESTAY
+XMT3,Gunungkidul,Wulenpari,4.4,148000,718,-7.8856773,110.5121019,https://www.google.com/maps/search/Wulenpari
+9Z9M,Gunungkidul,Griya Birowo Metting Room and Cafe,4.7,136000,10,-7.9722045,110.6021239,https://www.google.com/maps/search/Griya%20Birowo%20Metting%20Room%20and%20Cafe
+XV0H,Gunungkidul,OYO Life 3003 Wisma Handayani Syariah,3.9,200000,180,-7.9599503,110.6031755,https://www.google.com/maps/search/OYO%20Life%203003%20Wisma%20Handayani%20Syariah
+83L2,Gunungkidul,OMAH PRAYA KOSTEL,5.0,138000,20,-7.9643268,110.6095165,https://www.google.com/maps/search/OMAH%20PRAYA%20KOSTEL
+J08A,Gunungkidul,Motel Padmahyasa,4.3,200000,153,-7.9707567,110.601217,https://www.google.com/maps/search/Motel%20Padmahyasa
+DDFS,Gunungkidul,Cindelaras hostel & coworking space yogjakarta,3.1,490000,7,-7.8280709,110.4478721,https://www.google.com/maps/search/Cindelaras%20hostel%20%26%20coworking%20space%20yogjakarta
+GLG0,Gunungkidul,Rumah Dharma 3 Grha Timoho,4.7,136000,121,-7.7953185,110.3899846,https://www.google.com/maps/search/Rumah%20Dharma%203%20Grha%20Timoho
+65FM,Gunungkidul,"Omah Watupayung. Resto, Homestay, Photo Corner",4.2,230000,371,-7.8623966,110.737804,https://www.google.com/maps/search/Omah%20Watupayung.%20Resto%2C%20Homestay%2C%20Photo%20Corner
+HJRO,Gunungkidul,Hotel Aji Mantoro,3.5,300000,74,-8.0498125,110.7990625,https://www.google.com/maps/search/Hotel%20Aji%20Mantoro
+2ZT9,Gunungkidul,TERRA Guesthouse JEC Mitra RedDoorz,4.5,226000,15,-7.8126804,110.4191576,https://www.google.com/maps/search/TERRA%20Guesthouse%20JEC%20Mitra%20RedDoorz
+CRTY,Gunungkidul,Losmen Sekar Kedhaton,4.3,231000,25,-7.9547949,110.5904538,https://www.google.com/maps/search/Losmen%20Sekar%20Kedhaton
+68QM,Gunungkidul,Bitu Garden,4.7,124000,111,-7.8843723,110.5346742,https://www.google.com/maps/search/Bitu%20Garden
+3X35,Gunungkidul,Rika Home Stay,4.0,128000,3,-7.8720628,110.466428,https://www.google.com/maps/search/Rika%20Home%20Stay
+RZ4Q,Gunungkidul,Homestay Sutarwan,4.5,250000,2,-8.0108038,110.6369192,https://www.google.com/maps/search/Homestay%20Sutarwan
+5H9F,Gunungkidul,Homestay Trysus,3.5,116000,6,-8.010061,110.637219,https://www.google.com/maps/search/Homestay%20Trysus
+1LNB,Gunungkidul,Madina Guest House Syariah near Gembira Loka Zoo Yogyakarta Mitra RedDoorz,4.8,300000,105,-7.8123686,110.4049649,https://www.google.com/maps/search/Madina%20Guest%20House%20Syariah%20near%20Gembira%20Loka%20Zoo%20Yogyakarta%20Mitra%20RedDoorz
+8VX8,Gunungkidul,Pendopo KASIH,4.6,191000,28,-7.867673,110.761552,https://www.google.com/maps/search/Pendopo%20KASIH
+BZX5,Gunungkidul,Homestay Omahmbesi,4.6,107000,95,-7.9166173,110.5773393,https://www.google.com/maps/search/Homestay%20Omahmbesi
+P1YD,Gunungkidul,Camila Living Yogyakarta Syariah RedPartner,5.0,400000,11,-7.8171708,110.3876967,https://www.google.com/maps/search/Camila%20Living%20Yogyakarta%20Syariah%20RedPartner
+9BDH,Gunungkidul,Green Resort Pracimantoro,4.5,250000,589,-8.0419292,110.7908564,https://www.google.com/maps/search/Green%20Resort%20Pracimantoro
+2A22,Gunungkidul,Motel Syariah Anggraini,4.3,134000,86,-7.9632426,110.5982458,https://www.google.com/maps/search/Motel%20Syariah%20Anggraini
+N5YI,Gunungkidul,OYO 91816 Griya Putih,4.4,135000,44,-7.8091364,110.4183584,https://www.google.com/maps/search/OYO%2091816%20Griya%20Putih
+QARF,Gunungkidul,OMAH LEREN Mitra Reddoorz,4.6,200000,24,-7.8123326,110.3835463,https://www.google.com/maps/search/OMAH%20LEREN%20Mitra%20Reddoorz
+FHH1,Gunungkidul,HOTEL FEVYTRA,4.1,300000,209,-7.8135041,110.3893641,https://www.google.com/maps/search/HOTEL%20FEVYTRA
+FK5G,Gunungkidul,RedDoorz Syariah @ Kebun Raya,4.5,136000,182,-7.8080203,110.3981703,https://www.google.com/maps/search/RedDoorz%20Syariah%20%40%20Kebun%20Raya
+6LP1,Gunungkidul,Omah Gading Homestay,4.5,200000,49,-7.9129835,110.5644496,https://www.google.com/maps/search/Omah%20Gading%20Homestay
+GIPA,Gunungkidul,Londres Bed and Breakfast RedPartner near Gembira Loka Zoo,4.7,123000,154,-7.8117669,110.3880295,https://www.google.com/maps/search/Londres%20Bed%20and%20Breakfast%20RedPartner%20near%20Gembira%20Loka%20Zoo
+KUFT,Gunungkidul,Joglo Satrio Pinayungan,4.9,1500000,28,-7.8374206,110.4555752,https://www.google.com/maps/search/Joglo%20Satrio%20Pinayungan
+QWWU,Gunungkidul,Rumah Daun Timoho Yogyakarta RedPartner,4.1,138000,24,-7.7961088,110.3958353,https://www.google.com/maps/search/Rumah%20Daun%20Timoho%20Yogyakarta%20RedPartner
+Q4L8,Gunungkidul,Homestay Putu Popon,4.8,200000,6,-7.9600341,110.4402093,https://www.google.com/maps/search/Homestay%20Putu%20Popon
+25V2,Gunungkidul,Serambut Widi ArtCation,5.0,490000,8,-7.8232399,110.459376,https://www.google.com/maps/search/Serambut%20Widi%20ArtCation
+WZ77,Gunungkidul,Omah Singo stay & resto,4.9,371000,60,-7.8221875,110.4588125,https://www.google.com/maps/search/Omah%20Singo%20stay%20%26%20resto
+KC71,Gunungkidul,Hotel Tirta Sanita,3.8,136000,332,-7.8193415,110.3874312,https://www.google.com/maps/search/Hotel%20Tirta%20Sanita
+3U0P,Gunungkidul,Homestay Arya Mangunan,4.9,230000,294,-7.9330186,110.4263299,https://www.google.com/maps/search/Homestay%20Arya%20Mangunan
+7WXD,Gunungkidul,Tirta Kencana Hotel & Garden Resto,4.2,226000,1357,-7.80434,110.4092321,https://www.google.com/maps/search/Tirta%20Kencana%20Hotel%20%26%20Garden%20Resto
+NKO4,Gunungkidul,Dzikry Guest House Syariah,4.9,231000,45,-7.810658,110.4190858,https://www.google.com/maps/search/Dzikry%20Guest%20House%20Syariah
+B4BX,Gunungkidul,Rama Shinta Homestay Mitra RedDoorz,3.7,124000,9,-7.8051953,110.3957242,https://www.google.com/maps/search/Rama%20Shinta%20Homestay%20Mitra%20RedDoorz
+7QHT,Gunungkidul,House 140,3.7,128000,462,-7.7987257,110.411797,https://www.google.com/maps/search/House%20140
+MGBD,Gunungkidul,RedDoorz near XT Square 2,3.5,116000,259,-7.815511,110.388421,https://www.google.com/maps/search/RedDoorz%20near%20XT%20Square%202
+RP23,Gunungkidul,Homestay Wanajaya,4.7,300000,32,-7.9034019,110.4407069,https://www.google.com/maps/search/Homestay%20Wanajaya
+2S0X,Gunungkidul,ENDRAYANTI INN SYARI'AH,5.0,191000,1,-7.8254377,110.3794972,https://www.google.com/maps/search/ENDRAYANTI%20INN%20SYARI%27AH
+F8IL,Gunungkidul,Litto (Little Tokyo) Jogja,4.6,107000,1892,-7.8955224,110.4399784,https://www.google.com/maps/search/Litto%20%28Little%20Tokyo%29%20Jogja
+9ZDY,Gunungkidul,Homestay Madit Jaya,4.7,400000,19,-7.8912055,110.4477685,https://www.google.com/maps/search/Homestay%20Madit%20Jaya
+BAO9,Gunungkidul,Home Stay Family 96 Mangunan,4.1,250000,8,-7.9381409,110.4291535,https://www.google.com/maps/search/Home%20Stay%20Family%2096%20Mangunan
+P42E,Gunungkidul,Dann's Homestay,4.5,200000,4,-7.9153509,110.4371028,https://www.google.com/maps/search/Dann%27s%20Homestay
+2CV2,Gunungkidul,Srikandi Baru Inn Blok O,4.1,300000,98,-7.8002519,110.4164809,https://www.google.com/maps/search/Srikandi%20Baru%20Inn%20Blok%20O
+LCMO,Sleman,Banua Raya Homestay,3.0,188000,155,-7.740312,110.38997,https://www.google.com/maps/search/Banua%20Raya%20Homestay
+XVI7,Kota Yogyakarta,Laxston Hotel,3.5,328000,1900,-7.780018,110.36064,https://www.google.com/maps/search/Laxston%20Hotel
+K8Y3,Sleman,Java Amazon Villa & Resort,3.5,281000,3000,-7.646822,110.3833,https://www.google.com/maps/search/Java%20Amazon%20Villa%20%26%20Resort
+FDOJ,Gunungkidul,Griya Limasan Gunung Kidul,4.5,203000,440,-7.964918,110.60892,https://www.google.com/maps/search/Griya%20Limasan%20Gunung%20Kidul
+VUCE,Kulon Progo,KP inn bandara YIA,4.2,110000,52,-7.8881543,110.0733434,https://www.google.com/maps/search/KP%20inn%20bandara%20YIA
+1OO3,Kulon Progo,Penginapan Syariah Mbak Ibek Wates Kulon Progo,4.5,102000,258,-7.8553624,110.161035,https://www.google.com/maps/search/Penginapan%20Syariah%20Mbak%20Ibek%20Wates%20Kulon%20Progo
+D6TE,Kulon Progo,Homestay Sukarman,4.6,177000,123,-7.7993762,110.1166495,https://www.google.com/maps/search/Homestay%20Sukarman
+2XCC,Kulon Progo,Suparman Homestay,3.4,147000,123,-7.8067443,110.1112234,https://www.google.com/maps/search/Suparman%20Homestay
+6DH9,Kulon Progo,Sri Homestay,4.3,115000,1,-7.8067443,110.1112234,https://www.google.com/maps/search/Sri%20Homestay
+R6WB,Kulon Progo,Home sty kasmiyem,4.4,149000,74,-7.7986462,110.1164332,https://www.google.com/maps/search/Home%20sty%20kasmiyem
+2MPI,Kulon Progo,Iran Homestay,4.6,104000,7,-7.7980111,110.1153281,https://www.google.com/maps/search/Iran%20Homestay
+IAVH,Sleman,RedDoorz near Lotte Mart Maguwoharjo Yogyakarta,3.3,285000,6,-7.7639454,110.4238458,https://www.google.com/maps/search/RedDoorz%20near%20Lotte%20Mart%20Maguwoharjo%20Yogyakarta
+XMH1,Sleman,RedDoorz near Lotte Mart maguwo,3.9,128000,55,-7.7605384,110.4334437,https://www.google.com/maps/search/RedDoorz%20near%20Lotte%20Mart%20maguwo
+QW2X,Sleman,The Riverside,4.8,127000,11,-7.7507169,110.3920854,https://www.google.com/maps/search/The%20Riverside
+NA90,Sleman,RedDoorz near Terminal Condong Catur,4.3,124000,69,-7.7551257,110.3966744,https://www.google.com/maps/search/RedDoorz%20near%20Terminal%20Condong%20Catur
+OO7A,Sleman,RedDoorz near Gejayan,4.0,328000,320,-7.7684194,110.3960539,https://www.google.com/maps/search/RedDoorz%20near%20Gejayan
+75YF,Sleman,RedDoorz near Hartono Mall,4.1,96900,179,-7.7544199,110.3962813,https://www.google.com/maps/search/RedDoorz%20near%20Hartono%20Mall
+HXTG,Sleman,Pondok Guesthouse RedPartner,4.0,133000,16,-7.7721571,110.4326596,https://www.google.com/maps/search/Pondok%20Guesthouse%20RedPartner
+KJF7,Sleman,Hotel Sunrise Jogja,4.0,147000,861,-7.759415,110.39267,https://www.google.com/maps/search/Hotel%20Sunrise%20Jogja
+V1GA,Sleman,RedDoorz @ Anggajaya Condongatur,3.5,288000,4,-7.7539371,110.3996281,https://www.google.com/maps/search/RedDoorz%20%40%20Anggajaya%20Condongatur
+FLVR,Sleman,RedDoorz near AMIKOM Yogyakarta,4.4,56400,229,-7.7473817,110.4122104,https://www.google.com/maps/search/RedDoorz%20near%20AMIKOM%20Yogyakarta
+00HH,Sleman,Kost Exclusive Maleo Cempaka Putih,3.9,265000,260,-7.7656583,110.3909104,https://www.google.com/maps/search/Kost%20Exclusive%20Maleo%20Cempaka%20Putih
+RA6U,Sleman,Reddoorz @ Plemburan,4.1,206000,374,-7.7466414,110.3840669,https://www.google.com/maps/search/Reddoorz%20%40%20Plemburan
+JYP9,Sleman,Penginapan cindelaras,5.0,156000,1,-7.8278438,110.4431674,https://www.google.com/maps/search/Penginapan%20cindelaras
+IJH6,Sleman,RedDoorz near Jogja Kembali Monument 3,3.7,205000,201,-7.7513272,110.373052,https://www.google.com/maps/search/RedDoorz%20near%20Jogja%20Kembali%20Monument%203
+IMX4,Sleman,Reddoorz @ Jalan Wonosari KM.9,3.0,117000,134,-7.8257923,110.4311273,https://www.google.com/maps/search/Reddoorz%20%40%20Jalan%20Wonosari%20KM.9
+SW7R,Sleman,Homestay Syariah Ngangkruk,4.0,168000,165,-7.7777157,110.459397,https://www.google.com/maps/search/Homestay%20Syariah%20Ngangkruk
+UOA8,Sleman,RedDoorz near Candi Ratu Boko,4.0,940000,152,-7.7797311,110.4822281,https://www.google.com/maps/search/RedDoorz%20near%20Candi%20Ratu%20Boko
+2MAB,Sleman,RedDoorz Plus near Jogja Kembali Monument,3.8,145000,356,-7.755232,110.3698208,https://www.google.com/maps/search/RedDoorz%20Plus%20near%20Jogja%20Kembali%20Monument
+KQI8,Bantul,Homestay dan Batik erlangga,5.0,400000,1,-7.8608468,110.2954301,https://www.google.com/maps/search/Homestay%20dan%20Batik%20erlangga
+LE7I,Bantul,Rahayu homestay,5.0,350000,94,-7.8708289,110.3548413,https://www.google.com/maps/search/Rahayu%20homestay
+77,Bantul,Homestay Syariah Bantul,4.5,289000,28,-7.8850208,110.3238434,https://www.google.com/maps/search/Homestay%20Syariah%20Bantul
+FXBH,Bantul,Homestay-Tembi,4.8,450000,22,-7.8726022,110.3546561,https://www.google.com/maps/search/Homestay-Tembi
+TEQA,Bantul,DS Homestay Krebet,4.0,106000,373,-7.8641723,110.2937347,https://www.google.com/maps/search/DS%20Homestay%20Krebet
+FJEL,Bantul,Homestay Miftah,5.0,62800,28,-7.8601623,110.293647,https://www.google.com/maps/search/Homestay%20Miftah
+BYPS,Bantul,Penginapan Galuh,3.0,281000,597,-7.8601623,110.293647,https://www.google.com/maps/search/Penginapan%20Galuh
+WE4B,Bantul,Sor Sawo Krebet Homestay,2.0,132000,1,-7.8601623,110.293647,https://www.google.com/maps/search/Sor%20Sawo%20Krebet%20Homestay
+Y398,Bantul,Homestay Lentera Putra,3.0,235000,28,-7.8601623,110.293647,https://www.google.com/maps/search/Homestay%20Lentera%20Putra
+490T,Bantul,Arnymas Homestay,3.5,314000,28,-7.8601623,110.293647,https://www.google.com/maps/search/Arnymas%20Homestay
+ZDID,Bantul,Homestay Dulngori,4.5,54200,28,-7.8601623,110.293647,https://www.google.com/maps/search/Homestay%20Dulngori
+XVET,Bantul,Mayza Homestay Syariah,5.0,179000,298,-7.8596821,110.2990286,https://www.google.com/maps/search/Mayza%20Homestay%20Syariah
+FMRA,Bantul,BU SOEM HOMESTAY SYARIAH,4.3,238000,28,-7.88093,110.30321,https://www.google.com/maps/search/BU%20SOEM%20HOMESTAY%20SYARIAH
+8U39,Bantul,Homestay Hasta Aji,4.5,156000,1,-7.8601623,110.293647,https://www.google.com/maps/search/Homestay%20Hasta%20Aji
+9SLM,Bantul,Homestay Sutriono,3.0,97800,28,-7.8628975,110.2945303,https://www.google.com/maps/search/Homestay%20Sutriono
+HPH7,Bantul,Argosari Homestay,4.0,239000,28,-7.8628975,110.2945303,https://www.google.com/maps/search/Argosari%20Homestay
+5VSI,Bantul,Homestay Azka,3.0,305000,82,-7.8601623,110.293647,https://www.google.com/maps/search/Homestay%20Azka
+02OJ,Bantul,Ana Homestay,2.0,275000,80,-7.8601623,110.293647,https://www.google.com/maps/search/Ana%20Homestay
+X2WP,Bantul,CAMPING GROUND GUNUNG MIJIL HILS,3.0,261000,36,-7.8704097,110.3237372,https://www.google.com/maps/search/CAMPING%20GROUND%20GUNUNG%20MIJIL%20HILS
+EF5O,Bantul,Homestay Sidodadi,3.4,400000,36,-7.8611269,110.2895423,https://www.google.com/maps/search/Homestay%20Sidodadi
+EYGK,Bantul,Roto Homestay,3.0,236000,28,-7.8601623,110.293647,https://www.google.com/maps/search/Roto%20Homestay
+2XN7,Gunungkidul,Bukit Indah | Resto & Hotel,4.2,120000,1800,-7.8446018,110.4803258,https://www.google.com/maps/search/Bukit%20Indah%20%7C%20Resto%20%26%20Hotel
+TBK9,Gunungkidul,OYO 94377 Maryam Homestay Syariah 2,3.0,500000,1,-7.849559,110.485685,https://www.google.com/maps/search/OYO%2094377%20Maryam%20Homestay%20Syariah%202
+WZ18,Gunungkidul,OYO 94120 Penginapan Viki Syariah,5.0,550000,1,-7.880877,110.445556,https://www.google.com/maps/search/OYO%2094120%20Penginapan%20Viki%20Syariah
+9JAQ,Gunungkidul,SPOT ON 93029 Pondok Wisata Sabar,2.0,250000,2,-7.965542,110.600882,https://www.google.com/maps/search/SPOT%20ON%2093029%20Pondok%20Wisata%20Sabar
+IUUL,Gunungkidul,"Wisma Ganesha, Wonosari, Gunung Kidul",4.0,123000,98,-7.963914,110.6025785,https://www.google.com/maps/search/Wisma%20Ganesha%2C%20Wonosari%2C%20Gunung%20Kidul
+4V49,Gunungkidul,Wonosari,5.0,371000,573,-7.9721723,110.7139294,https://www.google.com/maps/search/Wonosari
+8DHY,Gunungkidul,Noto House Homey,5.0,151000,12,-7.8113468,110.3980291,https://www.google.com/maps/search/Noto%20House%20Homey
+95H7,Gunungkidul,Ngatiyo Homestay,4.8,300000,5,-7.8917854,110.4465782,https://www.google.com/maps/search/Ngatiyo%20Homestay
+YH1K,Gunungkidul,Camping Ground Kali Oya,5.0,250000,2,-7.9657645,110.4347728,https://www.google.com/maps/search/Camping%20Ground%20Kali%20Oya
+FR6S,Gunungkidul,Al Abror Homestay,2.7,135000,216,-7.7950684,110.3872993,https://www.google.com/maps/search/Al%20Abror%20Homestay
+PC94,Gunungkidul,RedDoorz near Balai Kota Yogyakarta Timoho,4.7,151000,27,-7.7957849,110.3925047,https://www.google.com/maps/search/RedDoorz%20near%20Balai%20Kota%20Yogyakarta%20Timoho

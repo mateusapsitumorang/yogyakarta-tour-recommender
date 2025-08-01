@@ -1,0 +1,1257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Admin Dashboard</title>
+    <link rel="icon" type="image/png" href="{{ url_for('static', filename='images/favicon.png') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='vendors/bootstrap/css/bootstrap.min.css') }}"
+        media="all">
+    <link rel="stylesheet" type="text/css"
+        href="{{ url_for('static', filename='vendors/fontawesome/css/all.min.css') }}">
+    <link rel="stylesheet" type="text/css"
+        href="{{ url_for('static', filename='vendors/jquery-ui/jquery-ui.min.css') }}">
+    <link rel="stylesheet" type="text/css"
+        href="{{ url_for('static', filename='vendors/modal-video/modal-video.min.css') }}">
+    <link rel="stylesheet" type="text/css"
+        href="{{ url_for('static', filename='vendors/lightbox/dist/css/lightbox.min.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='vendors/slick/slick.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='vendors/slick/slick-theme.css') }}">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,400&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <!-- Tambahkan CDN Plotly -->
+    <script src="https://cdn.plot.ly/plotly-2.35.2.min.js"></script>
+    <script>
+        // Fallback jika CDN gagal
+        if (typeof Plotly === 'undefined') {
+            document.write('<script src="{{ url_for('static', filename='js / plotly - 2.35.2.min.js') }}"><\/script>');
+        }
+    </script>
+    <style>
+        #modebar-faf963,
+        #modebar-faf963 .modebar-group {
+            display: flex !important;
+            flex-direction: column !important;
+        }
+
+        .plot-container .modebar,
+        .plot-container .modebar .modebar-group {
+            display: flex !important;
+            flex-direction: column !important;
+        }
+
+        :root {
+            --primary-color: #F56960;
+            --sidebar-bg: #ffffff;
+            --sidebar-width: 300px;
+            --sidebar-collapsed-width: 70px;
+            --transition-speed: 0.3s;
+        }
+
+        body {
+            font-family: 'Open Sans', sans-serif;
+            background-color: #f4f6f9;
+            transition: all var(--transition-speed) ease;
+        }
+
+        .main-content {
+            margin-left: var(--sidebar-width);
+            padding: 4.5rem 2rem 2rem 2rem;
+            transition: margin-left var(--transition-speed) ease;
+        }
+
+        .main-content.collapsed {
+            margin-left: var(--sidebar-collapsed-width);
+        }
+
+        .main-content h1.mb-4 {
+            position: fixed;
+            top: 0;
+            left: var(--sidebar-width);
+            right: 0;
+            width: calc(100% - var(--sidebar-width));
+            background-color: #F56960;
+            background-image: url('{{ url_for("static", filename="images/admin.png") }}');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            color: #ffffff;
+            padding: 1rem 2rem;
+            margin: 0;
+            z-index: 1000;
+            transition: left var(--transition-speed) ease, width var(--transition-speed) ease;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .main-content.collapsed h1.mb-4 {
+            left: var(--sidebar-collapsed-width);
+            width: calc(100% - var(--sidebar-collapsed-width));
+        }
+
+        .main-content h1.mb-4::before {
+            content: none;
+        }
+
+        .table-responsive {
+            max-height: 700px;
+            overflow-y: auto;
+        }
+
+        .table-responsive thead {
+            position: sticky;
+            top: 0rem;
+            z-index: 900;
+            background: #000000;
+        }
+
+        .table-responsive thead th {
+            background: #000000;
+            color: #ffffff;
+            border-bottom: 2px solid #dee2e6;
+        }
+
+        @media (max-width: 768px) {
+            .main-content h1.mb-4 {
+                left: var(--sidebar-collapsed-width);
+                width: calc(100% - var(--sidebar-collapsed-width));
+            }
+
+            .main-content.collapsed h1.mb-4 {
+                left: 0;
+                width: 100%;
+            }
+
+            .table-responsive thead {
+                top: 4.5rem;
+            }
+        }
+
+        .main-content h1.mb-4::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            border-radius: 8px;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+        }
+
+        .sidebar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: var(--sidebar-width);
+            height: 100vh;
+            background: var(--sidebar-bg);
+            padding: 1rem;
+            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+            transition: width var(--transition-speed) ease;
+            overflow-y: auto;
+            z-index: 1000;
+        }
+
+        .sidebar.collapsed {
+            width: var(--sidebar-collapsed-width);
+        }
+
+        #feedbackPieChartContainer,
+        #recommendationPieChartContainer {
+            height: 300px;
+            width: 100%;
+            /* Pastikan lebar mengisi parent */
+            max-width: 646.8px;
+            /* Batasi lebar maksimum untuk konsistensi */
+            border: 1px solid #ccc;
+            /* Ubah border agar terlihat */
+            overflow: hidden;
+            position: relative;
+            /* Membantu Plotly mengukur container dengan benar */
+        }
+
+        #feedbackPieChartContainer .plotly-graph-div,
+        #recommendationPieChartContainer .plotly-graph-div {
+            width: 100%;
+            height: 100%;
+        }
+
+        .sidebar .logo-container {
+            display: flex;
+            align-items: center;
+            padding: 1rem 0;
+            border-bottom: 1px solid #e9ecef;
+            margin-bottom: 1rem;
+        }
+
+        .sidebar .logo {
+            width: 40px;
+            height: 40px;
+            margin-right: 1rem;
+        }
+
+        .sidebar .admin-info {
+            flex-grow: 1;
+        }
+
+        .sidebar .admin-info h4 {
+            margin: 0;
+            font-size: 1.2rem;
+            color: #343a40;
+        }
+
+        .sidebar .admin-info p {
+            margin: 0;
+            font-size: 0.9rem;
+            color: #6c757d;
+        }
+
+        .sidebar .toggle-btn {
+            background-color: transparent !important;
+            border: none !important;
+            outline: none !important;
+            padding: 12px 16px;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            bottom: 20px;
+            left: 20px;
+        }
+
+        .sidebar .toggle-btn:hover {
+            color: var(--primary-color);
+        }
+
+        .sidebar .toggle-btn i {
+            font-size: 1.5rem;
+            transform: scaleX(30);
+            transition: font-size 0.3s ease, transform 0.3s ease;
+        }
+
+        .sidebar.collapsed .toggle-btn i {
+            font-size: 1.2rem;
+            transform: scaleX(1);
+        }
+
+        .sidebar .nav-link {
+            color: #495057;
+            padding: 0.75rem 1rem;
+            border-radius: 4px;
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+            transition: all 0.2s ease;
+        }
+
+        .sidebar .nav-link i {
+            margin-right: 0.75rem;
+            width: 20px;
+            text-align: center;
+        }
+
+        .sidebar .nav-link:hover {
+            background: #e9ecef;
+            color: var(--primary-color);
+        }
+
+        .sidebar .nav-link.active {
+            background: var(--primary-color);
+            color: #fff;
+        }
+
+        .sidebar.collapsed .admin-info,
+        .sidebar.collapsed .nav-link span {
+            display: none;
+        }
+
+        .sidebar.collapsed .nav-link {
+            justify-content: center;
+            padding: 0.75rem;
+        }
+
+        .sidebar.collapsed .nav-link i {
+            margin-right: 0;
+        }
+
+        .main-content {
+            margin-left: var(--sidebar-width);
+            padding: 2rem;
+            transition: margin-left var(--transition-speed) ease;
+        }
+
+        .main-content.collapsed {
+            margin-left: var(--sidebar-collapsed-width);
+        }
+
+        .table-responsive {
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+            overflow-x: auto;
+        }
+
+        .table-responsive>table {
+            white-space: nowrap;
+            margin-bottom: 0;
+        }
+
+        .table th,
+        .table td {
+            vertical-align: middle;
+            padding: 0.75rem;
+        }
+
+        .table thead th {
+            background: #000000;
+            border-bottom: 2px solid #dee2e6;
+        }
+
+        .card {
+            border: none;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+        }
+
+        .card-header {
+            background: #fff;
+            border-bottom: 1px solid #e9ecef;
+            border-radius: 8px 8px 0 0;
+        }
+
+        .btn-primary,
+        .btn-success {
+            border-radius: 4px;
+            padding: 0.5rem 1rem;
+            transition: background 0.2s ease;
+        }
+
+        .btn-primary:hover,
+        .btn-success:hover {
+            filter: brightness(90%);
+        }
+
+        @media (max-width: 768px) {
+            .sidebar {
+                width: var(--sidebar-collapsed-width);
+            }
+
+            .sidebar.collapsed {
+                width: 0;
+                padding: 0;
+                overflow: hidden;
+            }
+
+            .main-content {
+                margin-left: var(--sidebar-collapsed-width);
+            }
+
+            .main-content.collapsed {
+                margin-left: 0;
+            }
+        }
+
+        .form-group select {
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="siteLoader" class="site-loader">
+        <div class="preloader-content">
+            <img src="{{ url_for('static', filename='images/loader1.gif') }}" alt="">
+        </div>
+    </div>
+    <nav class="sidebar" id="sidebar">
+        <div class="logo-container">
+            <img src="{{ url_for('static', filename='images/favicon.png') }}" alt="Logo" class="logo">
+            <div class="admin-info">
+                <h4>Selamat Datang,</h4>
+                {% for user in users if user.is_admin %}
+                <p>{{ user.username }}</p>
+                {% endfor %}
+            </div>
+        </div>
+
+        <button class="toggle-btn" id="toggleSidebar">
+            <i class="fas fa-bars"></i>
+        </button>
+        <div class="nav-separator" style="border-top: 1px solid #e9ecef; margin: 1rem 0;"></div>
+        <div class="nav flex-column nav-pills" id="pills-tab" role="tablist">
+            <a class="nav-link active" id="pills-users-tab" data-toggle="pill" href="#pills-users"><i
+                    class="fas fa-users"></i><span>Data Pengguna</span></a>
+            <a class="nav-link" id="pills-criteria-tab" data-toggle="pill" href="#pills-criteria"><i
+                    class="fas fa-list"></i><span>Kriteria Pengguna</span></a>
+            <a class="nav-link" id="pills-recs-tab" data-toggle="pill" href="#pills-recs">
+                <i class="fas fa-check-circle"></i><span>Hasil Rekomendasi Sistem</span>
+            </a>
+            <a class="nav-link" id="pills-feedback-tab" data-toggle="pill" href="#pills-feedback">
+                <i class="fas fa-thumbs-up"></i><span>Feedback Pengguna</span>
+            </a>
+            <a class="nav-link" id="pills-evaluation-tab" data-toggle="pill" href="#pills-evaluation"><i
+                    class="fas fa-chart-line"></i><span>Evaluasi Sistem</span></a>
+        </div>
+        <div class="nav-separator" style="border-top: 1px solid #e9ecef; margin: 1rem 0;"></div>
+        <div class="nav flex-column mb-3">
+            <a class="nav-link" href="{{ url_for('index') }}">
+                <i class="fas fa-home"></i><span>Beranda</span>
+            </a>
+            <a class="nav-link" href="{{ url_for('logout') }}">
+                <i class="fas fa-sign-out-alt"></i><span>LOGOUT</span>
+            </a>
+        </div>
+    </nav>
+
+    <div class="main-content" id="main-content">
+        <h1 class="mb-4"> .</h1>
+        <div class="tab-content" id="pills-tabContent">
+            <div class="tab-pane fade show active" id="pills-users">
+                <div class="row mb-4" style="margin-top: 80px">
+                    <div class="col-md-4 mb-3">
+                        <div class="card text-center"
+                            style="border-left: 4px solid #F56960; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+                            <div class="card-body">
+                                <h5 class="card-title">Daftar Pengguna</h5>
+                                <h3 class="card-text">{{ users | length if users else 0 }}</h3>
+                                <p class="card-text text-muted">{{ (users | selectattr('is_admin', 'equalto', False) |
+                                    list
+                                    | length) if users else 0 }} Pengguna Non-Admin</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="card text-center"
+                            style="border-left: 4px solid #F56960; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+                            <div class="card-body">
+                                <h5 class="card-title">Kriteria Pengguna</h5>
+                                <h3 class="card-text">{{ user_criteria | length if user_criteria else 0 }}</h3>
+                                <p class="card-text text-muted">Kriteria Tersedia</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="card text-center"
+                            style="border-left: 4px solid #F56960; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+                            <div class="card-body">
+                                <h5 class="card-title">Feedback Pengguna</h5>
+                                <h3 class="card-text">{{ feedbacks | length if feedbacks else 0 }}</h3>
+                                <p class="card-text text-muted">Feedback Diterima</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <h2 style="margin-top: 20px;color: #000000;">Daftar Pengguna</h2>
+                {% if users %}
+                <div class="table-responsive">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th>No</th>
+                                <th>ID User</th>
+                                <th>Username</th>
+                                <th>Email</th>
+                                <th>Status</th>
+                                <th>Tanggal & Waktu</th>
+                                <th>Hapus Pengguna</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for u in users %}
+                            <tr data-user-id="{{ u.id }}">
+                                <td>{{ loop.index }}</td>
+                                <td>{{ u.id }}</td>
+                                <td>{{ u.username }}</td>
+                                <td>{{ u.email }}</td>
+                                <td>{{ 'Admin' if u.is_admin else 'Pengguna' }}</td>
+                                <td>{{ u.created_at|format_indonesia }}</td>
+                                <td>
+                                    {% if not u.is_admin %}
+                                    <button class="btn btn-danger btn-sm delete-user-btn" data-user-id="{{ u.id }}"
+                                        title="Hapus Pengguna">
+                                        <i class="fas fa-trash-alt"></i>
+                                    </button>
+                                    {% else %}
+                                    <span class="text-muted">-</span>
+                                    {% endif %}
+                                </td>
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+                {% else %}
+                <p class="text-muted">Belum ada pengguna.</p>
+                {% endif %}
+            </div>
+
+            <div class="tab-pane fade" id="pills-criteria">
+                <h2 style="margin-top: 60px;color: #000000;">Kriteria Pengguna</h2>
+                {% if user_criteria %}
+                <div class="table-responsive">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th>No</th>
+                                <th>ID Kriteria</th>
+                                <th>ID User</th>
+                                <th>Username</th>
+                                <th>Email</th>
+                                <th>Kabupaten</th>
+                                <th>Rating Tempat Wisata</th>
+                                <th>Rating Penginapan</th>
+                                <th>Rating Rumah Makan</th>
+                                <th>Kategori Tempat Wisata</th>
+                                <th>Minimal Harga Penginapan</th>
+                                <th>Maximal Harga Penginapan</th>
+                                <th>Metode Pencarian</th>
+                                <th>Jumlah Rekomendasi</th>
+                                <th>Tanggal & Waktu</th>
+                                <th>Hapus Kriteria</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for crit in user_criteria %}
+                            <tr data-criteria-id="{{ crit.id_kriteria }}">
+                                <td>{{ loop.index }}</td>
+                                <td>{{ crit.id_kriteria }}</td>
+                                <td>{{ crit.id_user }}</td>
+                                <td>{{ crit.username }}</td>
+                                <td>{{ crit.email }}</td>
+                                <td>{{ crit.kabupaten }}</td>
+                                <td>{{ crit.rating_tempat_wisata }}</td>
+                                <td>{{ crit.rating_penginapan }}</td>
+                                <td>{{ crit.rating_rumah_makan }}</td>
+                                <td>{{ crit.kategori_wisata }}</td>
+                                <td>{{ crit.min_harga_penginapan }}</td>
+                                <td>{{ crit.max_harga_penginapan }}</td>
+                                <td>{{ crit.metode_pencarian }}</td>
+                                <td>{{ crit.jumlah_rekomendasi }}</td>
+                                <td>{{ crit.created_at|format_indonesia }}</td>
+                                <td>
+                                    <button class="btn btn-danger btn-sm delete-criteria-btn"
+                                        data-criteria-id="{{ crit.id_kriteria }}" title="Hapus Kriteria">
+                                        <i class="fas fa-trash-alt"></i>
+                                    </button>
+                                </td>
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+                {% else %}
+                <p class="text-muted">Belum ada kriteria.</p>
+                {% endif %}
+            </div>
+
+            <div class="tab-pane fade" id="pills-recs">
+                <h2 style="margin-top: 60px;color: #000000;">Hasil Rekomendasi</h2>
+                {% if recommendations %}
+                <div class="table-responsive">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th>No</th>
+                                <th>ID Rekomendasi</th>
+                                <th>ID Kriteria</th>
+                                <th>ID User</th>
+                                <th>Skor</th>
+                                <th>Kabupaten</th>
+                                <th>Nama Penginapan</th>
+                                <th>Rating Penginapan</th>
+                                <th>Harga Penginapan</th>
+                                <th>Nama Tempat Wisata 1</th>
+                                <th>Kategori Tempat Wisata 1</th>
+                                <th>Rating Tempat Wisata 1</th>
+                                <th>Nama Tempat Wisata 2</th>
+                                <th>Kategori Tempat Wisata 2</th>
+                                <th>Rating Tempat Wisata 2</th>
+                                <th>Nama Rumah Makan</th>
+                                <th>Rating Rumah Makan</th>
+                                <th>Tanggal & Waktu</th>
+                                <th>Hapus Rekomendasi</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for rec in recommendations %}
+                            <tr>
+                                <td>{{ loop.index }}</td>
+                                <td>{{ rec.package_id }}</td>
+                                <td>{{ rec.criteria_id }}</td>
+                                <td>{{ rec.user_id }}</td>
+                                <td>{{ rec.skor }}</td>
+                                <td>{{ rec.kabupaten_penginapan }}</td>
+                                <td>{{ rec.nama_penginapan }}</td>
+                                <td>{{ rec.rating_penginapan }}</td>
+                                <td>{{ rec.harga_penginapan }}</td>
+                                <td>{{ rec.nama_wisata_1 }}</td>
+                                <td>{{ rec.kategori_wisata_1 }}</td>
+                                <td>{{ rec.rating_wisata_1 }}</td>
+                                <td>{{ rec.nama_wisata_2 }}</td>
+                                <td>{{ rec.kategori_wisata_2 }}</td>
+                                <td>{{ rec.rating_wisata_2 }}</td>
+                                <td>{{ rec.nama_rumah_makan }}</td>
+                                <td>{{ rec.rating_rumah_makan }}</td>
+                                <td>{{ rec.created_at|format_indonesia }}</td>
+                                <td>
+                                    <button class="btn btn-danger btn-sm delete-recommendation-btn"
+                                        data-recommendation-id="{{ rec.id }}">
+                                        <i class="fas fa-trash-alt"></i>
+                                    </button>
+                                </td>
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+                {% else %}
+                <p class="text-muted">Belum ada rekomendasi.</p>
+                {% endif %}
+            </div>
+
+            <div class="tab-pane fade" id="pills-feedback">
+                <h2 style="margin-top: 60px;color: #000000;">Feedback Rekomendasi</h2>
+                {% if feedbacks %}
+                <div class="table-responsive">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th>No</th>
+                                <th>ID Feedback</th>
+                                <th>ID Rekomendasi</th>
+                                <th>ID Kriteria</th>
+                                <th>ID User</th>
+                                <th>Username</th>
+                                <th>Feedback</th>
+                                <th>Skor</th>
+                                <th>Waktu & Tanggal</th>
+                                <th>Hapus Feedback</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for fb in feedbacks %}
+                            <tr data-feedback-id="{{ fb.id }}">
+                                <td>{{ loop.index }}</td>
+                                <td>{{ fb.id }}</td>
+                                <td>{{ fb.recommendation.package_id }}</td>
+                                <td>{{ fb.recommendation.criteria_id }}</td>
+                                <td>{{ fb.user_id }}</td>
+                                <td>{{ fb.user_name }}</td>
+                                <td>{{ fb.feedback_type }}</td>
+                                <td>{{ fb.score }}</td>
+                                <td>{{ fb.created_at|format_indonesia }}</td>
+                                <td>
+                                    <button class="btn btn-danger btn-sm delete-feedback-btn"
+                                        data-feedback-id="{{ fb.id }}" title="Hapus Feedback">
+                                        <i class="fas fa-trash-alt"></i>
+                                    </button>
+                                </td>
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+                {% else %}
+                <p class="text-muted">Belum ada feedback.</p>
+                {% endif %}
+            </div>
+
+            <div class="tab-pane fade" id="pills-evaluation">
+                <h2 style="margin-top: 60px;color: #000000;">Evaluasi Sistem Rekomendasi</h2>
+                <p class="text-muted">Evaluasi performa sistem rekomendasi berdasarkan feedback pengguna (Like/Dislike)
+                    menggunakan metrik Precision@k, Recall@k, NDCG@k, dan Hit Rate@k.</p>
+
+                <!-- Pie chart section in card -->
+                <div class="row mb-4">
+                    <div class="col-md-6">
+                        <div id="feedbackPieChartContainer" style="height: 300px; border: 1px solid #ffffff;"></div>
+                    </div>
+                    <div class="col-md-6">
+                        <div id="recommendationPieChartContainer" style="height: 300px; border: 1px solid #ffffff;">
+                        </div>
+                    </div>
+                </div>
+                <!-- Form section inside a card -->
+                <div class="card mt-4">
+                    <div class="card-body">
+                        <form id="evaluationForm">
+                            <div class="form-group mb-3">
+                                <label for="evaluationModeSelect">Mode Evaluasi</label>
+                                <select class="form-control" id="evaluationModeSelect" name="evaluation_mode">
+                                    <option value="per_user">Per Pengguna</option>
+                                    <option value="overall">Keseluruhan (Semua Pengguna)</option>
+                                </select>
+                            </div>
+                            <div class="form-group mb-3">
+                                <label for="userSelect">Pilih Pengguna</label>
+                                <select class="form-control" id="userSelect" name="user_id">
+                                    <option value="all">Semua Pengguna (Non-Admin)</option>
+                                    {% for user in users if not user.is_admin %}
+                                    <option value="{{ user.id }}">{{ user.username }} ({{ user.email }})</option>
+                                    {% endfor %}
+                                </select>
+                            </div>
+                            <div class="form-group mb-3">
+                                <label for="criteriaSelect" class="form-label">Pilih Kriteria</label>
+                                <select class="form-control" id="criteriaSelect" name="criteria_id">
+                                    <option value="all">Semua Kriteria</option>
+                                </select>
+                            </div>
+                            <div class="form-group mb-3">
+                                <label for="kValuesInput">Masukkan Nilai K (pisahkan dengan koma, misal: 3,5,7)</label>
+                                <input type="text" class="form-control" id="kValuesInput" name="k_values"
+                                    placeholder="Contoh: 3,5,7" value="3,5,7">
+                            </div>
+                            <div class="d-flex justify-content-center mb-3 gap-3" style="gap: 10rem;">
+                                <button type="submit" class="btn btn-primary" id="runEvaluationBtn">
+                                    <i class="fas fa-play-circle me-2"></i> Jalankan Evaluasi
+                                </button>
+                                <button type="button" class="btn btn-info" id="showChartBtn">
+                                    <i class="fas fa-chart-bar me-2"></i> Tampilkan Grafik
+                                </button>
+                                <button type="button" class="btn btn-success" id="exportAllEvaluationsBtn">
+                                    <i class="fas fa-file-csv me-2"></i> Export Evaluasi
+                                </button>
+                            </div>
+                        </form>
+                        <div id="evaluationResults" class="mt-4">
+                            <!-- ❶ Grafik -->
+                            <div id="evaluationChartContainer" style="height: 450px;"></div>
+                            <!-- ❷ Grafik tambahan (bar+line) -->
+                            <div id="newEvaluationChartContainer" style="height: 800px;"></div>
+                            <!-- ❸ Tabel hasil evaluasi -->
+                            <div id="evaluationTableContainer" class="table-responsive mt-3"></div>
+                        </div>
+                        <a id="backTotop" href="#" class="to-top-icon">
+                            <i class="fas fa-chevron-up"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/jquery.js') }}"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+    <script src="{{ url_for('static', filename='vendors/bootstrap/js/bootstrap.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='vendors/jquery-ui/jquery-ui.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='vendors/countdown-date-loop-counter/loopcounter.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/jquery.counterup.js') }}"></script>
+    <script src="{{ url_for('static', filename='vendors/modal-video/jquery-modal-video.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='vendors/masonry/masonry.pkgd.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='vendors/lightbox/dist/js/lightbox.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='vendors/slick/slick.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/jquery.slicknav.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/custom.min.js') }}"></script>
+    <script>
+        /* ==================================================================== *
+         *  ADMIN-DASHBOARD  ─  JAVASCRIPT (Plot & CRUD)                        *
+         * ==================================================================== */
+        (function ($) {
+            'use strict';
+
+            /* ------------------------------------------------------------ *
+             *  UTILITIES
+             * ------------------------------------------------------------ */
+            const msg = (t, m) => `<div class="alert alert-${t}">${m}</div>`;
+            const clr = ['#F56960', '#28a745', '#007bff', '#ffc107'];
+
+            function rebuildSlots() {
+                const $w = $('#evaluationResults').empty();
+                $w.append('<div id="evaluationChartContainer"></div>');
+                $w.append('<div id="evaluationTableContainer" class="table-responsive mt-3"></div>');
+            }
+
+            /* ------------------------------------------------------------ *
+             *  PIE CHART (feedback & recommendation)
+             * ------------------------------------------------------------ */
+            function loadPieCharts(userId = 'all') {
+                // ① Feedback
+                $.post({
+                    url: '/api/feedback_summary',
+                    contentType: 'application/json',
+                    data: JSON.stringify({ user_id: userId })
+                }).done(r => {
+                    $('#feedbackPieChartContainer').html(
+                        r.success && r.plotly_div
+                            ? r.plotly_div
+                            : msg('info', 'Tidak ada data feedback')
+                    );
+                }).fail(() => $('#feedbackPieChartContainer').html(
+                    msg('danger', 'Gagal memuat grafik'))
+                );
+
+                // ② Recommendation
+                $.post({
+                    url: '/api/recommendation_summary',
+                    contentType: 'application/json',
+                    data: JSON.stringify({ user_id: userId })
+                }).done(r => {
+                    $('#recommendationPieChartContainer').html(
+                        r.success && r.plotly_div
+                            ? r.plotly_div
+                            : msg('info', 'Tidak ada data rekomendasi')
+                    );
+                }).fail(() => $('#recommendationPieChartContainer').html(
+                    msg('danger', 'Gagal memuat grafik'))
+                );
+
+            }
+
+            /* ------------------------------------------------------------ *
+             *  DROPDOWN – mode / user → isi kriteria
+             * ------------------------------------------------------------ */
+            $('#evaluationModeSelect, #userSelect').on('change', function () {
+
+                const mode = $('#evaluationModeSelect').val();
+                const userId = $('#userSelect').val();
+                const $crit = $('#criteriaSelect')
+                    .html('<option value="all">Semua Kriteria</option>');
+
+                loadPieCharts(userId);                                 // refresh pie
+
+                if (mode === 'overall') { return; }                    // tak perlu kriteria
+
+                $.post({
+                    url: '/api/criteria_by_user',
+                    contentType: 'application/json',
+                    data: JSON.stringify({ user_id: userId })
+                }).done(r => {
+                    if (!r.success) { return; }
+                    r.results.forEach(c => {
+                        $crit.append(`
+                    <option value="${c.id_kriteria}">
+                        Kriteria ${c.id_kriteria} (Kab: ${c.kabupaten || '-'},
+                        Harga:${c.min_harga_penginapan || '-'}-${c.max_harga_penginapan || '-'},
+                        Metode:${c.metode_pencarian || '-'}, Jml:${c.jumlah_rekomendasi || '-'})
+                    </option>
+                `);
+                    });
+                });
+            });
+
+            /* ------------------------------------------------------------ *
+             *  JALANKAN EVALUASI  (tanpa grafik)
+             * ------------------------------------------------------------ */
+            $('#evaluationForm').on('submit', function (e) {
+                e.preventDefault();
+
+                const mode = $('#evaluationModeSelect').val();
+                const userId = $('#userSelect').val();
+                const critId = $('#criteriaSelect').val();
+                const kVals = $('#kValuesInput').val().split(',')
+                    .map(v => +v.trim()).filter(v => v > 0);
+
+                if (!kVals.length) { alert('Masukkan nilai K valid'); return; }
+
+                $('#runEvaluationBtn')
+                    .prop('disabled', true)
+                    .html('<i class="fas fa-spinner fa-spin me-2"></i> Processing…');
+
+                rebuildSlots();
+                $('#evaluationTableContainer').html(msg('info', 'Memproses…'));
+
+                $.post({
+                    url: '/api/evaluate_by_type',
+                    contentType: 'application/json',
+                    data: JSON.stringify({
+                        user_id: userId,
+                        criteria_id: critId,
+                        feedback_mode: 'all',
+                        k_values: kVals,
+                        evaluation_mode: mode
+                    })
+                }).done(r => {
+                    $('#evaluationTableContainer').html(
+                        r.success ? r.html_formatted
+                            : msg('warning', r.error || 'Data kosong')
+                    );
+                }).fail(() => $('#evaluationTableContainer').html(
+                    msg('danger', 'Server error'))
+                ).always(() => $('#runEvaluationBtn')
+                    .prop('disabled', false)
+                    .html('<i class="fas fa-play-circle me-2"></i> Jalankan Evaluasi'));
+            });
+
+            /* ------------------------------------------------------------ *
+             *  EXPORT CSV
+             * ------------------------------------------------------------ */
+            $('#exportAllEvaluationsBtn').on('click', function () {
+
+                const mode = $('#evaluationModeSelect').val();
+                const userId = $('#userSelect').val();
+                const critId = $('#criteriaSelect').val();
+                const kVals = $('#kValuesInput').val().split(',')
+                    .map(v => +v.trim()).filter(v => v > 0);
+                if (!kVals.length) { alert('Masukkan nilai K valid'); return; }
+
+                const $btn = $(this).prop('disabled', true)
+                    .html('<i class="fas fa-spinner fa-spin me-2"></i> Exporting…');
+
+                $.ajax({
+                    url: '/export_all_evaluations',
+                    method: 'POST',
+                    contentType: 'application/json',
+                    data: JSON.stringify({
+                        user_id: userId,
+                        criteria_id: critId,
+                        feedback_mode: 'all',
+                        k_values: kVals,
+                        evaluation_mode: mode
+                    }),
+                    xhrFields: { responseType: 'blob' }
+                }).done(blob => {
+                    const url = URL.createObjectURL(blob);
+                    const a = document.createElement('a');
+                    a.href = url;
+                    a.download = mode === 'overall'
+                        ? 'evaluation_overall.csv'
+                        : `evaluation_user_${userId}.csv`;
+                    a.click();
+                    URL.revokeObjectURL(url);
+                }).fail(() => $('#evaluationTableContainer').html(
+                    msg('danger', 'Gagal mengekspor'))
+                ).always(() => $btn.prop('disabled', false)
+                    .html('<i class="fas fa-file-csv me-2"></i> Export Evaluasi'));
+            });
+
+            /* ------------------------------------------------------------ *
+             *  HELPER – Membuat grafik utk satu user
+             * ------------------------------------------------------------ */
+            function createUserCharts(userId, username, results, kVals, containerSelector) {
+
+                const metrics = ['precision', 'recall', 'ndcg', 'hit_rate'];
+                const metricNames = ['Precision@k', 'Recall@k', 'NDCG@k', 'Hit Rate@k'];
+
+                const lineId = `line_chart_${userId}`;
+                const barId = `bar_chart_${userId}`;
+
+                // HTML wrapper
+                $(containerSelector).append(`
+            <div class="user-charts-container mb-4 p-3 border rounded">
+                <h6 class="text-primary mb-3">
+                    <i class="fas fa-chart-line me-2"></i>
+                    Grafik Evaluasi – Pengguna: ${userId}
+                </h6>
+                <div class="row">
+                    <div class="col-lg-6 mb-3"><div id="${lineId}" style="height:300px;"></div></div>
+                    <div class="col-lg-6 mb-3"><div id="${barId}"  style="height:300px;"></div></div>
+                </div>
+            </div>
+        `);
+
+                /* ① Line chart -------------------------------------------------- */
+                const lineTraces = metrics.map((m, i) => ({
+                    x: kVals,
+                    y: kVals.map(k => results[k]?.[m]?.mean ?? 0),
+                    type: 'scatter',
+                    mode: 'lines+markers',
+                    name: metricNames[i],
+                    line: { color: clr[i] },
+                    marker: { size: 6 }
+                }));
+                Plotly.newPlot(lineId, lineTraces, {
+                    title: 'Tren Skor Metrik pada Berbagai Nilai K',
+                    xaxis: { title: 'Nilai K' },
+                    yaxis: { title: 'Skor', range: [0, 1] },
+                    legend: { orientation: 'h', y: -0.4 },
+                    template: 'plotly_white',
+                    margin: { l: 80, r: 50, t: 50, b: 80 }
+                });
+
+                /* ② Bar chart --------------------------------------------------- */
+                const barTraces = kVals.map((k, idx) => ({
+                    x: metricNames,
+                    y: metrics.map(m => results[k]?.[m]?.mean ?? 0),
+                    type: 'bar',
+                    name: `K=${k}`,
+                    marker: { color: clr[idx % clr.length] }
+                }));
+                Plotly.newPlot(barId, barTraces, {
+                    title: 'Perbandingan Skor Metrik pada Berbagai Nilai K',
+                    barmode: 'group',
+                    yaxis: { title: 'Skor', range: [0, 1] },
+                    legend: { orientation: 'h', y: -0.2 },
+                    template: 'plotly_white',
+                    margin: { l: 50, r: 50, t: 50, b: 80 }
+                });
+            }
+
+            /* ------------------------------------------------------------ *
+             *  SHOW CHART – multi-user friendly
+             * ------------------------------------------------------------ */
+            $('#showChartBtn').on('click', function () {
+
+                const mode = $('#evaluationModeSelect').val();
+                const userId = $('#userSelect').val();
+                const critId = $('#criteriaSelect').val();
+                const kVals = $('#kValuesInput').val().split(',')
+                    .map(v => +v.trim()).filter(v => v > 0);
+
+                if (!kVals.length) { alert('Masukkan nilai K valid'); return; }
+
+                const $btn = $(this).prop('disabled', true)
+                    .html('<i class="fas fa-spinner fa-spin me-2"></i> Memuat Grafik…');
+
+                if ($('#evaluationTableContainer').is(':empty')) { rebuildSlots(); }
+                $('#evaluationChartContainer').html(msg('info', 'Memuat Grafik…'));
+
+                $.post({
+                    url: '/api/evaluate_by_type',
+                    contentType: 'application/json',
+                    data: JSON.stringify({
+                        user_id: userId,
+                        criteria_id: critId,
+                        feedback_mode: 'all',
+                        k_values: kVals,
+                        evaluation_mode: mode
+                    })
+                }).done(r => {
+
+                    if (!r.success || !r.results) {
+                        $('#evaluationChartContainer').html(
+                            msg('warning', r.error || 'Tidak ada data'));
+                        return;
+                    }
+
+                    // tampilkan juga tabel jika belum ada
+                    if ($('#evaluationTableContainer').is(':empty') ||
+                        $('#evaluationTableContainer').find('.alert').length) {
+                        $('#evaluationTableContainer').html(r.html_formatted);
+                    }
+
+                    $('#evaluationChartContainer').empty();
+
+                    /* ----------  CASE 1 : overall  OR  satu user  ---------- */
+                    if (mode === 'overall' || userId !== 'all') {
+
+                        const resObj = Array.isArray(r.results)
+                            ? r.results[0].results
+                            : (r.results.results || r.results);
+
+                        const displayId = (mode === 'overall') ? 'overall' : userId;
+                        const displayName = (mode === 'overall')
+                            ? 'Keseluruhan'
+                            : (r.results.username || r.results[0]?.username
+                                || `Pengguna ${userId}`);
+
+                        $('#evaluationChartContainer').append(`
+                    <div class="alert alert-info mb-4">
+                        <i class="fas fa-info-circle me-2"></i>
+                        Menampilkan grafik evaluasi
+                        ${mode === 'overall' ? 'secara keseluruhan'
+                                : `untuk ${displayName}`}.
+                    </div>
+                `);
+
+                        createUserCharts(displayId, displayName, resObj, kVals,
+                            '#evaluationChartContainer');
+
+                        /* ----------  CASE 2 : per_user & all (multi-user) ----- */
+                    } else {
+
+                        $('#evaluationChartContainer').append(`
+                    <div class="alert alert-info mb-4">
+                        <i class="fas fa-info-circle me-2"></i>
+                        Menampilkan grafik evaluasi untuk setiap pengguna
+                    </div>
+                `);
+
+                        r.results
+                            .filter(u => u.user_id)     // abaikan agregat anonim
+                            .forEach(u => {
+                                createUserCharts(u.user_id,
+                                    u.username || `Pengguna ${u.user_id}`,
+                                    u.results,
+                                    kVals,
+                                    '#evaluationChartContainer');
+                            });
+                    }
+
+                }).fail(() => {
+                    $('#evaluationChartContainer')
+                        .html(msg('danger', 'Gagal memuat grafik dari server'));
+                }).always(() => {
+                    $btn.prop('disabled', false)
+                        .html('<i class="fas fa-chart-bar me-2"></i> Tampilkan Grafik');
+                });
+            });
+
+            /* ------------------------------------------------------------ *
+             *  SIDEBAR TOGGLE
+             * ------------------------------------------------------------ */
+            $('#toggleSidebar').on('click', function () {
+                $('#sidebar, #main-content').toggleClass('collapsed');
+                $(this).find('i').toggleClass('fa-bars fa-chevron-right');
+            });
+
+            /* ------------------------------------------------------------ *
+             *  CRUD DELETE HANDLERS (user, criteria, feedback)
+             * ------------------------------------------------------------ */
+            function reindexRows($tbody) {
+                $tbody.find('tr').each(function (idx) {
+                    $(this).find('td:first').text(idx + 1);
+                });
+            }
+
+            $(document).on('click', '.delete-user-btn', function () {
+                const userId = $(this).data('user-id');
+                const $row = $(this).closest('tr');
+                const username = $row.find('td:nth-child(3)').text();
+
+                if (!confirm(`Apakah Anda yakin ingin menghapus pengguna "${username}" (ID: ${userId})? Tindakan ini tidak dapat dibatalkan.`)) {
+                    return;
+                }
+
+                $.ajax({
+                    url: `/admin/delete_user/${userId}`,
+                    type: 'POST',
+                    contentType: 'application/json'
+                }).done(res => {
+                    if (res.success) {
+                        $row.remove();
+                        reindexRows($('#pills-users tbody'));
+                        alert(res.message);
+                        if (!$('#pills-users tbody tr').length) {
+                            $('#pills-users .table-responsive')
+                                .replaceWith('<p class="text-muted">Belum ada pengguna.</p>');
+                        }
+                    } else {
+                        alert('Error: ' + res.error);
+                    }
+                }).fail(xhr => {
+                    console.error('AJAX error:', xhr.responseText);
+                    alert('Gagal menghapus pengguna: lihat console untuk detail');
+                });
+            });
+
+            $(document).on('click', '.delete-criteria-btn', function () {
+                const criteriaId = $(this).data('criteria-id');
+                const $row = $(this).closest('tr');
+                const criteriaNo = $row.find('td:nth-child(2)').text();
+
+                if (!confirm(`Apakah Anda yakin ingin menghapus kriteria dengan ID "${criteriaNo}"? Tindakan ini tidak dapat dibatalkan.`)) {
+                    return;
+                }
+
+                $.ajax({
+                    url: `/admin/delete_criteria/${criteriaId}`,
+                    type: 'POST',
+                    contentType: 'application/json'
+                }).done(res => {
+                    if (res.success) {
+                        $row.remove();
+                        reindexRows($('#pills-criteria tbody'));
+                        alert(res.message);
+                        if (!$('#pills-criteria tbody tr').length) {
+                            $('#pills-criteria .table-responsive')
+                                .replaceWith('<p class="text-muted">Belum ada kriteria.</p>');
+                        }
+                    } else {
+                        alert('Error: ' + res.error);
+                    }
+                }).fail(xhr => {
+                    console.error('AJAX error:', xhr.responseText);
+                    alert('Gagal menghapus kriteria: lihat console untuk detail');
+                });
+            });
+            /* DELETE – hasil rekomendasi */
+            $(document).on('click', '.delete-recommendation-btn', function () {
+                const recId = $(this).data('recommendation-id');
+                const $row = $(this).closest('tr');
+                const nomor = $row.find('td:first').text();      // nomor urut di tabel
+
+                if (!confirm(`Yakin ingin menghapus rekomendasi nomor ${nomor} (ID: ${recId})?`)) {
+                    return;
+                }
+
+                $.ajax({
+                    url: `/admin/delete_recommendation/${recId}`,
+                    type: 'POST',
+                    contentType: 'application/json'
+                }).done(res => {
+                    if (res.success) {
+                        $row.remove();                                         // hapus baris
+                        reindexRows($('#pills-recs tbody'));                   // re-index nomor
+                        alert(res.message);
+                        if (!$('#pills-recs tbody tr').length) {
+                            $('#pills-recs .table-responsive')
+                                .replaceWith('<p class="text-muted">Belum ada rekomendasi.</p>');
+                        }
+                    } else {
+                        alert('Error: ' + (res.error || 'Gagal menghapus'));
+                    }
+                }).fail(xhr => {
+                    console.error('AJAX error:', xhr.responseText);
+                    alert('Gagal menghapus rekomendasi – lihat console untuk detail');
+                });
+            });
+
+            $(document).on('click', '.delete-feedback-btn', function () {
+                const feedbackId = $(this).data('feedback-id');
+                const $row = $(this).closest('tr');
+                const feedbackNo = $row.find('td:nth-child(2)').text();
+
+                if (!confirm(`Apakah Anda yakin ingin menghapus feedback dengan ID "${feedbackNo}"? Tindakan ini tidak dapat dibatalkan.`)) {
+                    return;
+                }
+
+                $.ajax({
+                    url: `/admin/delete_feedback/${feedbackId}`,
+                    type: 'POST',
+                    contentType: 'application/json'
+                }).done(res => {
+                    if (res.success) {
+                        $row.remove();
+                        reindexRows($('#pills-feedback tbody'));
+                        alert(res.message);
+                        if (!$('#pills-feedback tbody tr').length) {
+                            $('#pills-feedback .table-responsive')
+                                .replaceWith('<p class="text-muted">Belum ada feedback.</p>');
+                        }
+                    } else {
+                        alert('Error: ' + res.error);
+                    }
+                }).fail(xhr => {
+                    console.error('AJAX error:', xhr.responseText);
+                    alert('Gagal menghapus feedback: lihat console untuk detail');
+                });
+            });
+
+            /* ------------------------------------------------------------ *
+             *  INIT
+             * ------------------------------------------------------------ */
+            $(document).ready(function () {
+                loadPieCharts('all');
+                $('#evaluationModeSelect').trigger('change');
+            });
+
+            window.addEventListener('load', () =>
+                setTimeout(() => $('#siteLoader').hide(), 800));
+
+        })(jQuery);
+    </script>
+    <script>
+        document.getElementById("backTotop").addEventListener('click', function (event) {
+            // Menghentikan efek default dari scroll-behavior smooth
+            document.documentElement.style.scrollBehavior = 'auto';
+            // Menggunakan scrollTo langsung menuju atas dengan animasi smooth
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+            // Mengaktifkan kembali scroll-behavior smooth setelah scroll selesai
+            setTimeout(function () {
+                document.documentElement.style.scrollBehavior = 'smooth';
+            }, 50000); // Menunggu 300ms setelah scroll selesai
+        });
+    </script>
+</body>
+
+</html>

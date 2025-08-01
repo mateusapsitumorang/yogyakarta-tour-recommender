@@ -1,0 +1,624 @@
+{% extends 'base_admin.html' %}
+
+{% block title %}Home | Yogyakarta Travel{% endblock %}
+
+{% block content %}
+<section class="home-slider-section">
+    <div class="home-slider">
+        <div class="home-banner-items">
+            <div class="banner-inner-wrap">
+                <!-- Gantilah gambar dengan video -->
+                <video autoplay muted loop class="background-video">
+                    <source src="{{ url_for('static', filename='videos/YogTrip.mp4') }}" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="banner-content-wrap">
+                <div class="container">
+                    <div class="banner-content text-center">
+                        <h2 class="banner-title">Exploring the Wonders of Yogyakarta</h2>
+                        <p>Menjelajahi segala pesona yang dimiliki Yogyakarta, dari utara hingga selatan, setiap
+                            sudutnya menyuguhkan pengalaman yang tak terlupakan.</p>
+                        <a href="#destination-section" class="button-primary">Continue Exploring</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="destination-section" class="destination-section">
+    <div class="container">
+        <div class="section-heading">
+            <div class="row align-items-end">
+                <div class="col-lg-7">
+                    <br><br><br>
+                    <h5 class="dash-style">POPULAR DESTINATION</h5>
+                    <h2>Destinasi Terbaik dari Berbagai Kabupaten dan Kota</h2>
+                    <p>Temukan Pesona Alam yang Memukau dan Warisan Budaya yang Tak Ternilai di Setiap Kabupaten,
+                        Menawarkan Pengalaman Wisata yang Penuh Keindahan Alam dan Cerita Sejarah yang Memikat.</p>
+                </div>
+                <div class="col-lg-5">
+                    <div class="section-disc">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Swiper Container -->
+        <div class="swiper-container destination-slider">
+            <div class="swiper-wrapper">
+                <!-- Slide 1 -->
+                <div class="swiper-slide">
+                    <div class="destination-inner destination-three-column">
+                        <div class="row d-flex flex-wrap">
+                            <div class="col-lg-4 col-md-6">
+                                <div class="desti-item overlay-desti-item">
+                                    <figure class="desti-image">
+                                        <img src="{{ url_for('static', filename='images/Candi Prambanan.png') }}"
+                                            alt="">
+                                    </figure>
+                                    <div class="meta-cat bg-meta-cat">
+                                        <a href="#">Sleman</a>
+                                    </div>
+                                    <div class="desti-content">
+                                        <h3>
+                                            <a href="#">Candi Prambanan</a>
+                                        </h3>
+                                        <div class="rating" data-rating="4.7" title="4,7">
+                                            <i class="far fa-star" data-value="1"></i>
+                                            <i class="far fa-star" data-value="2"></i>
+                                            <i class="far fa-star" data-value="3"></i>
+                                            <i class="far fa-star" data-value="4"></i>
+                                            <i class="far fa-star" data-value="5"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 2 -->
+                <div class="swiper-slide">
+                    <div class="destination-inner destination-three-column">
+                        <div class="row d-flex flex-wrap">
+                            <div class="col-lg-4 col-md-6">
+                                <div class="desti-item overlay-desti-item">
+                                    <figure class="desti-image">
+                                        <img src="{{ url_for('static', filename='images/Kampung Wisata Taman Sari.png') }}"
+                                            alt="">
+                                    </figure>
+                                    <div class="meta-cat bg-meta-cat">
+                                        <a href="#">Kota Yogyakarta</a>
+                                    </div>
+                                    <div class="desti-content">
+                                        <h3>
+                                            <a href="#">Kampung Wisata <br>Taman Sari</a>
+                                        </h3>
+                                        <div class="rating" data-rating="4.6" title="4,6">
+                                            <i class="far fa-star" data-value="1"></i>
+                                            <i class="far fa-star" data-value="2"></i>
+                                            <i class="far fa-star" data-value="3"></i>
+                                            <i class="far fa-star" data-value="4"></i>
+                                            <i class="far fa-star" data-value="5"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 3 -->
+                <div class="swiper-slide">
+                    <div class="destination-inner destination-three-column">
+                        <div class="row d-flex flex-wrap">
+                            <div class="col-lg-4 col-md-6">
+                                <div class="desti-item overlay-desti-item">
+                                    <figure class="desti-image">
+                                        <img src="{{ url_for('static', filename='images/Bukit Bintang.png') }}" alt="">
+                                    </figure>
+                                    <div class="meta-cat bg-meta-cat">
+                                        <a href="#">Gunungkidul</a>
+                                    </div>
+                                    <div class="desti-content">
+                                        <h3>
+                                            <a href="#">Bukit Bintang</a>
+                                        </h3>
+                                        <div class="rating" data-rating="4.5" title="4,5">
+                                            <i class="far fa-star" data-value="1"></i>
+                                            <i class="far fa-star" data-value="2"></i>
+                                            <i class="far fa-star" data-value="3"></i>
+                                            <i class="far fa-star" data-value="4"></i>
+                                            <i class="far fa-star" data-value="5"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 4 -->
+                <div class="swiper-slide">
+                    <div class="destination-inner destination-three-column">
+                        <div class="row d-flex flex-wrap">
+                            <div class="col-lg-4 col-md-6">
+                                <div class="desti-item overlay-desti-item">
+                                    <figure class="desti-image">
+                                        <img src="{{ url_for('static', filename='images/Hutan Pinus Pengger.png') }}"
+                                            alt="">
+                                    </figure>
+                                    <div class="meta-cat bg-meta-cat">
+                                        <a href="#">Bantul</a>
+                                    </div>
+                                    <div class="desti-content">
+                                        <h3>
+                                            <a href="#">Hutan Pinus Pengger</a>
+                                        </h3>
+                                        <div class="rating" data-rating="4.5" title="4,5">
+                                            <i class="far fa-star" data-value="1"></i>
+                                            <i class="far fa-star" data-value="2"></i>
+                                            <i class="far fa-star" data-value="3"></i>
+                                            <i class="far fa-star" data-value="4"></i>
+                                            <i class="far fa-star" data-value="5"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 5 -->
+                <div class="swiper-slide">
+                    <div class="destination-inner destination-three-column">
+                        <div class="row d-flex flex-wrap">
+                            <div class="col-lg-4 col-md-6">
+                                <div class="desti-item overlay-desti-item">
+                                    <figure class="desti-image">
+                                        <img src="{{ url_for('static', filename='images/Pantai Glagah.png') }}" alt="">
+                                    </figure>
+                                    <div class="meta-cat bg-meta-cat">
+                                        <a href="{{ url_for('destination') }}">Kulon Progo</a>
+                                    </div>
+                                    <div class="desti-content">
+                                        <h3>
+                                            <a href="#">Pantai Glagah</a>
+                                        </h3>
+                                        <div class="rating" data-rating="4.4" title="4,4">
+                                            <i class="far fa-star" data-value="1"></i>
+                                            <i class="far fa-star" data-value="2"></i>
+                                            <i class="far fa-star" data-value="3"></i>
+                                            <i class="far fa-star" data-value="4"></i>
+                                            <i class="far fa-star" data-value="5"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</section>
+
+<!-- Home special section html start -->
+<section class="best-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-5">
+                <div class="section-heading">
+                    <h5 class="dash-style">OUR TOUR GALLERY</h5>
+                    <h2>Foto-foto perjalanan para wisatawan</h2>
+                    <p>Setiap foto di galeri ini menceritakan pengalaman tak terlupakan para wisatawan
+                        yang telah menjelajahi keindahan destinasi di Daerah Istimewa Yogyakarta.
+                    </p>
+                </div>
+                <figure class="gallery-img">
+                    <img src="{{ url_for('static', filename='images/img14.png') }}" alt="Image 12">
+                </figure>
+            </div>
+            <div class="col-lg-7">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <br>
+                        <figure class="gallery-img">
+                            <img src="{{ url_for('static', filename='images/img12.png') }}" alt="Image 13">
+                        </figure>
+                    </div>
+                    <div class="col-sm-6">
+                        <figure class="gallery-img">
+                            <img src="{{ url_for('static', filename='images/img13.png') }}" alt="Image 14">
+                        </figure>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <figure class="gallery-img">
+                            <img src="{{ url_for('static', filename='images/img15.png') }}" alt="Image 15">
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Home callback section html start -->
+<section class="callback-section">
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Konten Callback -->
+            <div class="col-12">
+                <div class="callback-inner">
+                    <div class="section-heading section-heading-white text-center">
+                        <h5 class="dash-style">NEW DISCOVERIES AWAIT</h5>
+                        <h2>BERJALAN JAUH. TEMUKAN LEBIH. INGAT SELALU!!</h2>
+                        <p>Yogyakarta bukan sekadar tujuan wisata, melainkan sebuah perjalanan spiritual dan
+                            budaya yang mengalir lembut seperti aliran Sungai Code. Setiap sudut kota ini menyimpan
+                            cerita mendalam, dari megahnya Candi Prambanan yang menjulang hingga gemerlap malam di
+                            Malioboro
+                            yang penuh warna.</p>
+                    </div>
+                    <div class="callback-counter-wrap d-flex justify-content-center flex-wrap">
+                        <div class="counter-item">
+                            <div class="counter-icon">
+                                <img src="{{ url_for('static', filename='images/icon1.png') }}" alt="">
+                            </div>
+                            <div class="counter-content">
+                                <span class="counter-no">
+                                    <span class="counter">5</span>
+                                </span>
+                                <span class="counter-text">
+                                    Kabupaten dan Kota
+                                </span>
+                            </div>
+                        </div>
+                        <div class="counter-item">
+                            <div class="counter-icon">
+                                <img src="{{ url_for('static', filename='images/icon2.png') }}" alt="">
+                            </div>
+                            <div class="counter-content">
+                                <span class="counter-no">
+                                    <span class="counter">500</span>+
+                                </span>
+                                <span class="counter-text">
+                                    Penginapan
+                                </span>
+                            </div>
+                        </div>
+                        <div class="counter-item">
+                            <div class="counter-icon">
+                                <img src="{{ url_for('static', filename='images/icon3.png') }}" alt="">
+                            </div>
+                            <div class="counter-content">
+                                <span class="counter-no">
+                                    <span class="counter">600</span>+
+                                </span>
+                                <span class="counter-text">
+                                    Tempat Wisata
+                                </span>
+                            </div>
+                        </div>
+                        <div class="counter-item">
+                            <div class="counter-icon">
+                                <img src="{{ url_for('static', filename='images/icon4.png') }}" alt="">
+                            </div>
+                            <div class="counter-content">
+                                <span class="counter-no">
+                                    <span class="counter">500</span>+
+                                </span>
+                                <span class="counter-text">
+                                    Rumah Makan
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Peta Leaflet -->
+            <div class="col-12">
+                <h2  style="color: white;">Sebaran Destinasi Wisata DIY</h2>
+                <div id="map" class="w-100" style="height: 100%; min-height: 500px;"></div>
+            </div>
+</section>
+
+{% endblock %}
+{% block extra_js %}
+<!-- Script untuk Peta OpenStreetMap dengan Leaflet.js -->
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+<script>
+    // Membuat peta dengan koordinat pusat Yogyakarta dan zoom awal
+    var map = L.map('map').setView([-7.7956, 110.3695], 12); // Koordinat Yogyakarta
+
+    // Menambahkan tile layer (peta dasar) dari OpenStreetMap
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+    }).addTo(map);
+
+    // Menambahkan marker statis untuk memeriksa apakah peta berfungsi
+    var marker = L.marker([-7.7956, 110.3695]).addTo(map);
+    marker.bindPopup("<b>Yogyakarta</b>");
+
+    // Mengambil data dari API Flask
+    fetch('/get_data')
+        .then(response => response.json())
+        .then(dataWisata => {
+            console.log("Data diterima:", dataWisata);
+            dataWisata.forEach(function (wisata) {
+                console.log("Menambahkan marker untuk: " + wisata.nama_tempat_wisata);
+                if (wisata.latitude && wisata.longitude) {
+                    var wisataMarker = L.marker([wisata.latitude, wisata.longitude]).addTo(map);
+                    wisataMarker.bindPopup("<b>" + wisata.nama_tempat_wisata + "</b><br>" +
+                        "Kabupaten: " + wisata.kabupaten + "<br>" +
+                        "Rating: " + wisata.rating + "<br>" +
+                        "Kategori: " + wisata.kategori + "<br>" +
+                        "Jumlah Ulasan: " + wisata.jumlah_ulasan);
+                }
+            });
+        })
+        .catch(error => console.error('Error fetching data:', error));
+</script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script>
+    var destinationSwiper = new Swiper('.destination-slider', {
+        slidesPerView: 3,
+        spaceBetween: 0,
+        loop: true,
+        autoplay: {
+            delay: 3000,
+            disableOnInteraction: false,
+        },
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        breakpoints: {
+            768: {
+                slidesPerView: 2,
+                spaceBetween: 20,
+            },
+            992: {
+                slidesPerView: 3,
+                spaceBetween: 10,
+            },
+        },
+        on: {
+            init: function () {
+                this.slides.forEach((slide) => {
+                    slide.style.width = 'calc(100% / 3)';
+
+                });
+            },
+        },
+    });
+</script>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const sections = [
+            '.destination-section',
+            '.best-section',
+            '.callback-section'
+        ];
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('is-visible');
+                }
+            });
+        }, {
+            threshold: 0.1
+        });
+
+        sections.forEach(selector => {
+            const section = document.querySelector(selector);
+            if (section) {
+                observer.observe(section);
+            }
+        });
+    });
+</script>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const bannerTitle = document.querySelector('.banner-title');
+        const bannerParagraph = document.querySelector('.banner-content p');
+        const bannerButton = document.querySelector('.button-primary');
+
+        // Optional: Tambahkan event listener untuk reset animasi jika diperlukan
+        function resetAnimations() {
+            bannerTitle.style.animationName = 'none';
+            bannerParagraph.style.animationName = 'none';
+            bannerButton.style.animationName = 'none';
+
+            // Force reflow
+            void bannerTitle.offsetWidth;
+            void bannerParagraph.offsetWidth;
+            void bannerButton.offsetWidth;
+
+            bannerTitle.style.animationName = 'slideFromRight';
+            bannerParagraph.style.animationName = 'slideFromLeft';
+            bannerButton.style.animationName = 'slideFromRight';
+        }
+    });
+</script>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const slides = document.querySelectorAll('.destination-slider .swiper-slide');
+
+        const observerOptions = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.1
+        };
+
+        const slideObserver = new IntersectionObserver((entries, observer) => {
+            entries.forEach((entry, index) => {
+                if (entry.isIntersecting) {
+                    // Tambahkan delay untuk efek berurutan
+                    setTimeout(() => {
+                        entry.target.classList.add('fade-in');
+                    }, index * 200); // Setiap slide muncul dengan jeda 200ms
+
+                    // Berhenti mengamati slide yang sudah tampil
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        // Mulai mengamati setiap slide
+        slides.forEach(slide => {
+            slideObserver.observe(slide);
+        });
+
+        // Optional: Tambahkan efek hover pada destinasi
+        const destinationItems = document.querySelectorAll('.desti-item');
+        destinationItems.forEach(item => {
+            item.addEventListener('mouseenter', () => {
+                item.style.transform = 'scale(1.05)';
+                item.style.boxShadow = '0 10px 20px rgba(0,0,0,0.1)';
+            });
+
+            item.addEventListener('mouseleave', () => {
+                item.style.transform = 'scale(1)';
+                item.style.boxShadow = 'none';
+            });
+        });
+    });
+</script>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const observerOptions = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.1
+        };
+
+        const animatedElements = [
+            '.destination-section .dash-style',
+            '.destination-section h2',
+            '.destination-section p'
+        ];
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const target = entry.target;
+                    target.style.animationPlayState = 'running';
+                    observer.unobserve(target);
+                }
+            });
+        }, observerOptions);
+
+        // Tambahkan observer ke setiap elemen
+        animatedElements.forEach(selector => {
+            const element = document.querySelector(selector);
+            if (element) {
+                element.style.animationPlayState = 'paused';
+                observer.observe(element);
+            }
+        });
+    });
+</script>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    // Animasi untuk heading
+                    const heading = entry.target.querySelector('.section-heading');
+                    if (heading) heading.classList.add('animate');
+
+                    // Animasi untuk gambar-gambar
+                    const images = entry.target.querySelectorAll('.gallery-img');
+                    images.forEach((img, index) => {
+                        setTimeout(() => {
+                            img.classList.add('animate');
+                        }, index * 200); // Delay bertahap untuk setiap gambar
+                    });
+
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        // Mulai mengamati section
+        const section = document.querySelector('.best-section');
+        if (section) {
+            observer.observe(section);
+        }
+    });
+</script>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    // Animasi Heading
+                    const heading = entry.target.querySelector('.section-heading');
+                    if (heading) heading.classList.add('animate');
+
+                    // Animasi Counter Items dengan delay
+                    const counterItems = entry.target.querySelectorAll('.counter-item');
+                    counterItems.forEach((item, index) => {
+                        setTimeout(() => {
+                            item.classList.add('animate');
+
+                            // Animasi Counter Counting menggunakan requestAnimationFrame
+                            const counterElement = item.querySelector('.counter');
+                            if (counterElement) {
+                                const targetValue = parseInt(counterElement.textContent);
+                                const duration = 1000; // Durasi animasi dalam milidetik (misal 1 detik)
+                                let startTime = null;
+
+                                function animate(currentTime) {
+                                    if (!startTime) startTime = currentTime;
+                                    const elapsedTime = currentTime - startTime;
+                                    const progress = Math.min(elapsedTime / duration, 1); // Pastikan progress tidak lebih dari 1
+
+                                    const currentValue = Math.floor(progress * targetValue); // Hitung nilai saat ini
+
+                                    counterElement.textContent = currentValue; // Perbarui tampilan
+
+                                    if (progress < 1) {
+                                        requestAnimationFrame(animate); // Lanjutkan animasi jika belum selesai
+                                    } else {
+                                        // Pastikan nilai akhir tepat sesuai target
+                                        counterElement.textContent = targetValue;
+                                    }
+                                }
+
+                                requestAnimationFrame(animate); // Mulai animasi
+                            }
+                        }, index); // Delay bertahap untuk setiap counter item
+                    });
+
+                    // Animasi Peta
+                    const mapContainer = entry.target.querySelector('#map-container');
+                    if (mapContainer) mapContainer.classList.add('animate');
+
+                    // Hentikan pengamatan setelah section terlihat
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        // Mulai mengamati section
+        const section = document.querySelector('.callback-section');
+        if (section) {
+            observer.observe(section);
+        }
+    });
+</script>
+
+{% endblock %}

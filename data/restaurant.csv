@@ -1,0 +1,569 @@
+id_rumah_makan,kabupaten,nama_rumah_makan,rating,jumlah_ulasan,latitude,longitude,google_maps_link
+b2290,Kota Yogyakarta,Restoran Bumbu Desa,4.5,4818,-7.7799995,110.3770098,https://www.google.com/maps/search/Restoran%20Bumbu%20Desa
+91b70,Kota Yogyakarta,Warung Bu Ageng,4.4,3641,-7.8182451,110.3641888,https://www.google.com/maps/search/Warung%20Bu%20Ageng
+97c50,Kota Yogyakarta,Warung Makan Bu Ning Rasa Sayange,4.5,1604,-7.7785531,110.3685189,https://www.google.com/maps/search/Warung%20Makan%20Bu%20Ning%20Rasa%20Sayange
+7bdb0,Kota Yogyakarta,Lombok Idjo Jogja Adisoetjipto,4.5,4861,-7.7832888,110.3896497,https://www.google.com/maps/search/Lombok%20Idjo%20Jogja%20Adisoetjipto
+13800,Kota Yogyakarta,Rumah Makan Mbah Buyut,4.4,877,-7.8181976,110.3617892,https://www.google.com/maps/search/Rumah%20Makan%20Mbah%20Buyut
+0d420,Kota Yogyakarta,Bale Raos - The Sultan's Dishes,4.5,5873,-7.8084895,110.3630646,https://www.google.com/maps/search/Bale%20Raos%20-%20The%20Sultan%27s%20Dishes
+812f0,Kota Yogyakarta,Warung Makan Cak Koting,4.3,3074,-7.7920498,110.3776769,https://www.google.com/maps/search/Warung%20Makan%20Cak%20Koting
+f4bd0,Bantul,Gubug Makan Mang Engking Soragan Castle,4.5,8012,-7.783124,110.34987,https://www.google.com/maps/search/Gubug%20Makan%20Mang%20Engking%20Soragan%20Castle
+cca10,Kota Yogyakarta,KESUMA Restaurant,4.7,314,-7.8201653,110.3664335,https://www.google.com/maps/search/KESUMA%20Restaurant
+290b0,Kota Yogyakarta,Madam Tan Indonesian Food,4.3,1966,-7.7751847,110.3749841,https://www.google.com/maps/search/Madam%20Tan%20Indonesian%20Food
+2920,Kota Yogyakarta,Dapur Manado,4.5,1978,-7.7912846,110.3848276,https://www.google.com/maps/search/Dapur%20Manado
+5ac10,Kota Yogyakarta,Dapur EL,4.6,254,-7.8211159,110.3678259,https://www.google.com/maps/search/Dapur%20EL
+cc5d0,Kota Yogyakarta,Soto Sampah,4.3,2939,-7.7816219,110.3669409,https://www.google.com/maps/search/Soto%20Sampah
+379f0,Kota Yogyakarta,Rumah Makan Duta Minang - Sudirman,4.4,2729,-7.783119,110.3702831,https://www.google.com/maps/search/Rumah%20Makan%20Duta%20Minang%20-%20Sudirman
+d5500,Kota Yogyakarta,R&B Grill Yogyakarta,4.6,4854,-7.7789694,110.363068,https://www.google.com/maps/search/R%26B%20Grill%20Yogyakarta
+a00c0,Kota Yogyakarta,Mediterranea Restaurant by Kamil,4.7,8979,-7.818566,110.3645276,https://www.google.com/maps/search/Mediterranea%20Restaurant%20by%20Kamil
+f8c40,Kota Yogyakarta,Ayam Goreng Bu Tini,4.5,4679,-7.801433,110.3736419,https://www.google.com/maps/search/Ayam%20Goreng%20Bu%20Tini
+36ed0,Kota Yogyakarta,Raminten's Kitchen,4.3,11495,-7.7844065,110.3721107,https://www.google.com/maps/search/Raminten%27s%20Kitchen
+996f0,Kota Yogyakarta,Rumah Makan Colombo,4.4,285,-7.7919216,110.3569116,https://www.google.com/maps/search/Rumah%20Makan%20Colombo
+bfd50,Kota Yogyakarta,Rumah Makan Terang Mulyo,4.4,764,-7.8124999,110.3686198,https://www.google.com/maps/search/Rumah%20Makan%20Terang%20Mulyo
+3fe90,Kota Yogyakarta,Rumah Makan Lestari Yogyakarta,4.1,1434,-7.7818269,110.4045272,https://www.google.com/maps/search/Rumah%20Makan%20Lestari%20Yogyakarta
+27790,Kota Yogyakarta,Rumah Makan Lie Djiong,4.5,2241,-7.802719,110.3693702,https://www.google.com/maps/search/Rumah%20Makan%20Lie%20Djiong
+a3ec0,Kota Yogyakarta,The House Of Raminten,4.5,1991,-7.7851826,110.3713911,https://www.google.com/maps/search/The%20House%20Of%20Raminten
+f6ab0,Kota Yogyakarta,Rumah Makan Baru,4.5,684,-7.7873947,110.3791322,https://www.google.com/maps/search/Rumah%20Makan%20Baru
+2acf0,Kota Yogyakarta,Gudeg Pawon,4.5,4227,-7.805718,110.3901396,https://www.google.com/maps/search/Gudeg%20Pawon
+c4280,Kota Yogyakarta,Sawah Resto Nologaten,4.4,3246,-7.7757778,110.4031217,https://www.google.com/maps/search/Sawah%20Resto%20Nologaten
+8afd0,Kota Yogyakarta,Bale Timoho Resto,4.5,4721,-7.7955619,110.3928768,https://www.google.com/maps/search/Bale%20Timoho%20Resto
+08bf0,Kota Yogyakarta,Restoran Mahkota,4.5,981,-7.7963281,110.3641908,https://www.google.com/maps/search/Restoran%20Mahkota
+95650,Kota Yogyakarta,Oseng-oseng Mercon Bu Narti,3.8,9737,-7.8013005,110.3574346,https://www.google.com/maps/search/Oseng-oseng%20Mercon%20Bu%20Narti
+812c0,Kota Yogyakarta,Omah Dhuwur Dining & Coffee,4.5,1989,-7.8274099,110.3943962,https://www.google.com/maps/search/Omah%20Dhuwur%20Dining%20%26%20Coffee
+fa210,Kota Yogyakarta,Sekar Kedhaton Restaurant,4.5,2477,-7.8270391,110.3927971,https://www.google.com/maps/search/Sekar%20Kedhaton%20Restaurant
+a99a0,Kota Yogyakarta,Rumah Makan Bakso ITO,4.4,2049,-7.7925,110.3675,https://www.google.com/maps/search/Rumah%20Makan%20Bakso%20ITO
+13030,Kota Yogyakarta,Warung Brongkos Handayani,4.5,2479,-7.8126435,110.363015,https://www.google.com/maps/search/Warung%20Brongkos%20Handayani
+4d2c0,Kota Yogyakarta,Banyu Mili Resto,4.4,6713,-7.7759095,110.3463541,https://www.google.com/maps/search/Banyu%20Mili%20Resto
+65990,Kota Yogyakarta,ViaVia Jogja,4.4,3604,-7.8193508,110.3715262,https://www.google.com/maps/search/ViaVia%20Jogja
+a8eb0,Kota Yogyakarta,Lesehan SBTB Terang Bulan malioboro,4.4,1169,-7.7977081,110.3662074,https://www.google.com/maps/search/Lesehan%20SBTB%20Terang%20Bulan%20malioboro
+b0a30,Kota Yogyakarta,Rumah Makan Rata-Rata,4.1,709,-7.8166074,110.3812909,https://www.google.com/maps/search/Rumah%20Makan%20Rata-Rata
+da3c0,Kota Yogyakarta,Rumah Makan Padang Murah,4.4,1275,-7.7931483,110.3733351,https://www.google.com/maps/search/Rumah%20Makan%20Padang%20Murah
+03d90,Kota Yogyakarta,Rumah Makan Duta Minang - Katamso,4.4,2375,-7.8124408,110.3689192,https://www.google.com/maps/search/Rumah%20Makan%20Duta%20Minang%20-%20Katamso
+7ebc0,Kota Yogyakarta,Kedai Kebun Forum,4.6,1248,-7.81805,110.3627528,https://www.google.com/maps/search/Kedai%20Kebun%20Forum
+6cf00,Kota Yogyakarta,Duta Minang Yogyakarta,4.4,856,-7.8011703,110.3616789,https://www.google.com/maps/search/Duta%20Minang%20Yogyakarta
+25200,Kota Yogyakarta,Nanamia Pizzeria,4.7,8287,-7.8180926,110.3626235,https://www.google.com/maps/search/Nanamia%20Pizzeria
+2a040,Kota Yogyakarta,Gudeg Yu Djum,4.3,3685,-7.7939226,110.3652499,https://www.google.com/maps/search/Gudeg%20Yu%20Djum
+5bb40,Kota Yogyakarta,Kedai Lur,4.5,930,-7.7875666,110.364955,https://www.google.com/maps/search/Kedai%20Lur
+99500,Kota Yogyakarta,Gudeg Yu Djum Wijilan 167,4.5,563,-7.8045659,110.3667533,https://www.google.com/maps/search/Gudeg%20Yu%20Djum%20Wijilan%20167
+3b3f0,Kota Yogyakarta,Warung Makan Gudeg Yu Tum,4.4,241,-7.803141,110.363117,https://www.google.com/maps/search/Warung%20Makan%20Gudeg%20Yu%20Tum
+8fe50,Kota Yogyakarta,Restoran Jawa Timur Tante Lies,4.5,111,-7.8189542,110.3681762,https://www.google.com/maps/search/Restoran%20Jawa%20Timur%20Tante%20Lies
+87fc0,Kota Yogyakarta,Gudeg Wijilan Bu Lies 2,4.4,3744,-7.8042287,110.3667,https://www.google.com/maps/search/Gudeg%20Wijilan%20Bu%20Lies%202
+de4a0,Kota Yogyakarta,Rumah Makan Rata-Rata BUGISAN,4.3,710,-7.8121367,110.3496432,https://www.google.com/maps/search/Rumah%20Makan%20Rata-Rata%20BUGISAN
+47540,Kota Yogyakarta,Pempek Ny. Kamto Beskalan 3,4.5,392,-7.7973993,110.3646025,https://www.google.com/maps/search/Pempek%20Ny.%20Kamto%20Beskalan%203
+4aa70,Kota Yogyakarta,Jogja Fried Chicken,4.6,234,-7.7877188,110.3929411,https://www.google.com/maps/search/Jogja%20Fried%20Chicken
+14a20,Kota Yogyakarta,Bakmi Jowo Mbah Gito,4.3,15315,-7.813363,110.3971575,https://www.google.com/maps/search/Bakmi%20Jowo%20Mbah%20Gito
+cf0a0,Kota Yogyakarta,Lalawuh Sunda,4.2,3226,-7.7800674,110.3502119,https://www.google.com/maps/search/Lalawuh%20Sunda
+3b8c0,Kota Yogyakarta,Kayu Manis Restaurant,4.6,182,-7.7738889,110.3686111,https://www.google.com/maps/search/Kayu%20Manis%20Restaurant
+9eef0,Kota Yogyakarta,Rumah Makan Hao Mei,4.3,364,-7.7850621,110.3525097,https://www.google.com/maps/search/Rumah%20Makan%20Hao%20Mei
+dcea0,Kota Yogyakarta,Rumah Makan Padang Minang Ria - Yogyakarta,4.3,847,-7.8018417,110.3897408,https://www.google.com/maps/search/Rumah%20Makan%20Padang%20Minang%20Ria%20-%20Yogyakarta
+798d0,Kota Yogyakarta,Ayam Panggang 3 Berku,4.5,1729,-7.802055,110.3961831,https://www.google.com/maps/search/Ayam%20Panggang%203%20Berku
+ac140,Kota Yogyakarta,Rumah Makan Teratai,4.3,310,-7.7833825,110.3634365,https://www.google.com/maps/search/Rumah%20Makan%20Teratai
+21250,Kota Yogyakarta,Warung Makan Okeiki,4.3,412,-7.8036111,110.3513889,https://www.google.com/maps/search/Warung%20Makan%20Okeiki
+5a830,Kota Yogyakarta,Rumah Makan NASI PADANG,4.4,447,-7.7909781,110.3830628,https://www.google.com/maps/search/Rumah%20Makan%20NASI%20PADANG
+1c9c0,Kota Yogyakarta,Rumah Makan Andalas,4.3,161,-7.7962553,110.3691328,https://www.google.com/maps/search/Rumah%20Makan%20Andalas
+23fd0,Kota Yogyakarta,Warung Kotik,4.5,297,-7.7961738,110.3633721,https://www.google.com/maps/search/Warung%20Kotik
+f49a0,Kota Yogyakarta,City Grill - Eastern Mediterranean Restaurant,4.9,163,-7.8194842,110.3681308,https://www.google.com/maps/search/City%20Grill%20-%20Eastern%20Mediterranean%20Restaurant
+2e2e0,Kota Yogyakarta,nDalem Ngabean Resto,4.5,630,-7.8100929,110.3623428,https://www.google.com/maps/search/nDalem%20Ngabean%20Resto
+0ae90,Kota Yogyakarta,Rumah Makan Padang Asli,4.5,922,-7.7806081,110.3672495,https://www.google.com/maps/search/Rumah%20Makan%20Padang%20Asli
+cbbb0,Kota Yogyakarta,Rumah Makan Soto Ayam 61,4.3,418,-7.7974852,110.3650954,https://www.google.com/maps/search/Rumah%20Makan%20Soto%20Ayam%2061
+62670,Kota Yogyakarta,Yam Yam Restaurant Yogyakarta,4.9,403,-7.8192571,110.3723121,https://www.google.com/maps/search/Yam%20Yam%20Restaurant%20Yogyakarta
+3a590,Kota Yogyakarta,Warung Makan Prigel Asih,4.4,866,-7.7809143,110.3670829,https://www.google.com/maps/search/Warung%20Makan%20Prigel%20Asih
+dd4b0,Kota Yogyakarta,Nasi Goreng Bringharjo,4.4,767,-7.797283,110.370602,https://www.google.com/maps/search/Nasi%20Goreng%20Bringharjo
+522d0,Sleman,The Westlake Resto,4.5,102,-7.747528,110.3383619,https://www.google.com/maps/search/The%20Westlake%20Resto
+e4710,Kota Yogyakarta,"Sego Telkem ""Mbak Nur""",4.6,16,-7.8039656,110.3665066,https://www.google.com/maps/search/Sego%20Telkem%20%22Mbak%20Nur%22
+4b3e0,Kota Yogyakarta,"Warung Makan ""Bogasari""",4.6,860,-7.7941698,110.3664846,https://www.google.com/maps/search/Warung%20Makan%20%22Bogasari%22
+21da0,Kota Yogyakarta,Warung Makan Bu Bandi,4.1,9757,-7.8041131,110.3658779,https://www.google.com/maps/search/Warung%20Makan%20Bu%20Bandi
+c1840,Kota Yogyakarta,Warung Lawas,4.2,390,-7.8200984,110.371994,https://www.google.com/maps/search/Warung%20Lawas
+e9ab0,Kota Yogyakarta,Rumah Makan Sea Food 99,4.5,339,-7.8048123,110.3630008,https://www.google.com/maps/search/Rumah%20Makan%20Sea%20Food%2099
+52220,Kota Yogyakarta,Rumah Makan Surya Minang,4.6,43,-7.8131919,110.3574095,https://www.google.com/maps/search/Rumah%20Makan%20Surya%20Minang
+d70f0,Kota Yogyakarta,Rumah Makan Ayam Dan Bebek Brontak Cabang Jogja,4.6,53,-7.8144468,110.3668304,https://www.google.com/maps/search/Rumah%20Makan%20Ayam%20Dan%20Bebek%20Brontak%20Cabang%20Jogja
+6.70E+01,Kota Yogyakarta,Lemah Ledok Garden Resto,4.4,525,-7.769873,110.4640658,https://www.google.com/maps/search/Lemah%20Ledok%20Garden%20Resto
+628c0,Kota Yogyakarta,Rumah Makan Padang Untuang,4.4,302,-7.7787718,110.3733873,https://www.google.com/maps/search/Rumah%20Makan%20Padang%20Untuang
+85ec0,Kota Yogyakarta,Warung Makan Padang Murah,4.2,150,-7.8252636,110.4004516,https://www.google.com/maps/search/Warung%20Makan%20Padang%20Murah
+ed7a0,Kota Yogyakarta,Yammie Pathuk Kemetiran Kidul Yogyakarta,4.5,35,-7.7932338,110.3580809,https://www.google.com/maps/search/Yammie%20Pathuk%20Kemetiran%20Kidul%20Yogyakarta
+6d6a0,Kota Yogyakarta,Pendopo Sop,4.2,2143,-7.8031748,110.363114,https://www.google.com/maps/search/Pendopo%20Sop
+c00c0,Kota Yogyakarta,Raminten Malioboro Resto,4.4,295,-7.7991661,110.3648118,https://www.google.com/maps/search/Raminten%20Malioboro%20Resto
+419a0,Kota Yogyakarta,Rumah Makan Padang Aroma Baru,4.3,349,-7.8034971,110.3662075,https://www.google.com/maps/search/Rumah%20Makan%20Padang%20Aroma%20Baru
+2bde0,Kota Yogyakarta,Gudeg Wijilan Bu Hj. Rini,4.5,578,-7.8043545,110.3667744,https://www.google.com/maps/search/Gudeg%20Wijilan%20Bu%20Hj.%20Rini
+b3e30,Kota Yogyakarta,Warung Makan Parahyangan,4.6,615,-7.787004,110.3524974,https://www.google.com/maps/search/Warung%20Makan%20Parahyangan
+034b0,Kota Yogyakarta,Rumah Makan Liliana,4.3,899,-7.794656,110.37286,https://www.google.com/maps/search/Rumah%20Makan%20Liliana
+e2910,Kota Yogyakarta,Gudeg Bu Slamet Wijilan 1946,4.5,295,-7.8045689,110.3667133,https://www.google.com/maps/search/Gudeg%20Bu%20Slamet%20Wijilan%201946
+f77d0,Kota Yogyakarta,Sate Kambing Asli Tambaksegaran Yogyakarta,4.3,1121,-7.8102186,110.368797,https://www.google.com/maps/search/Sate%20Kambing%20Asli%20Tambaksegaran%20Yogyakarta
+be510,Kota Yogyakarta,Kuliner Pecel & Gudeg Ibu Lely Beringharjo,4.8,81,-7.7986682,110.3643677,https://www.google.com/maps/search/Kuliner%20Pecel%20%26%20Gudeg%20Ibu%20Lely%20Beringharjo
+c4190,Kota Yogyakarta,Soto Keraton Alun-Alun Lor Yogyakarta,4.4,12,-7.8034986,110.3657683,https://www.google.com/maps/search/Soto%20Keraton%20Alun-Alun%20Lor%20Yogyakarta
+3dae0,Kota Yogyakarta,Rustik Bistro & Bar (Harper Malioboro),4.4,323,-7.7847465,110.3673656,https://www.google.com/maps/search/Rustik%20Bistro%20%26%20Bar%20%28Harper%20Malioboro%29
+fd9b0,Kota Yogyakarta,Rumah Makan Padang Sahabat Minang Murah,4.3,738,-7.7847083,110.3868634,https://www.google.com/maps/search/Rumah%20Makan%20Padang%20Sahabat%20Minang%20Murah
+cd6f0,Kota Yogyakarta,Warung Makan Eka,4.5,19,-7.8121948,110.3715496,https://www.google.com/maps/search/Warung%20Makan%20Eka
+083a0,Kota Yogyakarta,Warung Makan Bu Sum,4.5,382,-7.7992096,110.3677565,https://www.google.com/maps/search/Warung%20Makan%20Bu%20Sum
+62130,Kota Yogyakarta,Rumah Makan Padang Ar -Razzaq,4.4,87,-7.7883287,110.3872552,https://www.google.com/maps/search/Rumah%20Makan%20Padang%20Ar%20-Razzaq
+6f280,Kota Yogyakarta,Warung Makan Cedak Semanak,4.5,68,-7.7922232,110.3494892,https://www.google.com/maps/search/Warung%20Makan%20Cedak%20Semanak
+89d20,Kota Yogyakarta,KEDAI MAKAN HIQMAT,4.8,107,-7.806584,110.3693459,https://www.google.com/maps/search/KEDAI%20MAKAN%20HIQMAT
+c0c50,Kota Yogyakarta,Rumah Makan Padang Jawa,4.7,520,-7.7841104,110.3881664,https://www.google.com/maps/search/Rumah%20Makan%20Padang%20Jawa
+20740,Kota Yogyakarta,Walter Coffee and Eatery,4.9,275,-7.7935288,110.3605887,https://www.google.com/maps/search/Walter%20Coffee%20and%20Eatery
+a1840,Kota Yogyakarta,Kepik Sawah,4.2,388,-7.767952,110.30441,https://www.google.com/maps/search/Kepik%20Sawah
+233b0,Kota Yogyakarta,Rumah Makan Bungo Palo,3.6,19,-7.7964257,110.3528755,https://www.google.com/maps/search/Rumah%20Makan%20Bungo%20Palo
+48920,Sleman,Jejamuran,4.6,27,-7.7053814,110.3611638,https://www.google.com/maps/search/Jejamuran
+4c990,Kota Yogyakarta,"Warung Makan ""Bu Spoed""",4.7,895,-7.8036531,110.3674809,https://www.google.com/maps/search/Warung%20Makan%20%22Bu%20Spoed%22
+06b60,Kota Yogyakarta,Rumah Makan Padang Selera Minang,4.4,2383,-7.8186168,110.3619063,https://www.google.com/maps/search/Rumah%20Makan%20Padang%20Selera%20Minang
+55ac0,Kota Yogyakarta,Gudeg Yu Djum Wijilan 31,4.5,121,-7.8049362,110.3667234,https://www.google.com/maps/search/Gudeg%20Yu%20Djum%20Wijilan%2031
+69b80,Kota Yogyakarta,Gudeg Mercon Bu Tinah,4.2,27324,-7.7813475,110.3626583,https://www.google.com/maps/search/Gudeg%20Mercon%20Bu%20Tinah
+f8b70,Kota Yogyakarta,"Rumah Makan ""Ibu Yuli"" Lumpia Ayam Asli Semarang & Aneka Masakan",4.3,199,-7.8072376,110.3743148,https://www.google.com/maps/search/Rumah%20Makan%20%22Ibu%20Yuli%22%20Lumpia%20Ayam%20Asli%20Semarang%20%26%20Aneka%20Masakan
+54b50,Kota Yogyakarta,Warung Makan Bu Sirep,4.6,63,-7.8082823,110.3603624,https://www.google.com/maps/search/Warung%20Makan%20Bu%20Sirep
+abbf0,Kota Yogyakarta,Gudeg mbarek Bu Hj Amad PDHI Alun2 Utara,4.3,109,-7.8026596,110.3635171,https://www.google.com/maps/search/Gudeg%20mbarek%20Bu%20Hj%20Amad%20PDHI%20Alun2%20Utara
+5020,Kota Yogyakarta,El Patio Restaurant,4.4,313,-7.797285,110.3690134,https://www.google.com/maps/search/El%20Patio%20Restaurant
+067d0,Kota Yogyakarta,warung eswe,4.4,141,-7.8141779,110.3614313,https://www.google.com/maps/search/warung%20eswe
+db090,Kota Yogyakarta,Warung Buto,4.5,129,-7.8049625,110.3694594,https://www.google.com/maps/search/Warung%20Buto
+a79c0,Kota Yogyakarta,Warung Makan Bu Edi,4.4,805,-7.8108761,110.3720616,https://www.google.com/maps/search/Warung%20Makan%20Bu%20Edi
+bee70,Bantul,Rajaklana Resto & Spa Jogja,4.5,60,-7.8299211,110.2878846,https://www.google.com/maps/search/Rajaklana%20Resto%20%26%20Spa%20Jogja
+6da50,Kota Yogyakarta,Mood River Garden,4.3,43,-7.7479565,110.4324819,https://www.google.com/maps/search/Mood%20River%20Garden
+2a540,Kota Yogyakarta,Rumah Makan Sabar Menanti,4.4,342,-7.7805314,110.452931,https://www.google.com/maps/search/Rumah%20Makan%20Sabar%20Menanti
+3dce0,Kota Yogyakarta,TOP JAVA ( Masakan Kuliner Jawa ),4.7,243,-7.7617098,110.4334465,https://www.google.com/maps/search/TOP%20JAVA%20%28%20Masakan%20Kuliner%20Jawa%20%29
+19080,Kota Yogyakarta,Lampau Banjar,4.5,2734,-7.7523964,110.4286793,https://www.google.com/maps/search/Lampau%20Banjar
+373a0,Kota Yogyakarta,PENYETAN & PEPES BAKAR MAS YOGI,4.6,538,-7.7512889,110.428099,https://www.google.com/maps/search/PENYETAN%20%26%20PEPES%20BAKAR%20MAS%20YOGI
+fb8a0,Sleman,Sate Ratu,4.7,866,-7.7359684,110.3991035,https://www.google.com/maps/search/Sate%20Ratu
+5a630,Kota Yogyakarta,Bebek dan Ayam Kampung Mas Budi,4.5,3234,-7.7503163,110.4236973,https://www.google.com/maps/search/Bebek%20dan%20Ayam%20Kampung%20Mas%20Budi
+f4350,Kota Yogyakarta,Kopi Legi Garden Resto,4.6,151,-7.7822673,110.4380341,https://www.google.com/maps/search/Kopi%20Legi%20Garden%20Resto
+4f510,Kota Yogyakarta,Warung Makan Chinese Food Tali Roso,4.6,314,-7.7561746,110.4229828,https://www.google.com/maps/search/Warung%20Makan%20Chinese%20Food%20Tali%20Roso
+c8490,Kota Yogyakarta,Ayam Goreng Suharti - Laksda Adisucipto,4.5,55,-7.783167,110.4132929,https://www.google.com/maps/search/Ayam%20Goreng%20Suharti%20-%20Laksda%20Adisucipto
+97bd0,Sleman,Kebuli Hadromi,4.8,9631,-7.743179,110.434369,https://www.google.com/maps/search/Kebuli%20Hadromi
+39240,Kota Yogyakarta,Kedai Sabo,4.2,286,-7.7599142,110.431218,https://www.google.com/maps/search/Kedai%20Sabo
+2c140,Kota Yogyakarta,Laksita Ikan Bakar dan Seafood,4.3,2408,-7.7458124,110.4340054,https://www.google.com/maps/search/Laksita%20Ikan%20Bakar%20dan%20Seafood
+8b280,Sleman,Warung Makan Kebon Ndhelik Pusat,4.5,265,-7.7268986,110.3667333,https://www.google.com/maps/search/Warung%20Makan%20Kebon%20Ndhelik%20Pusat
+b4c00,Sleman,Tengkleng Gajah Jogja,4.4,8096,-7.730019,110.405267,https://www.google.com/maps/search/Tengkleng%20Gajah%20Jogja
+21420,Kota Yogyakarta,Ayam Goreng Miraos Jogja,4.6,133,-7.7522527,110.4341093,https://www.google.com/maps/search/Ayam%20Goreng%20Miraos%20Jogja
+69f50,Kota Yogyakarta,Sari Rasa Rumah Makan & Catering,4.5,190,-7.7595054,110.423773,https://www.google.com/maps/search/Sari%20Rasa%20Rumah%20Makan%20%26%20Catering
+5a5a0,Kota Yogyakarta,Bale Bengong Jogjakarta Restaurant,4.2,270,-7.7736401,110.4631128,https://www.google.com/maps/search/Bale%20Bengong%20Jogjakarta%20Restaurant
+ee290,Kota Yogyakarta,Rumah Makan Padang Buyung Upik,3.9,1837,-7.7518015,110.4344844,https://www.google.com/maps/search/Rumah%20Makan%20Padang%20Buyung%20Upik
+136f0,Sleman,Restoran Taman Pringsewu,4.4,22896,-7.728415,110.3638894,https://www.google.com/maps/search/Restoran%20Taman%20Pringsewu
+10210,Kota Yogyakarta,Rumah Makan Padang Group Murah Meriah,4.4,145,-7.7504676,110.4346586,https://www.google.com/maps/search/Rumah%20Makan%20Padang%20Group%20Murah%20Meriah
+b6ea0,Kota Yogyakarta,Rumah Makan Padang Murah Meriah Jl.Nusa Indah,4.3,2143,-7.7567082,110.4091199,https://www.google.com/maps/search/Rumah%20Makan%20Padang%20Murah%20Meriah%20Jl.Nusa%20Indah
+f96a0,Sleman,Floating Resto Jogja,4.7,1063,-7.7195429,110.3570098,https://www.google.com/maps/search/Floating%20Resto%20Jogja
+c3230,Kota Yogyakarta,Rumah Makan Rempah Jawa 87,5.0,211,-7.7584258,110.4289598,https://www.google.com/maps/search/Rumah%20Makan%20Rempah%20Jawa%2087
+88170,Kota Yogyakarta,Rumah Makan Padang Murah Mantab Kawan Lamo,4.4,1624,-7.7602377,110.4329875,https://www.google.com/maps/search/Rumah%20Makan%20Padang%20Murah%20Mantab%20Kawan%20Lamo
+d7710,Sleman,Pasta Banget Signature,4.5,211,-7.7319326,110.3815755,https://www.google.com/maps/search/Pasta%20Banget%20Signature
+1d3a0,Kota Yogyakarta,Waroeng Spesial Sambal SS Maguwo,3.9,1624,-7.7470471,110.4196745,https://www.google.com/maps/search/Waroeng%20Spesial%20Sambal%20SS%20Maguwo
+2050,Kota Yogyakarta,Rumah Makan Sederhana Murah,4.4,225,-7.7706082,110.4020113,https://www.google.com/maps/search/Rumah%20Makan%20Sederhana%20Murah
+0d340,Sleman,Sasanti Restaurant,4.5,6006,-7.741969,110.3735913,https://www.google.com/maps/search/Sasanti%20Restaurant
+9ae40,Sleman,Ikan Bakar Jimbaran,4.4,27324,-7.7312046,110.3812708,https://www.google.com/maps/search/Ikan%20Bakar%20Jimbaran
+d0a10,Kota Yogyakarta,Warung Makan Kurnia,4.5,542,-7.7465723,110.4215815,https://www.google.com/maps/search/Warung%20Makan%20Kurnia
+31430,Kota Yogyakarta,Bakmi & Sea Food 99,4.5,386,-7.7555802,110.4227051,https://www.google.com/maps/search/Bakmi%20%26%20Sea%20Food%2099
+77c20,Kota Yogyakarta,Warung Makan Mantap Jaya,4.7,127,-7.7467629,110.434169,https://www.google.com/maps/search/Warung%20Makan%20Mantap%20Jaya
+f0840,Kota Yogyakarta,Gadjah Wong Restaurant,4.5,24,-7.7624362,110.39414,https://www.google.com/maps/search/Gadjah%20Wong%20Restaurant
+b56e0,Kota Yogyakarta,Rumah Makan Padang Murah Harga Pelajar,4.5,228,-7.7606094,110.4123251,https://www.google.com/maps/search/Rumah%20Makan%20Padang%20Murah%20Harga%20Pelajar
+f8910,Kota Yogyakarta,Rumah makan Padang kawan kito,4.6,2771,-7.7667675,110.4249777,https://www.google.com/maps/search/Rumah%20makan%20Padang%20kawan%20kito
+81d40,Kota Yogyakarta,Moelih nDeso,4.2,9757,-7.7565235,110.4304883,https://www.google.com/maps/search/Moelih%20nDeso
+4fb70,Kota Yogyakarta,Kedai akau,5.0,1434,-7.7576495,110.422946,https://www.google.com/maps/search/Kedai%20akau
+ae9f0,Sleman,Gubuk Makan Iwak Kalen Cebongan,4.0,1523,-7.7255389,110.3332758,https://www.google.com/maps/search/Gubuk%20Makan%20Iwak%20Kalen%20Cebongan
+17270,Kota Yogyakarta,Rumah Makan Dan Seafood 99,4.4,56,-7.7529461,110.4108914,https://www.google.com/maps/search/Rumah%20Makan%20Dan%20Seafood%2099
+b1a00,Sleman,Warung Makan Jaman Now Yogyakarta,4.7,1497,-7.7220567,110.361636,https://www.google.com/maps/search/Warung%20Makan%20Jaman%20Now%20Yogyakarta
+7dd10,Kota Yogyakarta,Hikaru Dining Yogyakarta,4.5,2182,-7.7768797,110.3818189,https://www.google.com/maps/search/Hikaru%20Dining%20Yogyakarta
+59c00,Sleman,Rumah Makan Sinar Minang 2,4.3,15,-7.7180096,110.349497,https://www.google.com/maps/search/Rumah%20Makan%20Sinar%20Minang%202
+ce920,Kota Yogyakarta,Rumah Makan Padang Uni Len 2 (Masakan Padang Asli),5.0,204,-7.754059,110.4231766,https://www.google.com/maps/search/Rumah%20Makan%20Padang%20Uni%20Len%202%20%28Masakan%20Padang%20Asli%29
+c6db0,Sleman,De Tropen Jogja Kitchen,4.4,13,-7.7476871,110.3683435,https://www.google.com/maps/search/De%20Tropen%20Jogja%20Kitchen
+26470,Kota Yogyakarta,Warung Makan Indomie (Warmindo) Mugi Langgeng 2,4.6,2383,-7.7514314,110.4352465,https://www.google.com/maps/search/Warung%20Makan%20Indomie%20%28Warmindo%29%20Mugi%20Langgeng%202
+39a50,Kota Yogyakarta,Warung Makan Indomie (Warmindo) Chimindi Parahyangan,4.3,863,-7.7558813,110.428663,https://www.google.com/maps/search/Warung%20Makan%20Indomie%20%28Warmindo%29%20Chimindi%20Parahyangan
+4a9e0,Kota Yogyakarta,Warung Makan Mbak Lutfi,4.1,119,-7.7530002,110.4211278,https://www.google.com/maps/search/Warung%20Makan%20Mbak%20Lutfi
+02fe0,Kota Yogyakarta,"Ganesha Ek Sanskriti, Indian Restaurant & Bar",4.5,102,-7.7791654,110.4285431,https://www.google.com/maps/search/Ganesha%20Ek%20Sanskriti%2C%20Indian%20Restaurant%20%26%20Bar
+932f0,Sleman,RM Padang Asli,4.3,39,-7.7130472,110.3431706,https://www.google.com/maps/search/RM%20Padang%20Asli
+42bb0,Kota Yogyakarta,Warung Makan Prasmanan,5.0,1925,-7.7534341,110.4203181,https://www.google.com/maps/search/Warung%20Makan%20Prasmanan
+11ad0,Sleman,Cak Moel 2 Lesehan dan Wedding,4.6,16,-7.712769,110.3343307,https://www.google.com/maps/search/Cak%20Moel%202%20Lesehan%20dan%20Wedding
+22f90,Kota Yogyakarta,Yogyakarta Kitchen by Marriott,4.7,1067,-7.7618506,110.3984353,https://www.google.com/maps/search/Yogyakarta%20Kitchen%20by%20Marriott
+35c80,Kota Yogyakarta,Suwatu By Mil & Bay,4.6,176,-7.7680839,110.4940659,https://www.google.com/maps/search/Suwatu%20By%20Mil%20%26%20Bay
+d56d0,Sleman,Consulate Bistro Sleman City Hall,4.5,13,-7.7200149,110.3614759,https://www.google.com/maps/search/Consulate%20Bistro%20Sleman%20City%20Hall
+74a00,Sleman,Warmindo Biji Daun,4.7,906,-7.7185809,110.3465213,https://www.google.com/maps/search/Warmindo%20Biji%20Daun
+c5db0,Sleman,Kemangi Bistro,4.7,45,-7.7405588,110.373364,https://www.google.com/maps/search/Kemangi%20Bistro
+10c00,Sleman,Rica Sapi Mbah Wongso,4.4,36,-7.7145122,110.3436197,https://www.google.com/maps/search/Rica%20Sapi%20Mbah%20Wongso
+24870,Kota Yogyakarta,Warung Makan Selera Baru,5.0,666,-7.7533534,110.4243702,https://www.google.com/maps/search/Warung%20Makan%20Selera%20Baru
+1b7f0,Kota Yogyakarta,Taman Sari Bar & Grill Restaurant,4.7,61,-7.7618017,110.3981728,https://www.google.com/maps/search/Taman%20Sari%20Bar%20%26%20Grill%20Restaurant
+c2920,Kota Yogyakarta,Rumah Makan Padang Nusantara,5.0,41,-7.7572989,110.4230052,https://www.google.com/maps/search/Rumah%20Makan%20Padang%20Nusantara
+00a80,Kota Yogyakarta,Putra Minang,3.9,16,-7.7589301,110.4228853,https://www.google.com/maps/search/Putra%20Minang
+67100,Kota Yogyakarta,Royal Palm Resto and Coffee Kalasan,4.6,471,-7.7732528,110.4704515,https://www.google.com/maps/search/Royal%20Palm%20Resto%20and%20Coffee%20Kalasan
+b0bf0,Kota Yogyakarta,"Warung Makan & Laundry ""Mimie""",4.5,33,-7.7611476,110.423359,https://www.google.com/maps/search/Warung%20Makan%20%26%20Laundry%20%22Mimie%22
+8b8a0,Kota Yogyakarta,"Sate Kambing ""Bu Rati""",4.5,16,-7.7536726,110.435663,https://www.google.com/maps/search/Sate%20Kambing%20%22Bu%20Rati%22
+acf70,Kota Yogyakarta,Holy Smokes - Slow Smoked BBQ,4.6,95,-7.7558589,110.3829929,https://www.google.com/maps/search/Holy%20Smokes%20-%20Slow%20Smoked%20BBQ
+f19d0,Kota Yogyakarta,Warung Makan Tiara,4.5,640,-7.754637,110.4228757,https://www.google.com/maps/search/Warung%20Makan%20Tiara
+cae70,Kota Yogyakarta,Warung Makan Laris Manis 2 Seafood dan Chinesse Food,4.4,1681,-7.7471307,110.4344102,https://www.google.com/maps/search/Warung%20Makan%20Laris%20Manis%202%20Seafood%20dan%20Chinesse%20Food
+f8630,Sleman,Warung Makan Berkah,4.8,126,-7.7168182,110.3602201,https://www.google.com/maps/search/Warung%20Makan%20Berkah
+26d30,Sleman,Susu Ayam Sleman,4.6,123,-7.7167831,110.3450573,https://www.google.com/maps/search/Susu%20Ayam%20Sleman
+2840,Kota Yogyakarta,Rumah Makan Susanna,4.4,425,-7.7832472,110.4214012,https://www.google.com/maps/search/Rumah%20Makan%20Susanna
+14790,Sleman,Ayam Bakar Klaten MIROSO,4.6,24,-7.7123786,110.3444631,https://www.google.com/maps/search/Ayam%20Bakar%20Klaten%20MIROSO
+a3ad0,Kota Yogyakarta,"Warung Makan ""Berkah""",5.0,16,-7.7473101,110.4341712,https://www.google.com/maps/search/Warung%20Makan%20%22Berkah%22
+c60e0,Kota Yogyakarta,Kedai kuliner ben&jhon,5.0,2734,-7.7505368,110.4244133,https://www.google.com/maps/search/Kedai%20kuliner%20ben%26jhon
+d2a30,Sleman,RUMAH MAKAN SAHABAT,4.9,172,-7.7093188,110.3464906,https://www.google.com/maps/search/RUMAH%20MAKAN%20SAHABAT
+9.00E+440,Kota Yogyakarta,Warung bakso tenis dan mie ayam bayam,4.5,16,-7.7499836,110.4209486,https://www.google.com/maps/search/Warung%20bakso%20tenis%20dan%20mie%20ayam%20bayam
+e07b0,Sleman,Ayam Ingkung Mbak Sri,4.2,37,-7.7314383,110.3189971,https://www.google.com/maps/search/Ayam%20Ingkung%20Mbak%20Sri
+c80e0,Kota Yogyakarta,Gudeg Sagan,4.6,370,-7.777918,110.3797758,https://www.google.com/maps/search/Gudeg%20Sagan
+fcbe0,Kota Yogyakarta,Warung Makan Bu Siti,4.7,14,-7.7541271,110.4263423,https://www.google.com/maps/search/Warung%20Makan%20Bu%20Siti
+cf750,Kota Yogyakarta,"Mie Jakarta ""Bowo""",4.5,73,-7.7552309,110.4227413,https://www.google.com/maps/search/Mie%20Jakarta%20%22Bowo%22
+2a550,Sleman,Warung Makan RIFQI,5.0,1089,-7.7142513,110.3412298,https://www.google.com/maps/search/Warung%20Makan%20RIFQI
+cf850,Kota Yogyakarta,"Rumah Makan ""Bu Eni""",5.0,16,-7.7609053,110.4394004,https://www.google.com/maps/search/Rumah%20Makan%20%22Bu%20Eni%22
+42640,Kota Yogyakarta,Rumah makan istimewa,5.0,36,-7.7624229,110.4240406,https://www.google.com/maps/search/Rumah%20makan%20istimewa
+6a290,Sleman,Pikali Pizza Coffee and Kitchen,4.8,20,-7.7337832,110.3881146,https://www.google.com/maps/search/Pikali%20Pizza%20Coffee%20and%20Kitchen
+b6c40,Sleman,Waroeng Belik,4.4,603,-7.7271006,110.4014124,https://www.google.com/maps/search/Waroeng%20Belik
+eb550,Kota Yogyakarta,Warung Makan Resqina,5.0,11,-7.7482214,110.4344796,https://www.google.com/maps/search/Warung%20Makan%20Resqina
+fee70,Sleman,Rumah Makan Pendowo,4.5,412,-7.7161572,110.3355003,https://www.google.com/maps/search/Rumah%20Makan%20Pendowo
+e1c90,Sleman,Resto Unagi & Udang Alam Kreo,4.7,38,-7.724056,110.2312456,https://www.google.com/maps/search/Resto%20Unagi%20%26%20Udang%20Alam%20Kreo
+67ec0,Kota Yogyakarta,Warung Makan Indomie (Warmindo) Qubah,4.2,16,-7.7627437,110.4265538,https://www.google.com/maps/search/Warung%20Makan%20Indomie%20%28Warmindo%29%20Qubah
+a6c80,Sleman,Wedangan Kampoeng,4.5,20,-7.702772,110.413655,https://www.google.com/maps/search/Wedangan%20Kampoeng
+230,Kota Yogyakarta,warung pecel lele lamongan LS,4.5,190,-7.7561057,110.4231434,https://www.google.com/maps/search/warung%20pecel%20lele%20lamongan%20LS
+ac490,Kota Yogyakarta,Warung Makan EMPAT SAUDARA,3.8,2104,-7.7607788,110.4296389,https://www.google.com/maps/search/Warung%20Makan%20EMPAT%20SAUDARA
+4.50E+30,Kota Yogyakarta,Warung Makan Dangkita,5.0,7928,-7.7553772,110.4228942,https://www.google.com/maps/search/Warung%20Makan%20Dangkita
+3c500,Sleman,Tekko - Sleman City Hall,3.9,13,-7.7201117,110.3617785,https://www.google.com/maps/search/Tekko%20-%20Sleman%20City%20Hall
+55150,Kota Yogyakarta,Rumah Makan Tenda Biru,4.4,105,-7.7832546,110.4214016,https://www.google.com/maps/search/Rumah%20Makan%20Tenda%20Biru
+c3460,Kota Yogyakarta,Warung Makan Mulih Ndeso,4.3,38,-7.7565795,110.4306719,https://www.google.com/maps/search/Warung%20Makan%20Mulih%20Ndeso
+d3390,Kota Yogyakarta,Warung Makan Budhe,5.0,16,-7.7617194,110.4240661,https://www.google.com/maps/search/Warung%20Makan%20Budhe
+73980,Kota Yogyakarta,Warung Makan Mas Ragil,5.0,20,-7.7489656,110.4179207,https://www.google.com/maps/search/Warung%20Makan%20Mas%20Ragil
+a5550,Sleman,Warung Makan WiFi MakNyak Cibukan Sumberadi Mlati Sleman,4.5,989,-7.7163833,110.3410469,https://www.google.com/maps/search/Warung%20Makan%20WiFi%20MakNyak%20Cibukan%20Sumberadi%20Mlati%20Sleman
+9b5e0,Kota Yogyakarta,Rumah makan cahaya bundo tajem,2.3,2024,-7.756317,110.433616,https://www.google.com/maps/search/Rumah%20makan%20cahaya%20bundo%20tajem
+e7b50,Kota Yogyakarta,"Soto dan Ayam Goreng ""BOKOR""",4.3,20,-7.7530175,110.4393063,https://www.google.com/maps/search/Soto%20dan%20Ayam%20Goreng%20%22BOKOR%22
+b0660,Sleman,Resto Viral,4.2,20,-7.7510358,110.3778684,https://www.google.com/maps/search/Resto%20Viral
+a4b40,Kota Yogyakarta,kedai makan dan dimsum ikiwae,4.5,15205,-7.7600021,110.4332854,https://www.google.com/maps/search/kedai%20makan%20dan%20dimsum%20ikiwae
+1a0a0,Sleman,Mie Ayam Bakso Pak Rosyid Klaten,4.5,49,-7.7132915,110.3425663,https://www.google.com/maps/search/Mie%20Ayam%20Bakso%20Pak%20Rosyid%20Klaten
+4ffd0,Kota Yogyakarta,"Rumah Makan "" Yuliasih "" Masakan Padang",4.0,6765,-7.7587205,110.4334265,https://www.google.com/maps/search/Rumah%20Makan%20%22%20Yuliasih%20%22%20Masakan%20Padang
+21200,Gunungkidul,THE MANGLUNG VIEW & RESTO,4.4,26,-7.8449289,110.4825745,https://www.google.com/maps/search/THE%20MANGLUNG%20VIEW%20%26%20RESTO
+062a0,Sleman,Kuliner Enak Sleman,4.2,12,-7.7505252,110.3596088,https://www.google.com/maps/search/Kuliner%20Enak%20Sleman
+41ac0,Kota Yogyakarta,RUMAH MAKAN AYAM GORENG KREMES,5.0,20,-7.7619583,110.4239988,https://www.google.com/maps/search/RUMAH%20MAKAN%20AYAM%20GORENG%20KREMES
+c44e0,Kota Yogyakarta,Nasi Balap & Ayam Taliwang Tajem,4.7,19,-7.7554482,110.4339318,https://www.google.com/maps/search/Nasi%20Balap%20%26%20Ayam%20Taliwang%20Tajem
+02d80,Bantul,Waroeng Pohon Omah Sawah,4.4,9,-7.8477975,110.3590239,https://www.google.com/maps/search/Waroeng%20Pohon%20Omah%20Sawah
+2aa30,Bantul,Pawon Tembi Jogja,4.4,87,-7.8744247,110.3570134,https://www.google.com/maps/search/Pawon%20Tembi%20Jogja
+8b900,Bantul,Ny.Yogk,4.5,5,-7.8545395,110.3324705,https://www.google.com/maps/search/Ny.Yogk
+efe30,Kota Yogyakarta,Pawon Segar Resto,4.7,20,-7.8244256,110.3491459,https://www.google.com/maps/search/Pawon%20Segar%20Resto
+7.98E+02,Bantul,RM & Restoran Parangtritis,4.4,20,-7.8762271,110.3517605,https://www.google.com/maps/search/RM%20%26%20Restoran%20Parangtritis
+8a690,Bantul,ANDRAWINA RESTO & SPACE,4.2,37,-7.8914216,110.3284831,https://www.google.com/maps/search/ANDRAWINA%20RESTO%20%26%20SPACE
+9f3d0,Bantul,Warung Enaak,4.3,76,-7.8806186,110.3341174,https://www.google.com/maps/search/Warung%20Enaak
+06b10,Bantul,WARUNG KULINER ATIK BERKAH,4.9,20,-7.8561049,110.3412754,https://www.google.com/maps/search/WARUNG%20KULINER%20ATIK%20BERKAH
+39c00,Bantul,JEMPOL nDeso Pondok Makan,4.6,19,-7.8847016,110.3450147,https://www.google.com/maps/search/JEMPOL%20nDeso%20Pondok%20Makan
+94600,Bantul,Waroeng Spesial Sambal SS Bantul,4.3,262,-7.8482715,110.3432588,https://www.google.com/maps/search/Waroeng%20Spesial%20Sambal%20SS%20Bantul
+93da0,Bantul,Pondok Makan Citra,4.3,20,-7.8984293,110.3528702,https://www.google.com/maps/search/Pondok%20Makan%20Citra
+a3f80,Kota Yogyakarta,Rumah Makan Padang Solok Raya,4.7,2323,-7.7988206,110.4133887,https://www.google.com/maps/search/Rumah%20Makan%20Padang%20Solok%20Raya
+dd130,Bantul,Bakmi Jawa Mbah Mo,4.4,5,-7.8876209,110.3483675,https://www.google.com/maps/search/Bakmi%20Jawa%20Mbah%20Mo
+930c0,Bantul,Waroeng Omah Sawah,4.5,20,-7.8713171,110.3456432,https://www.google.com/maps/search/Waroeng%20Omah%20Sawah
+cb000,Bantul,"Warung Makan Ala Restoran ""Pak Man""",4.2,141,-7.8834569,110.3316885,https://www.google.com/maps/search/Warung%20Makan%20Ala%20Restoran%20%22Pak%20Man%22
+2.04E+02,Bantul,Rumah Makan Sinar Minang,4.5,2939,-7.892594,110.3351386,https://www.google.com/maps/search/Rumah%20Makan%20Sinar%20Minang
+02f30,Bantul,"Spesial Bakmi & Nasi Goreng ""Pak Tris""",4.6,6058,-7.854297,110.342031,https://www.google.com/maps/search/Spesial%20Bakmi%20%26%20Nasi%20Goreng%20%22Pak%20Tris%22
+441c0,Bantul,Warung makan prasmanan Navisya Celep,4.7,428,-7.9710875,110.2856719,https://www.google.com/maps/search/Warung%20makan%20prasmanan%20Navisya%20Celep
+e26d0,Bantul,Pawon Mbah Poer,4.3,103,-7.930805,110.3167861,https://www.google.com/maps/search/Pawon%20Mbah%20Poer
+9d220,Bantul,d'Galengan Warung Makan Keluarga,4.7,228,-7.8746318,110.3450183,https://www.google.com/maps/search/d%27Galengan%20Warung%20Makan%20Keluarga
+673d0,Kota Yogyakarta,Kampoeng Mataraman,4.4,1551,-7.8357632,110.362271,https://www.google.com/maps/search/Kampoeng%20Mataraman
+c1090,Bantul,WARUNG MAKAN PAK MUNIR,4.4,521,-7.8786047,110.3193295,https://www.google.com/maps/search/WARUNG%20MAKAN%20PAK%20MUNIR
+dbed0,Bantul,Lotus Mio Bangunjiwo Restaurant,4.6,1818,-7.8432007,110.3051,https://www.google.com/maps/search/Lotus%20Mio%20Bangunjiwo%20Restaurant
+fb510,Bantul,Warung Makan GEJLIK PITU,4.3,47,-7.9557553,110.2667053,https://www.google.com/maps/search/Warung%20Makan%20GEJLIK%20PITU
+844f0,Bantul,Joglomas Resto & Cafe,4.2,337,-7.8770872,110.3435945,https://www.google.com/maps/search/Joglomas%20Resto%20%26%20Cafe
+5fd30,Bantul,Yabbiekayu Restaurant,4.8,5575,-7.8709826,110.3548693,https://www.google.com/maps/search/Yabbiekayu%20Restaurant
+a52d0,Bantul,Warung makan Kebon'e Mbah Kohari,4.9,872,-7.8729916,110.3686254,https://www.google.com/maps/search/Warung%20makan%20Kebon%27e%20Mbah%20Kohari
+53bd0,Kota Yogyakarta,Rumah Makan Masakan Padang Tamanan,4.7,92,-7.8335335,110.3810572,https://www.google.com/maps/search/Rumah%20Makan%20Masakan%20Padang%20Tamanan
+c04f0,Bantul,Rumah Makan Pondok Rejeki,4.8,2361,-7.8815423,110.3892498,https://www.google.com/maps/search/Rumah%20Makan%20Pondok%20Rejeki
+b5920,Bantul,Rumah Makan Bungo Padi,4.3,2064,-7.894283,110.343566,https://www.google.com/maps/search/Rumah%20Makan%20Bungo%20Padi
+6cdf0,Bantul,Warung Makan Ikan Segar,4.2,146,-7.8876861,110.3173982,https://www.google.com/maps/search/Warung%20Makan%20Ikan%20Segar
+dca20,Bantul,Warung Makan Barokah,4.3,174,-7.9128901,110.3694272,https://www.google.com/maps/search/Warung%20Makan%20Barokah
+3110,Bantul,Warung Ingkung Joglo Bu Sareh,4.2,268,-7.8901445,110.3034941,https://www.google.com/maps/search/Warung%20Ingkung%20Joglo%20Bu%20Sareh
+f89f0,Bantul,Warung Makan Barokah Lestari,4.9,19,-7.8776009,110.2686872,https://www.google.com/maps/search/Warung%20Makan%20Barokah%20Lestari
+28150,Bantul,Waroeng Dhahar Pulo Segaran,4.3,568,-7.8698718,110.3562908,https://www.google.com/maps/search/Waroeng%20Dhahar%20Pulo%20Segaran
+c8cc0,Kota Yogyakarta,Rumah Makan Padang Murah,4.4,296,-7.8027692,110.4129321,https://www.google.com/maps/search/Rumah%20Makan%20Padang%20Murah
+9c840,Bantul,"Rumah Makan Padang "" Sendowo """,4.3,5524,-7.8701021,110.3912652,https://www.google.com/maps/search/Rumah%20Makan%20Padang%20%22%20Sendowo%20%22
+d70d0,Bantul,Kuliner Nando,4.3,21,-7.8865773,110.3231252,https://www.google.com/maps/search/Kuliner%20Nando
+61b10,Bantul,Warung makan komeni,4.6,842,-7.8738492,110.3361331,https://www.google.com/maps/search/Warung%20makan%20komeni
+d6720,Kota Yogyakarta,Rumah Makan Masakan Asli Padang Ngalau Raya Kasihan,4.8,643,-7.821821,110.32814,https://www.google.com/maps/search/Rumah%20Makan%20Masakan%20Asli%20Padang%20Ngalau%20Raya%20Kasihan
+97400,Kota Yogyakarta,Dapur Jawi Tirtonirmolo,4.3,553,-7.8383465,110.3506502,https://www.google.com/maps/search/Dapur%20Jawi%20Tirtonirmolo
+25dd0,Bantul,Taman Kuliner Imogiri,4.5,227,-7.9234068,110.3843668,https://www.google.com/maps/search/Taman%20Kuliner%20Imogiri
+fd280,Bantul,Rumah Makan Medan Selera,4.5,19,-7.9035624,110.37272,https://www.google.com/maps/search/Rumah%20Makan%20Medan%20Selera
+90030,Bantul,Kuliner Selera Nusantara Bantul,4.8,305,-7.873142,110.3425167,https://www.google.com/maps/search/Kuliner%20Selera%20Nusantara%20Bantul
+a38c0,Kota Yogyakarta,SORKAT Rumah Makan,4.9,40,-7.8255529,110.3253437,https://www.google.com/maps/search/SORKAT%20Rumah%20Makan
+bcff0,Bantul,Warung Makan Bu Waginah,5.0,54,-7.9103014,110.3728707,https://www.google.com/maps/search/Warung%20Makan%20Bu%20Waginah
+de770,Kota Yogyakarta,Sambel Welut Pak Sabar,4.5,906,-7.8519033,110.3760472,https://www.google.com/maps/search/Sambel%20Welut%20Pak%20Sabar
+99da0,Kota Yogyakarta,Rumah Makan Bu Santi,4.5,497,-7.8525152,110.3912065,https://www.google.com/maps/search/Rumah%20Makan%20Bu%20Santi
+0a6f0,Bantul,Laju Minang & Lesehan,4.5,8012,-7.885077,110.3282573,https://www.google.com/maps/search/Laju%20Minang%20%26%20Lesehan
+e6040,Bantul,Warung Makan Joglo Lesung soto ayam kampung,4.7,538,-7.9676828,110.3200827,https://www.google.com/maps/search/Warung%20Makan%20Joglo%20Lesung%20soto%20ayam%20kampung
+9fe40,Bantul,Rumah Makan Nasi Goreng Pak Kakek,4.7,546,-7.9547611,110.3366021,https://www.google.com/maps/search/Rumah%20Makan%20Nasi%20Goreng%20Pak%20Kakek
+8f410,Bantul,Rumah Makan Duta Family Masakan Padang,4.6,15,-7.8609653,110.3893504,https://www.google.com/maps/search/Rumah%20Makan%20Duta%20Family%20Masakan%20Padang
+49c20,Bantul,Warung Makan Tradisional INGKUNG DIRO,4.7,56,-7.8584687,110.3403631,https://www.google.com/maps/search/Warung%20Makan%20Tradisional%20INGKUNG%20DIRO
+fe1b0,Bantul,Warung Nasi Goreng Barongan,4.3,246,-7.9155498,110.3751035,https://www.google.com/maps/search/Warung%20Nasi%20Goreng%20Barongan
+70a30,Bantul,Rumah makan padang asli Ngalau Raya,4.5,191,-7.8502306,110.3504748,https://www.google.com/maps/search/Rumah%20makan%20padang%20asli%20Ngalau%20Raya
+5fad0,Bantul,Bakso Pajero Kasongan,4.5,55,-7.8492434,110.3429507,https://www.google.com/maps/search/Bakso%20Pajero%20Kasongan
+f54a0,Kota Yogyakarta,Rumah Makan Mantep,4.5,63,-7.8243322,110.479619,https://www.google.com/maps/search/Rumah%20Makan%20Mantep
+50bd0,Bantul,Warung Makan Pak Paijo Sholeh,4.3,25,-7.8684099,110.3515572,https://www.google.com/maps/search/Warung%20Makan%20Pak%20Paijo%20Sholeh
+d6900,Bantul,Tenda kuliner patalan,4.7,373,-7.9215072,110.3509244,https://www.google.com/maps/search/Tenda%20kuliner%20patalan
+31ca0,Bantul,Warung Makan 24 Jam,4.8,998,-8.0051108,110.3174197,https://www.google.com/maps/search/Warung%20Makan%2024%20Jam
+ac690,Bantul,Warung Makan SImak,4.5,709,-7.8969952,110.3228705,https://www.google.com/maps/search/Warung%20Makan%20SImak
+3de20,Bantul,Rumah Makan Citra,4.3,111,-7.8124839,110.2681051,https://www.google.com/maps/search/Rumah%20Makan%20Citra
+b3e10,Bantul,Warung Makan Sederhana Bu Hari,4.6,14,-7.8500154,110.353666,https://www.google.com/maps/search/Warung%20Makan%20Sederhana%20Bu%20Hari
+80cd0,Bantul,pecel lele kremes mbok uwo,4.9,767,-7.8729596,110.3679568,https://www.google.com/maps/search/pecel%20lele%20kremes%20mbok%20uwo
+87070,Bantul,Warung Makan Mbak Dwi,4.8,25,-7.8858045,110.3434408,https://www.google.com/maps/search/Warung%20Makan%20Mbak%20Dwi
+9.20E+01,Bantul,ChampaJogja,4.6,84,-7.8414375,110.3255278,https://www.google.com/maps/search/ChampaJogja
+d5190,Bantul,Angkringan Puncak Bibis,4.6,1267,-7.8536531,110.3133224,https://www.google.com/maps/search/Angkringan%20Puncak%20Bibis
+c5ef0,Bantul,"Warung Makan & Lesehan "" Sederhana """,5.0,21,-7.8686683,110.3745935,https://www.google.com/maps/search/Warung%20Makan%20%26%20Lesehan%20%22%20Sederhana%20%22
+dd6d0,Bantul,Warung Makan Harmoni,4.3,34,-7.8991757,110.3461859,https://www.google.com/maps/search/Warung%20Makan%20Harmoni
+02ab0,Bantul,Rumah Makan Pawon Hayu,4.3,26,-7.9170661,110.2847327,https://www.google.com/maps/search/Rumah%20Makan%20Pawon%20Hayu
+5e7b0,Bantul,Wedang Uwuh Imogiri Ibu Samadi,4.6,18,-7.9232849,110.3893836,https://www.google.com/maps/search/Wedang%20Uwuh%20Imogiri%20Ibu%20Samadi
+95460,Bantul,Rumah Makan Padang PESONA,4.6,443,-7.9606195,110.3449067,https://www.google.com/maps/search/Rumah%20Makan%20Padang%20PESONA
+304a0,Bantul,Warung Lesehan Moro Seneng,4.3,30,-7.8929637,110.3373417,https://www.google.com/maps/search/Warung%20Lesehan%20Moro%20Seneng
+49d50,Kota Yogyakarta,Rumah Makan Ngotho,4.3,19,-7.845986,110.374624,https://www.google.com/maps/search/Rumah%20Makan%20Ngotho
+eb960,Bantul,KeRamenan,4.7,212,-7.9121428,110.3820109,https://www.google.com/maps/search/KeRamenan
+c39e0,Bantul,RM Murah Meriah Masakan Padang (Hj. Risma),3.9,87,-7.8869407,110.3299754,https://www.google.com/maps/search/RM%20Murah%20Meriah%20Masakan%20Padang%20%28Hj.%20Risma%29
+914c0,Bantul,warung makan MEGAR MIE LUNG,4.3,43,-7.8974885,110.3309908,https://www.google.com/maps/search/warung%20makan%20MEGAR%20MIE%20LUNG
+21f50,Bantul,Warung Makan Mitra,5.0,1074,-7.9227971,110.393331,https://www.google.com/maps/search/Warung%20Makan%20Mitra
+c24d0,Kota Yogyakarta,"Rumah Makan Wojo Minang,Buka Pukul O7-22 Wib",5.0,20,-7.8361553,110.3745618,https://www.google.com/maps/search/Rumah%20Makan%20Wojo%20Minang%2CBuka%20Pukul%20O7-22%20Wib
+fe830,Bantul,Olive Fried Chicken - Barongan Imogiri,4.4,27,-7.9152091,110.3749244,https://www.google.com/maps/search/Olive%20Fried%20Chicken%20-%20Barongan%20Imogiri
+701c0,Bantul,Warung Bakso Soto Mie Ayam Pak Plenik,4.3,269,-7.8685533,110.2616798,https://www.google.com/maps/search/Warung%20Bakso%20Soto%20Mie%20Ayam%20Pak%20Plenik
+c1390,Bantul,"Rumah Makan ""Shafira"" Special Ikan Bakar",4.5,10,-7.869058,110.401092,https://www.google.com/maps/search/Rumah%20Makan%20%22Shafira%22%20Special%20Ikan%20Bakar
+7ef90,Kota Yogyakarta,Bima Kroda,4.7,180,-7.7931936,110.4031622,https://www.google.com/maps/search/Bima%20Kroda
+31090,Bantul,Rumah makan Padang kang 'jo,4.6,20,-7.8876743,110.3285116,https://www.google.com/maps/search/Rumah%20makan%20Padang%20kang%20%27jo
+4.51E+02,Bantul,Rumah Makan Minang Family,4.1,33,-7.881256,110.3328117,https://www.google.com/maps/search/Rumah%20Makan%20Minang%20Family
+53220,Bantul,Rumah makan maremi,4.9,122,-7.933352,110.4302779,https://www.google.com/maps/search/Rumah%20makan%20maremi
+fe160,Bantul,Warung Makan MBAK ASIH,4.8,16,-7.9977235,110.249352,https://www.google.com/maps/search/Warung%20Makan%20MBAK%20ASIH
+7.50E+30,Kota Yogyakarta,"Pawon Songolas,karangnongko dk pelemsewu, rt 09 blok G no.19,panggungharjo, sewon, bantul,DIY",4.9,22,-7.834094,110.3559571,https://www.google.com/maps/search/Pawon%20Songolas%2Ckarangnongko%20dk%20pelemsewu%2C%20rt%2009%20blok%20G%20no.19%2Cpanggungharjo%2C%20sewon%2C%20bantul%2CDIY
+700d0,Kota Yogyakarta,Warung Makan Sinar Mulia,5.0,8,-7.8328803,110.3738176,https://www.google.com/maps/search/Warung%20Makan%20Sinar%20Mulia
+edbc0,Bantul,SEMANAAK Warung & Kopi,4.0,148,-7.8919871,110.3473796,https://www.google.com/maps/search/SEMANAAK%20Warung%20%26%20Kopi
+cf720,Bantul,Miedes bu Anifah,4.6,4644,-7.9106489,110.3830689,https://www.google.com/maps/search/Miedes%20bu%20Anifah
+84640,Bantul,Warung Makan Pak Gandung,4.7,20,-7.9106991,110.3832151,https://www.google.com/maps/search/Warung%20Makan%20Pak%20Gandung
+c53f0,Bantul,Mie Lethek mBah Bagong,4.3,13,-7.92291,110.3840556,https://www.google.com/maps/search/Mie%20Lethek%20mBah%20Bagong
+fc990,Bantul,Warung Tongseng Ayam Sudimoro,4.3,108,-7.8857876,110.330628,https://www.google.com/maps/search/Warung%20Tongseng%20Ayam%20Sudimoro
+6bcb0,Bantul,"Lesehan Pecel Lele Kang Sur Special"" Bakar Dan Mangut""",4.6,222,-7.9108287,110.3828866,https://www.google.com/maps/search/Lesehan%20Pecel%20Lele%20Kang%20Sur%20Special%22%20Bakar%20Dan%20Mangut%22
+fe6b0,Bantul,Warung makan Sederhana Lesehan,4.7,21,-7.8129373,110.2659811,https://www.google.com/maps/search/Warung%20makan%20Sederhana%20Lesehan
+17700,Bantul,Warung Sate dan Tongseng Mbak Bella,4.3,20,-7.9234334,110.3848281,https://www.google.com/maps/search/Warung%20Sate%20dan%20Tongseng%20Mbak%20Bella
+a3fc0,Bantul,Rumah Makan Morolego,5.0,15,-7.8691784,110.3744924,https://www.google.com/maps/search/Rumah%20Makan%20Morolego
+1e8e0,Bantul,Nasgor pak sut,4.6,183,-7.9178541,110.3775113,https://www.google.com/maps/search/Nasgor%20pak%20sut
+f6b40,Bantul,Warung Makan Wawa,3.9,382,-7.8106918,110.2711381,https://www.google.com/maps/search/Warung%20Makan%20Wawa
+ad090,Bantul,Ayam Goreng Bu Ismo,4.6,91,-7.8926834,110.3359843,https://www.google.com/maps/search/Ayam%20Goreng%20Bu%20Ismo
+6eab0,Bantul,Warung Makan Sari Rasa,4.8,10,-7.9134835,110.3713821,https://www.google.com/maps/search/Warung%20Makan%20Sari%20Rasa
+cf2e0,Bantul,Sate Kambing Mbah Djoyo,4.6,20,-7.8748771,110.3515586,https://www.google.com/maps/search/Sate%20Kambing%20Mbah%20Djoyo
+f3c70,Bantul,Rumah Makan Sinar Kharya,3.4,1063,-7.891888,110.3255523,https://www.google.com/maps/search/Rumah%20Makan%20Sinar%20Kharya
+553a0,Bantul,Rumah makan Padang Sendowo Imogiri,4.1,136,-7.914875,110.3821566,https://www.google.com/maps/search/Rumah%20makan%20Padang%20Sendowo%20Imogiri
+b4020,Bantul,Warung Soto Rejeki,4.6,130,-7.9059077,110.3168575,https://www.google.com/maps/search/Warung%20Soto%20Rejeki
+d0530,Gunungkidul,SalSari Resto & Coffee ,4.5,15,-7.9391306,110.5763068,https://www.google.com/maps/search/SalSari%20Resto%20%26%20Coffee%20
+6.73E+02,Gunungkidul,Rinten Ndalu Coffee & Resto,4.4,3654,-7.9727784,110.6010829,https://www.google.com/maps/search/Rinten%20Ndalu%20Coffee%20%26%20Resto
+dcc80,Gunungkidul,RM Seger Waras,4.4,77,-7.8578718,110.5026965,https://www.google.com/maps/search/RM%20Seger%20Waras
+87f80,Gunungkidul,Lesehan Katamso,4.3,25,-7.967249,110.6022258,https://www.google.com/maps/search/Lesehan%20Katamso
+4dad0,Gunungkidul,Rumah Makan Ayam Goreng Kondang Rasa,4.1,7,-7.9568434,110.5918164,https://www.google.com/maps/search/Rumah%20Makan%20Ayam%20Goreng%20Kondang%20Rasa
+f3dc0,Gunungkidul,Lesehan Layah Kembar Garden,4.3,5,-7.9747495,110.59342,https://www.google.com/maps/search/Lesehan%20Layah%20Kembar%20Garden
+4340,Gunungkidul,"Waroeng Spesial Sambal ""SS"" Wonosari",4.4,9,-7.9737352,110.6019041,https://www.google.com/maps/search/Waroeng%20Spesial%20Sambal%20%22SS%22%20Wonosari
+9f920,Gunungkidul,Rumah Makan Bantar Angin,4.7,20,-8.0383798,110.448301,https://www.google.com/maps/search/Rumah%20Makan%20Bantar%20Angin
+48a70,Gunungkidul,Omahena,4.5,274,-7.9348481,110.5775136,https://www.google.com/maps/search/Omahena
+16410,Gunungkidul,Rumah Makan Lesehan Griyo Wono,4.2,54,-8.1287309,110.5643062,https://www.google.com/maps/search/Rumah%20Makan%20Lesehan%20Griyo%20Wono
+4ad80,Gunungkidul,"Bakmi, Soto & Ayam Goreng Mbah Noto",4.5,19,-7.93768,110.5749246,https://www.google.com/maps/search/Bakmi%2C%20Soto%20%26%20Ayam%20Goreng%20Mbah%20Noto
+cc230,Gunungkidul,Ayam Goreng Pak Parman,4.3,352,-7.9442767,110.5809791,https://www.google.com/maps/search/Ayam%20Goreng%20Pak%20Parman
+e5920,Gunungkidul,Rumah Makan Padang Giwangan,4.4,2003,-7.9720632,110.6028085,https://www.google.com/maps/search/Rumah%20Makan%20Padang%20Giwangan
+c4100,Gunungkidul,Pawon Purba dan Homestay,4.6,10,-7.8441268,110.5345865,https://www.google.com/maps/search/Pawon%20Purba%20dan%20Homestay
+8fdd0,Gunungkidul,Warung Simbok,4.5,7,-7.9297613,110.567522,https://www.google.com/maps/search/Warung%20Simbok
+b9bb0,Gunungkidul,Pondok Makan Sekar Kusuma,4.4,896,-7.9726793,110.603592,https://www.google.com/maps/search/Pondok%20Makan%20Sekar%20Kusuma
+e0dd0,Gunungkidul,Lesehan Nasi Merah Pari Gogo,4.5,20,-7.9970798,110.6501754,https://www.google.com/maps/search/Lesehan%20Nasi%20Merah%20Pari%20Gogo
+30480,Gunungkidul,Warung Makan Primadona,4.6,32,-7.9609479,110.5948491,https://www.google.com/maps/search/Warung%20Makan%20Primadona
+cb860,Gunungkidul,Warung Ndeso Mbak Sri,4.6,23,-7.9782474,110.5938188,https://www.google.com/maps/search/Warung%20Ndeso%20Mbak%20Sri
+29cc0,Gunungkidul,Omah Kampoeng Kuliner Gunungkidul ( Rest Area & Transit ),4.2,82,-7.9818686,110.6176849,https://www.google.com/maps/search/Omah%20Kampoeng%20Kuliner%20Gunungkidul%20%28%20Rest%20Area%20%26%20Transit%20%29
+a1990,Gunungkidul,Rumah Makan Bu Wiwik,4.4,6,-8.0139712,110.5873576,https://www.google.com/maps/search/Rumah%20Makan%20Bu%20Wiwik
+7ed10,Gunungkidul,RUMAH MAKAN SAUNG ROMANSA,4.2,69,-7.8813757,110.719969,https://www.google.com/maps/search/RUMAH%20MAKAN%20SAUNG%20ROMANSA
+725a0,Gunungkidul,Sere Ratu Resto,4.1,33,-7.9361238,110.5730192,https://www.google.com/maps/search/Sere%20Ratu%20Resto
+7dcf0,Gunungkidul,Teras Petruk ,4.2,73,-7.86071,110.5063073,https://www.google.com/maps/search/Teras%20Petruk%20
+8bf40,Gunungkidul,"Warung Lesehan ""Sugarni""",4.3,2903,-7.9686529,110.6036863,https://www.google.com/maps/search/Warung%20Lesehan%20%22Sugarni%22
+13130,Gunungkidul,Lesehan Mak Iyem,4.6,335,-7.9770013,110.615259,https://www.google.com/maps/search/Lesehan%20Mak%20Iyem
+1d4f0,Gunungkidul,RM Padang Tuah Saiyo,4.4,2323,-7.9795694,110.6145962,https://www.google.com/maps/search/RM%20Padang%20Tuah%20Saiyo
+b7d50,Gunungkidul,Warung Makan Pak Wandi,4.2,389,-7.9966262,110.5927081,https://www.google.com/maps/search/Warung%20Makan%20Pak%20Wandi
+41730,Gunungkidul,Warung Sego Abang Gunung Kidul,4.5,1571,-7.9757196,110.5960004,https://www.google.com/maps/search/Warung%20Sego%20Abang%20Gunung%20Kidul
+e87e0,Gunungkidul,Warung Lesehan Pak Kirun,4.2,636,-7.9631051,110.6051749,https://www.google.com/maps/search/Warung%20Lesehan%20Pak%20Kirun
+cd1d0,Gunungkidul,Rumah Makan Padang Playen,4.4,1217,-7.9415239,110.5502552,https://www.google.com/maps/search/Rumah%20Makan%20Padang%20Playen
+ed960,Gunungkidul,Rumah Makan Pelangi,4.7,1646,-7.864063,110.5117683,https://www.google.com/maps/search/Rumah%20Makan%20Pelangi
+9e4c0,Gunungkidul,"RM Jawa ""Bu Sudar""",4.4,1963,-7.9565174,110.6036527,https://www.google.com/maps/search/RM%20Jawa%20%22Bu%20Sudar%22
+b8b80,Gunungkidul,RM Bu Tiwi Tan Tlogo,4.4,141,-7.9874713,110.6285764,https://www.google.com/maps/search/RM%20Bu%20Tiwi%20Tan%20Tlogo
+c22c0,Gunungkidul,Soto dan Ayam Goreng 3H-WikA Depan TBGK,4.6,583,-7.9455457,110.5880078,https://www.google.com/maps/search/Soto%20dan%20Ayam%20Goreng%203H-WikA%20Depan%20TBGK
+50cd0,Gunungkidul,Rumah Makan Padang dan Seafood DUTA RASA,4.7,2682,-7.9550456,110.6213316,https://www.google.com/maps/search/Rumah%20Makan%20Padang%20dan%20Seafood%20DUTA%20RASA
+99070,Gunungkidul,Rumah Makan Tiga Putra Gunungkidul,4.8,2359,-7.971864,110.5853322,https://www.google.com/maps/search/Rumah%20Makan%20Tiga%20Putra%20Gunungkidul
+7e5a0,Gunungkidul,Gudeg YU DJUM Pusat - JL Wonosari,4.4,1102,-7.9105901,110.5544433,https://www.google.com/maps/search/Gudeg%20YU%20DJUM%20Pusat%20-%20JL%20Wonosari
+7ec70,Gunungkidul,Pondok Makan Sumilir,4.2,554,-7.9699087,110.7098531,https://www.google.com/maps/search/Pondok%20Makan%20Sumilir
+d7540,Gunungkidul,Rest area dan rumah makan kampung ngingrong,4.9,183,-8.0271126,110.590368,https://www.google.com/maps/search/Rest%20area%20dan%20rumah%20makan%20kampung%20ngingrong
+caa70,Gunungkidul,Taman Kuliner Wonosari,4.5,2915,-7.9627292,110.6012434,https://www.google.com/maps/search/Taman%20Kuliner%20Wonosari
+e4700,Gunungkidul,Nasi Merah Lombok Ijo Lek War,4.5,1278,-7.9287112,110.5669543,https://www.google.com/maps/search/Nasi%20Merah%20Lombok%20Ijo%20Lek%20War
+e9a20,Gunungkidul,Warung Makan Bu Sabar Pondok Hijau,4.9,962,-8.144684,110.599769,https://www.google.com/maps/search/Warung%20Makan%20Bu%20Sabar%20Pondok%20Hijau
+8daa0,Gunungkidul,Rumah Makan Kampung Bambu Masakan Jawa,4.5,145,-7.9416455,110.5498988,https://www.google.com/maps/search/Rumah%20Makan%20Kampung%20Bambu%20Masakan%20Jawa
+3.17E+02,Gunungkidul,Rumah Makan Pak Kirun,4.4,389,-7.963628,110.605803,https://www.google.com/maps/search/Rumah%20Makan%20Pak%20Kirun
+039a0,Gunungkidul,Nasi Merah Wonosari,4.4,389,-7.9756618,110.5958844,https://www.google.com/maps/search/Nasi%20Merah%20Wonosari
+25690,Gunungkidul,"Kuliner,Cafe dan Resto Kalijogo",4.6,565,-7.9683814,110.6147366,https://www.google.com/maps/search/Kuliner%2CCafe%20dan%20Resto%20Kalijogo
+e5880,Gunungkidul,Rumah Makan Nasi Padang Giwangan,4.4,70,-7.9509566,110.5869218,https://www.google.com/maps/search/Rumah%20Makan%20Nasi%20Padang%20Giwangan
+85af0,Gunungkidul,Rumah Makan Bu. Ari,4.4,688,-8.1881255,110.800655,https://www.google.com/maps/search/Rumah%20Makan%20Bu.%20Ari
+58ec0,Gunungkidul,Resto Indrayanti GK Yogyakarta Indonesia,4.2,316,-8.1499508,110.6119476,https://www.google.com/maps/search/Resto%20Indrayanti%20GK%20Yogyakarta%20Indonesia
+43f80,Gunungkidul,"Warung Makan ""Berdikari""",4.6,305,-8.1181535,110.5031097,https://www.google.com/maps/search/Warung%20Makan%20%22Berdikari%22
+cb2a0,Gunungkidul,HUTAMA RESTO Rumah makan Pantai Drini,4.3,124,-8.1363899,110.5788475,https://www.google.com/maps/search/HUTAMA%20RESTO%20Rumah%20makan%20Pantai%20Drini
+92cc0,Kota Yogyakarta,HeHa Sky View,4.4,312,-7.8496144,110.478324,https://www.google.com/maps/search/HeHa%20Sky%20View
+c5540,Gunungkidul,"LESEHAN ""Khas Solo"" MBAH BAGONG",4.2,103,-7.9701808,110.6049801,https://www.google.com/maps/search/LESEHAN%20%22Khas%20Solo%22%20MBAH%20BAGONG
+9d9c0,Gunungkidul,"Rumah Makan Mbok IDA (Sop Iga Sapi, Ayam Goreng Kampung, Gurameh, Nila, Seafood)",4.8,795,-7.9467994,110.620062,https://www.google.com/maps/search/Rumah%20Makan%20Mbok%20IDA%20%28Sop%20Iga%20Sapi%2C%20Ayam%20Goreng%20Kampung%2C%20Gurameh%2C%20Nila%2C%20Seafood%29
+87520,Gunungkidul,Warung Makan Bu Yanti,4.5,657,-7.9574279,110.5927831,https://www.google.com/maps/search/Warung%20Makan%20Bu%20Yanti
+dc4c0,Gunungkidul,Kuliner Khas Gunungkidul,4.6,144,-7.974899,110.5943176,https://www.google.com/maps/search/Kuliner%20Khas%20Gunungkidul
+89bd0,Gunungkidul,Rumah Makan Padang BERKAH RASA,4.7,25,-7.9608552,110.6028427,https://www.google.com/maps/search/Rumah%20Makan%20Padang%20BERKAH%20RASA
+0efe0,Gunungkidul,Ayam Mbah Tumbu,4.7,102,-8.002782,110.6548887,https://www.google.com/maps/search/Ayam%20Mbah%20Tumbu
+22790,Gunungkidul,Rumah Makan Mbah Warno Coto Makasar,4.6,1404,-7.9587172,110.5882937,https://www.google.com/maps/search/Rumah%20Makan%20Mbah%20Warno%20Coto%20Makasar
+bf380,Gunungkidul,Rumah Makan Sepanjang Indah,4.1,341,-8.1361967,110.5686986,https://www.google.com/maps/search/Rumah%20Makan%20Sepanjang%20Indah
+97100,Gunungkidul,Warung Sego Abang Pari Gogo,4.3,53,-7.9971498,110.6504264,https://www.google.com/maps/search/Warung%20Sego%20Abang%20Pari%20Gogo
+e4f00,Gunungkidul,LESEHAN 24,5.0,12,-7.9520837,110.6795923,https://www.google.com/maps/search/LESEHAN%2024
+ca4d0,Gunungkidul,Warung Makan Lotek & Gado Gado Mbak Asih,4.4,1538,-7.966431,110.6014013,https://www.google.com/maps/search/Warung%20Makan%20Lotek%20%26%20Gado%20Gado%20Mbak%20Asih
+edde0,Gunungkidul,RUMAH MAKAN SRI REJEKI / Bu Warti,4.7,721,-8.1554455,110.6221335,https://www.google.com/maps/search/RUMAH%20MAKAN%20SRI%20REJEKI%20/%20Bu%20Warti
+0.00E+00,Gunungkidul,Nongko Doyong,4.4,34,-7.9424114,110.578886,https://www.google.com/maps/search/Nongko%20Doyong
+f18e0,Gunungkidul,Rumah Makan Sea Food Lestari,4.6,598,-8.1086611,110.4678961,https://www.google.com/maps/search/Rumah%20Makan%20Sea%20Food%20Lestari
+6bec0,Gunungkidul,Rumah Makan Padang Tuah Saiyo,4.3,134,-7.9639399,110.5989057,https://www.google.com/maps/search/Rumah%20Makan%20Padang%20Tuah%20Saiyo
+9.13E+02,Gunungkidul,Warung Makan Bu Sidas Pancuran,4.5,15,-7.9706188,110.5896203,https://www.google.com/maps/search/Warung%20Makan%20Bu%20Sidas%20Pancuran
+23440,Gunungkidul,Lesehan Bu Mamik,4.1,28,-7.9618421,110.6025764,https://www.google.com/maps/search/Lesehan%20Bu%20Mamik
+77b60,Gunungkidul,Taman Watu Cafe & Resort,4.9,61,-8.106485,110.4629789,https://www.google.com/maps/search/Taman%20Watu%20Cafe%20%26%20Resort
+8b8f0,Gunungkidul,Rumah Makan Padang Dua Satu,4.7,111,-7.9712378,110.602423,https://www.google.com/maps/search/Rumah%20Makan%20Padang%20Dua%20Satu
+c8bb0,Gunungkidul,Ayam Goreng Sri Pendowo,4.4,14,-7.9615404,110.5965395,https://www.google.com/maps/search/Ayam%20Goreng%20Sri%20Pendowo
+84ee0,Gunungkidul,Rumah makan Limasan Menanti,4.7,11,-8.1378507,110.5979697,https://www.google.com/maps/search/Rumah%20makan%20Limasan%20Menanti
+952a0,Gunungkidul,Warung makan bendrat mbah warti,4.9,253,-8.1412833,110.7708808,https://www.google.com/maps/search/Warung%20makan%20bendrat%20mbah%20warti
+c1110,Gunungkidul,OMAH SOP JAWA SUNDA ( RESTO & HOME STAY SYARI'AH),4.8,130,-8.0470554,110.5088917,https://www.google.com/maps/search/OMAH%20SOP%20JAWA%20SUNDA%20%28%20RESTO%20%26%20HOME%20STAY%20SYARI%27AH%29
+bf5e0,Gunungkidul,Warung makan Lamongan,4.5,273,-7.9628871,110.6187414,https://www.google.com/maps/search/Warung%20makan%20Lamongan
+272b0,Gunungkidul,Warung Makan Mbah Bandi Yu Tum,5.0,689,-8.1448474,110.6028881,https://www.google.com/maps/search/Warung%20Makan%20Mbah%20Bandi%20Yu%20Tum
+b5840,Gunungkidul,RM. Padang Jingglang,4.6,11,-7.9630073,110.6048412,https://www.google.com/maps/search/RM.%20Padang%20Jingglang
+897b0,Gunungkidul,Waroeng Dhahar PAWONE MBAH SECHO,4.6,394,-7.93754,110.5930352,https://www.google.com/maps/search/Waroeng%20Dhahar%20PAWONE%20MBAH%20SECHO
+032c0,Gunungkidul,Penginapan Dan Rumah Makan DEWI SEKAR,5.0,32752,-8.144917,110.60428,https://www.google.com/maps/search/Penginapan%20Dan%20Rumah%20Makan%20DEWI%20SEKAR
+0bca0,Gunungkidul,Magalaga,4.7,73,-7.9798783,110.6097206,https://www.google.com/maps/search/Magalaga
+2a551,Gunungkidul,Warung Makan Masakan Jawa Masja Mbak Titin,4.5,142,-7.9551616,110.5935337,https://www.google.com/maps/search/Warung%20Makan%20Masakan%20Jawa%20Masja%20Mbak%20Titin
+1f5a0,Gunungkidul,Pawon Njonge,4.7,163,-8.011008,110.627201,https://www.google.com/maps/search/Pawon%20Njonge
+bdbd0,Gunungkidul,Waroeng Ngumpul Coffee & Resto Wonosari,4.3,16,-7.9587457,110.593631,https://www.google.com/maps/search/Waroeng%20Ngumpul%20Coffee%20%26%20Resto%20Wonosari
+fcd20,Kota Yogyakarta,Rumah Makan Padang Rajo Minang Asli Masakan Padang,4.3,24,-7.848212,110.4819492,https://www.google.com/maps/search/Rumah%20Makan%20Padang%20Rajo%20Minang%20Asli%20Masakan%20Padang
+28850,Gunungkidul,"Warung Makan Lesehan ""BAKARANE SIMBOK""",5.0,593,-7.9702008,110.5930625,https://www.google.com/maps/search/Warung%20Makan%20Lesehan%20%22BAKARANE%20SIMBOK%22
+f6270,Gunungkidul,Sate Kambing Pak Turut,4.4,151,-7.9602834,110.5983011,https://www.google.com/maps/search/Sate%20Kambing%20Pak%20Turut
+dca30,Gunungkidul,Warung 'PONDOK SUNDAK' Mbak.RATMI,4.4,164,-8.1471184,110.608707,https://www.google.com/maps/search/Warung%20%27PONDOK%20SUNDAK%27%20Mbak.RATMI
+49030,Gunungkidul,Rumah Makan Ayam Goreng & Ayam Bakar Bu Sabar,4.8,409,-7.9755475,110.5952099,https://www.google.com/maps/search/Rumah%20Makan%20Ayam%20Goreng%20%26%20Ayam%20Bakar%20Bu%20Sabar
+243a0,Gunungkidul,Warung Makan Bu Gito,4.6,20,-7.9640575,110.5930151,https://www.google.com/maps/search/Warung%20Makan%20Bu%20Gito
+d3970,Gunungkidul,Omah Angon Farm & Cafe,4.6,136,-7.969305,110.537569,https://www.google.com/maps/search/Omah%20Angon%20Farm%20%26%20Cafe
+9.80E+01,Gunungkidul,IKAN BAKAR MAZ JAMMUS,4.2,11,-8.1085207,110.4683889,https://www.google.com/maps/search/IKAN%20BAKAR%20MAZ%20JAMMUS
+5be20,Gunungkidul,Pondok Makan Mutiara Seafood Bu Ning,4.2,98,-8.1368839,110.5785705,https://www.google.com/maps/search/Pondok%20Makan%20Mutiara%20Seafood%20Bu%20Ning
+f5fe0,Gunungkidul,Warung Bakso Cak Mun,4.1,10,-7.971284,110.602767,https://www.google.com/maps/search/Warung%20Bakso%20Cak%20Mun
+b6620,Gunungkidul,Rumah Makan Padang Putra Bundo,4.4,31,-7.9619232,110.5969069,https://www.google.com/maps/search/Rumah%20Makan%20Padang%20Putra%20Bundo
+5f300,Gunungkidul,warung makan pojok kidul wetan ex terminal lama wonosari,5.0,271,-7.973745,110.6057183,https://www.google.com/maps/search/warung%20makan%20pojok%20kidul%20wetan%20ex%20terminal%20lama%20wonosari
+c92d0,Gunungkidul,Warung Makan Pawon Ndeso,4.1,146,-8.1506211,110.6134089,https://www.google.com/maps/search/Warung%20Makan%20Pawon%20Ndeso
+e4580,Gunungkidul,Warung Makan Bu Lilik 2,4.6,1967,-7.9745296,110.6012012,https://www.google.com/maps/search/Warung%20Makan%20Bu%20Lilik%202
+284f0,Gunungkidul,Rumah Makan Bu Wati,4.8,148,-8.1888666,110.7997256,https://www.google.com/maps/search/Rumah%20Makan%20Bu%20Wati
+9ec90,Gunungkidul,Rumah Makan DUO SAUDARA,4.8,351,-7.933343,110.5706875,https://www.google.com/maps/search/Rumah%20Makan%20DUO%20SAUDARA
+75a80,Gunungkidul,Reine Rumah Makan Masakan Ayam Kampung,4.3,24,-7.9684073,110.6040079,https://www.google.com/maps/search/Reine%20Rumah%20Makan%20Masakan%20Ayam%20Kampung
+8-Feb-00,Kota Yogyakarta,Goebog Resto,4.2,18,-7.8111405,110.4085676,https://www.google.com/maps/search/Goebog%20Resto
+d1a30,Gunungkidul,Cafe de Slili,3.8,49,-8.1450813,110.6026763,https://www.google.com/maps/search/Cafe%20de%20Slili
+a1e40,Gunungkidul,Rumah Makan Padang Lima Sekawan,4.1,21,-8.12611,110.5540922,https://www.google.com/maps/search/Rumah%20Makan%20Padang%20Lima%20Sekawan
+76b80,Gunungkidul,Warung makan pak yanto,5.0,20,-8.0616161,110.5833612,https://www.google.com/maps/search/Warung%20makan%20pak%20yanto
+d8540,Gunungkidul,RM DRINI INDAH,4.3,106,-8.135954,110.5765826,https://www.google.com/maps/search/RM%20DRINI%20INDAH
+ca920,Gunungkidul,Rumah Makan Sakinah,4.3,96,-7.9776749,110.6130153,https://www.google.com/maps/search/Rumah%20Makan%20Sakinah
+9cd60,Gunungkidul,RM Kampoeng Lobster,4.4,2,-8.1370489,110.5690516,https://www.google.com/maps/search/RM%20Kampoeng%20Lobster
+59710,Gunungkidul,Rumah Makan Bu Endar 05,4.9,15,-8.1272714,110.5607518,https://www.google.com/maps/search/Rumah%20Makan%20Bu%20Endar%2005
+b2030,Gunungkidul,RUMAH MAKAN LESEHAN MBAK SRI,4.6,117,-7.8817552,110.7199019,https://www.google.com/maps/search/RUMAH%20MAKAN%20LESEHAN%20MBAK%20SRI
+bbfc0,Gunungkidul,Ikan Bakar Tambakromo,4.5,67,-7.963734,110.6076331,https://www.google.com/maps/search/Ikan%20Bakar%20Tambakromo
+ed290,Gunungkidul,Warung Makan Bu Prapti / seafood,4.5,4,-8.1447581,110.5995059,https://www.google.com/maps/search/Warung%20Makan%20Bu%20Prapti%20/%20seafood
+65ba0,Gunungkidul,"Rocket Chicken Mulo,",4.5,89,-8.0134587,110.587303,https://www.google.com/maps/search/Rocket%20Chicken%20Mulo%2C
+6a880,Gunungkidul,RUMAH MAKAN PADANG SELANG,4.0,9,-7.9635521,110.6164385,https://www.google.com/maps/search/RUMAH%20MAKAN%20PADANG%20SELANG
+39fb0,Gunungkidul,"RuMah makan mbak Parmi Pantai ngandong,gunung kidul, Jogjakarta",5.0,1389,-8.1450602,110.6033048,https://www.google.com/maps/search/RuMah%20makan%20mbak%20Parmi%20Pantai%20ngandong%2Cgunung%20kidul%2C%20Jogjakarta
+ee590,Kulon Progo,Pondok Makan Bu Hartin,4.6,111,-7.8635083,110.1519114,https://www.google.com/maps/search/Pondok%20Makan%20Bu%20Hartin
+79b70,Kulon Progo,Kripala Dekso Coffee and Resto,4.6,75,-7.7151759,110.2173953,https://www.google.com/maps/search/Kripala%20Dekso%20Coffee%20and%20Resto
+62360,Kulon Progo,Yu Djum 167 Resto & Coffee,4.6,19,-7.8866541,110.0555241,https://www.google.com/maps/search/Yu%20Djum%20167%20Resto%20%26%20Coffee
+5c060,Kulon Progo,Kopi Ampirono,4.3,151,-7.7502057,110.1913654,https://www.google.com/maps/search/Kopi%20Ampirono
+66dc0,Kulon Progo,Ayam Goreng BU HARTIN Resto & Music,4.4,60,-7.8663906,110.1694585,https://www.google.com/maps/search/Ayam%20Goreng%20BU%20HARTIN%20Resto%20%26%20Music
+97fe0,Kulon Progo,Resto KAMPUNG-KU PUNUKAN Tradisional & Seafood,4.4,102,-7.8529372,110.1503794,https://www.google.com/maps/search/Resto%20KAMPUNG-KU%20PUNUKAN%20Tradisional%20%26%20Seafood
+19730,Kulon Progo,JOGLO SAERAH RESTO,4.4,431,-7.8863704,110.0600266,https://www.google.com/maps/search/JOGLO%20SAERAH%20RESTO
+47810,Kulon Progo,WARUNG MAKAN MBAH SIBEAN,4.7,20,-7.9056371,110.0793382,https://www.google.com/maps/search/WARUNG%20MAKAN%20MBAH%20SIBEAN
+8f3f0,Kulon Progo,Bu hartin parasan,4.6,20,-7.8674237,110.1652229,https://www.google.com/maps/search/Bu%20hartin%20parasan
+a0b60,Kulon Progo,Kedai Kopi Pari,4.5,31,-7.7619524,110.1206561,https://www.google.com/maps/search/Kedai%20Kopi%20Pari
+79080,Kulon Progo,Rumah Makan Nayan,4.7,29,-7.8699078,110.1871457,https://www.google.com/maps/search/Rumah%20Makan%20Nayan
+c08b0,Kulon Progo,Terraskota Coffee & Kitchen,4.5,6,-7.8801823,110.1533135,https://www.google.com/maps/search/Terraskota%20Coffee%20%26%20Kitchen
+54b30,Kulon Progo,WARUNG MAKAN GUBUK IJO,4.5,13,-7.8870415,110.08332,https://www.google.com/maps/search/WARUNG%20MAKAN%20GUBUK%20IJO
+bfa70,Kulon Progo,Warung Makan Gule Sawah,4.3,14,-7.8597444,110.1539628,https://www.google.com/maps/search/Warung%20Makan%20Gule%20Sawah
+bf9e0,Kulon Progo,OTENTIK Resto & Cafe,4.7,3287,-7.9005951,110.1663955,https://www.google.com/maps/search/OTENTIK%20Resto%20%26%20Cafe
+4ea60,Kulon Progo,Warung Makan Mbah Kebo,4.5,648,-7.8226007,110.1833989,https://www.google.com/maps/search/Warung%20Makan%20Mbah%20Kebo
+37f40,Kulon Progo,Pondok Makan Omah Mbeji,4.6,28,-7.858042,110.14863,https://www.google.com/maps/search/Pondok%20Makan%20Omah%20Mbeji
+cc920,Kulon Progo,Waroeng Spesial Sambal Kulon Progo,4.1,36,-7.8658224,110.1585718,https://www.google.com/maps/search/Waroeng%20Spesial%20Sambal%20Kulon%20Progo
+cce90,Kulon Progo,Pecel Lele Thole Cabang Utama,4.5,173,-7.8532037,110.1543027,https://www.google.com/maps/search/Pecel%20Lele%20Thole%20Cabang%20Utama
+b9340,Kulon Progo,Dapur SEMAR,4.2,11,-7.8588264,110.1494337,https://www.google.com/maps/search/Dapur%20SEMAR
+7c310,Kulon Progo,Warung Al-Dan,4.3,242,-7.8627489,110.1576832,https://www.google.com/maps/search/Warung%20Al-Dan
+beba0,Kulon Progo,PUNCAK SAKA,4.5,25,-7.7686192,110.1962829,https://www.google.com/maps/search/PUNCAK%20SAKA
+47c60,Kulon Progo,Sego Penyetan & Bakso Komplit Bu Hartin Kemiri,4.5,17,-7.8585564,110.1636511,https://www.google.com/maps/search/Sego%20Penyetan%20%26%20Bakso%20Komplit%20Bu%20Hartin%20Kemiri
+f7c30,Kulon Progo,Lesehan MriCo (mriki eco),4.8,114,-7.6641802,110.1493045,https://www.google.com/maps/search/Lesehan%20MriCo%20%28mriki%20eco%29
+c8ac0,Kulon Progo,New Dapoer Khayangan,4.3,17,-7.7456248,110.181367,https://www.google.com/maps/search/New%20Dapoer%20Khayangan
+a6b60,Kulon Progo,BURON'S Coffee & Kitchen,4.6,424,-7.8468718,110.1765683,https://www.google.com/maps/search/BURON%27S%20Coffee%20%26%20Kitchen
+53670,Kulon Progo,"Warung Makan ""IWAK PROGO""",4.2,38,-7.7536949,110.2098253,https://www.google.com/maps/search/Warung%20Makan%20%22IWAK%20PROGO%22
+ffdf0,Kulon Progo,Warunk Teteg,4.4,20,-7.8581849,110.1630364,https://www.google.com/maps/search/Warunk%20Teteg
+2f7e0,Kulon Progo,Waroeng Soto Pak Ismo,4.1,926,-7.8244305,110.2307319,https://www.google.com/maps/search/Waroeng%20Soto%20Pak%20Ismo
+09d40,Sleman,PARIBORO pepes mangut ingkung,4.4,669,-7.7001351,110.2259264,https://www.google.com/maps/search/PARIBORO%20pepes%20mangut%20ingkung
+ab250,Kulon Progo,Sate Kambing Mbah Margo 1,4.3,407,-7.7475657,110.2127168,https://www.google.com/maps/search/Sate%20Kambing%20Mbah%20Margo%201
+371f0,Kulon Progo,OMAH CANTRIK,4.4,5984,-7.7841521,110.1994942,https://www.google.com/maps/search/OMAH%20CANTRIK
+d60b0,Kulon Progo,Warung Makan Bakmi Mbah Atmo,4.4,1969,-7.8559781,110.1618556,https://www.google.com/maps/search/Warung%20Makan%20Bakmi%20Mbah%20Atmo
+37180,Kulon Progo,Tumpeng Menoreh,4.5,219,-7.6450862,110.145562,https://www.google.com/maps/search/Tumpeng%20Menoreh
+cbb60,Kulon Progo,Rumah Makan Pandansari,4.4,299,-7.8862069,110.0612503,https://www.google.com/maps/search/Rumah%20Makan%20Pandansari
+4b5d0,Kulon Progo,Soto Bathok Wulung,4.3,64,-7.8508938,110.164268,https://www.google.com/maps/search/Soto%20Bathok%20Wulung
+be9b0,Kulon Progo,Rumah Makan Saiyo Sapta Pesona,4.1,1172,-7.8668096,110.1501693,https://www.google.com/maps/search/Rumah%20Makan%20Saiyo%20Sapta%20Pesona
+e9860,Kulon Progo,Ingkung Sawah,4.2,1177,-7.8600375,110.1538753,https://www.google.com/maps/search/Ingkung%20Sawah
+39b70,Kulon Progo,Rumah Makan Gerbang Trisik,3.9,744,-7.95187,110.2187521,https://www.google.com/maps/search/Rumah%20Makan%20Gerbang%20Trisik
+b4450,Kulon Progo,Warung Mbah Bangkit,4.8,64,-7.8363424,110.1759867,https://www.google.com/maps/search/Warung%20Mbah%20Bangkit
+1cf10,Kulon Progo,RM Lesehan OMAH KAMPOENG,4.5,907,-7.9283094,110.2122158,https://www.google.com/maps/search/RM%20Lesehan%20OMAH%20KAMPOENG
+edc30,Kulon Progo,Menoreh View,4.6,141,-7.7495409,110.2060647,https://www.google.com/maps/search/Menoreh%20View
+c0ef0,Kulon Progo,Rumah Makan DP (Dulu Pernah),4.5,346,-7.8270466,110.2235676,https://www.google.com/maps/search/Rumah%20Makan%20DP%20%28Dulu%20Pernah%29
+40090,Kulon Progo,Rumah Makan Buah Jarami Masakan Padang Asli,3.9,979,-7.8655237,110.155969,https://www.google.com/maps/search/Rumah%20Makan%20Buah%20Jarami%20Masakan%20Padang%20Asli
+a97a0,Kulon Progo,Rumah Makan Nggirli,3.9,702,-7.8673182,110.1644801,https://www.google.com/maps/search/Rumah%20Makan%20Nggirli
+d5c20,Kulon Progo,Rumah Makan Ledok Kalimanggis,4.4,713,-7.7919611,110.1947835,https://www.google.com/maps/search/Rumah%20Makan%20Ledok%20Kalimanggis
+0f330,Kulon Progo,GUBUK MAKAN IWAK KALEN KOTA WATES,4.3,1437,-7.8611927,110.1542256,https://www.google.com/maps/search/GUBUK%20MAKAN%20IWAK%20KALEN%20KOTA%20WATES
+62880,Kulon Progo,Rumah Makan Berkah Barito H.Dali,5.0,1835,-7.8386183,110.1386546,https://www.google.com/maps/search/Rumah%20Makan%20Berkah%20Barito%20H.Dali
+e5820,Kulon Progo,Ayam Tulang Lunak Sedap Mantap,4.4,1268,-7.8633896,110.1511768,https://www.google.com/maps/search/Ayam%20Tulang%20Lunak%20Sedap%20Mantap
+d9530,Kulon Progo,CHANNA FOOD RESTO,4.9,310,-7.8837551,110.1192223,https://www.google.com/maps/search/CHANNA%20FOOD%20RESTO
+e18a0,Kulon Progo,"Ayam Goreng ""Bu Hartin"" Driyan",4.4,65,-7.8616358,110.1553359,https://www.google.com/maps/search/Ayam%20Goreng%20%22Bu%20Hartin%22%20Driyan
+37710,Kulon Progo,Sego Pulen,4.3,319,-7.8871536,110.0695547,https://www.google.com/maps/search/Sego%20Pulen
+af660,Kulon Progo,Warung Makan Ambar,4.9,500,-7.8642914,110.1433884,https://www.google.com/maps/search/Warung%20Makan%20Ambar
+e82e0,Kulon Progo,Waroeng Ji Ro,3.3,451,-7.9205426,110.1835611,https://www.google.com/maps/search/Waroeng%20Ji%20Ro
+243d0,Kulon Progo,Warung makan Sedulur,4.3,102,-7.8523874,110.16397,https://www.google.com/maps/search/Warung%20makan%20Sedulur
+686d0,Kulon Progo,"""Kuliner Khas Menoreh"" Mangut & Sidat Goreng Bu Sriwanto",4.5,1149,-7.68245,110.255982,https://www.google.com/maps/search/%22Kuliner%20Khas%20Menoreh%22%20Mangut%20%26%20Sidat%20Goreng%20Bu%20Sriwanto
+e6610,Kulon Progo,Ayam Goreng Bugisan Kulon Progo,4.4,615,-7.8664931,110.1782153,https://www.google.com/maps/search/Ayam%20Goreng%20Bugisan%20Kulon%20Progo
+68930,Kulon Progo,Warung Bakmi Handayani,4.3,17,-7.8364497,110.1737986,https://www.google.com/maps/search/Warung%20Bakmi%20Handayani
+0d620,Kulon Progo,Bakmi Jawa Pak Sogol,4.5,1935,-7.8577443,110.1562278,https://www.google.com/maps/search/Bakmi%20Jawa%20Pak%20Sogol
+d0ac0,Kulon Progo,Rumah Makan,5.0,374,-7.848681,110.2172184,https://www.google.com/maps/search/Rumah%20Makan
+95af0,Kulon Progo,Lesehan AW,4.3,3201,-7.8424658,110.157585,https://www.google.com/maps/search/Lesehan%20AW
+61100,Kulon Progo,Rumah Makan Bu Luwis,4.7,75,-7.8964009,110.2034497,https://www.google.com/maps/search/Rumah%20Makan%20Bu%20Luwis
+20220,Kulon Progo,Resto Simpang Tiga,4.6,1591,-7.8605292,110.1589569,https://www.google.com/maps/search/Resto%20Simpang%20Tiga
+aea30,Kulon Progo,Waroeng Pempek Cik Ana,4.7,491,-7.8604256,110.1622939,https://www.google.com/maps/search/Waroeng%20Pempek%20Cik%20Ana
+aeb70,Kulon Progo,Warung Makan Bu Bingah,4.3,407,-7.8665886,110.1496806,https://www.google.com/maps/search/Warung%20Makan%20Bu%20Bingah
+f7330,Kulon Progo,RUMAH MAKAN PADANG SAIYO,4.8,624,-7.8481812,110.1682977,https://www.google.com/maps/search/RUMAH%20MAKAN%20PADANG%20SAIYO
+e9010,Kulon Progo,RM Lamongan Indah Pak Nilam,4.4,306,-7.8839502,110.149014,https://www.google.com/maps/search/RM%20Lamongan%20Indah%20Pak%20Nilam
+ea100,Kulon Progo,Waroeng Bakmi Dan Nasgor Pak GOENDUL,4.7,24,-7.8458323,110.1684951,https://www.google.com/maps/search/Waroeng%20Bakmi%20Dan%20Nasgor%20Pak%20GOENDUL
+c1be0,Kulon Progo,Bebakaran Masden - Daharndeso,4.6,66,-7.8722787,110.1976587,https://www.google.com/maps/search/Bebakaran%20Masden%20-%20Daharndeso
+59a70,Kulon Progo,Kayu Kalijaran View,4.4,2027,-7.7594418,110.2082136,https://www.google.com/maps/search/Kayu%20Kalijaran%20View
+5a0f0,Kulon Progo,Tumpeng Ayu,4.6,165,-7.643872,110.1455607,https://www.google.com/maps/search/Tumpeng%20Ayu
+af5a0,Kulon Progo,Twins Siomay Pengasih,4.4,321,-7.8418982,110.1667739,https://www.google.com/maps/search/Twins%20Siomay%20Pengasih
+f39d0,Kulon Progo,Warung Podjok Bandara Pak Pri Asli Klaten,4.7,120,-7.8867716,110.0589264,https://www.google.com/maps/search/Warung%20Podjok%20Bandara%20Pak%20Pri%20Asli%20Klaten
+18120,Kulon Progo,Rumah Makan Padang Putera Minang,4.6,84,-7.8891093,110.1301282,https://www.google.com/maps/search/Rumah%20Makan%20Padang%20Putera%20Minang
+12290,Kulon Progo,Soto Bathok Tunggal Wulung,4.4,500,-7.8332708,110.1803971,https://www.google.com/maps/search/Soto%20Bathok%20Tunggal%20Wulung
+41170,Kulon Progo,Joglo Menoreh Resto,4.6,23,-7.7523794,110.2055448,https://www.google.com/maps/search/Joglo%20Menoreh%20Resto
+513d0,Kulon Progo,Warung Soto Pak Paiman,4.3,461,-7.865221,110.1562319,https://www.google.com/maps/search/Warung%20Soto%20Pak%20Paiman
+613b0,Kulon Progo,TERAS BUDHE,5.0,15,-7.8379324,110.1747253,https://www.google.com/maps/search/TERAS%20BUDHE
+a25a0,Kulon Progo,WARUNG MAKAN SEDERHANA BU MUJIYATI,4.6,715,-7.863637,110.1568255,https://www.google.com/maps/search/WARUNG%20MAKAN%20SEDERHANA%20BU%20MUJIYATI
+735b0,Kulon Progo,Warung Makan Gudeg Yu Sum,4.6,66,-7.8597949,110.1544746,https://www.google.com/maps/search/Warung%20Makan%20Gudeg%20Yu%20Sum
+83380,Kulon Progo,Kedai Saparela,4.8,45,-7.851667,110.1615558,https://www.google.com/maps/search/Kedai%20Saparela
+2c670,Kulon Progo,WARUNG BURJO PAK CUBUNG (MAS KRISNOWO) & MIE AYAM CEKER YU SRI,4.4,228,-7.8588603,110.1587289,https://www.google.com/maps/search/WARUNG%20BURJO%20PAK%20CUBUNG%20%28MAS%20KRISNOWO%29%20%26%20MIE%20AYAM%20CEKER%20YU%20SRI
+1d650,Kulon Progo,Rumah Makan Arjo Kantor,4.8,45,-7.9419347,110.207968,https://www.google.com/maps/search/Rumah%20Makan%20Arjo%20Kantor
+ac2e0,Kulon Progo,Lesehan Bakmi Jowo FD,4.6,393,-7.8342901,110.1787436,https://www.google.com/maps/search/Lesehan%20Bakmi%20Jowo%20FD
+29c90,Kulon Progo,"Lesehan Cinta Rasa Bebakaran ""Pak Wahid""",4.7,331,-7.8696043,110.2400254,https://www.google.com/maps/search/Lesehan%20Cinta%20Rasa%20Bebakaran%20%22Pak%20Wahid%22
+c4330,Bantul,Warung Makan Rodo Jodo,4.3,203,-7.9392898,110.2392114,https://www.google.com/maps/search/Warung%20Makan%20Rodo%20Jodo
+523f0,Kulon Progo,Rumah Makan Raja Ngancar,4.7,582,-7.8648792,110.1135815,https://www.google.com/maps/search/Rumah%20Makan%20Raja%20Ngancar
+89530,Kulon Progo,Waroeng Joglo,4.1,85,-7.8596911,110.1525668,https://www.google.com/maps/search/Waroeng%20Joglo
+38550,Kulon Progo,Pecel Lele Bangjay Pengasih,4.4,12,-7.8422147,110.168524,https://www.google.com/maps/search/Pecel%20Lele%20Bangjay%20Pengasih
+cdb70,Kulon Progo,Bakmi Yu Bandi,4.7,26,-7.8333344,110.1664594,https://www.google.com/maps/search/Bakmi%20Yu%20Bandi
+6c920,Kulon Progo,Mino Legowo Rumah Makan & Pemancingan,4.3,77,-7.8495227,110.1596546,https://www.google.com/maps/search/Mino%20Legowo%20Rumah%20Makan%20%26%20Pemancingan
+4e3b0,Kulon Progo,Rumah Makan Padang Dita Minang,4.8,709,-7.8568891,110.1469715,https://www.google.com/maps/search/Rumah%20Makan%20Padang%20Dita%20Minang
+4.00E+830,Kulon Progo,Warung Makan Mbak Giri,4.5,17,-7.8911852,110.119624,https://www.google.com/maps/search/Warung%20Makan%20Mbak%20Giri
+a52d1,Kulon Progo,BACILAK Baso Aci Galak 5 Pengasih,4.8,12,-7.8432313,110.1685187,https://www.google.com/maps/search/BACILAK%20Baso%20Aci%20Galak%205%20Pengasih
+eb860,Sleman,Warung Makan Beong & Aneka Ikan mBah Juri,3.9,147,-7.6585758,110.257609,https://www.google.com/maps/search/Warung%20Makan%20Beong%20%26%20Aneka%20Ikan%20mBah%20Juri
+e9e60,Kulon Progo,SATE MBAH HARDJO,4.3,332,-7.887294,110.0831536,https://www.google.com/maps/search/SATE%20MBAH%20HARDJO
+b2d70,Kulon Progo,Seafood Bu Bagyo,4.2,64,-7.9129915,110.0737351,https://www.google.com/maps/search/Seafood%20Bu%20Bagyo
+4fb60,Kulon Progo,Pondok Nasi Uduk Obong,4.2,50,-7.8649287,110.1525359,https://www.google.com/maps/search/Pondok%20Nasi%20Uduk%20Obong
+e97d0,Kulon Progo,Warung Makan Bu Ibah,4.7,269,-7.8530106,110.1627519,https://www.google.com/maps/search/Warung%20Makan%20Bu%20Ibah
+8cee0,Kulon Progo,Rumah makan Mbok ijah,4.4,572,-7.9520048,110.2048764,https://www.google.com/maps/search/Rumah%20makan%20Mbok%20ijah
+0a910,Kulon Progo,Lesehan Bu Ambar Pecel Lele,4.3,395,-7.8919251,110.0521982,https://www.google.com/maps/search/Lesehan%20Bu%20Ambar%20Pecel%20Lele
+c70c0,Kulon Progo,RM PENDOPO TOYAN,4.1,27,-7.8922434,110.1278329,https://www.google.com/maps/search/RM%20PENDOPO%20TOYAN
+f0160,Kulon Progo,Rocket Chicken Pengasih,4.3,250,-7.8462009,110.1684478,https://www.google.com/maps/search/Rocket%20Chicken%20Pengasih
+6150,Kulon Progo,"Warung DALAN ANYAR "" CAPCAY, SEAFOOD&BAKMI""",4.8,72,-7.8422575,110.1649124,https://www.google.com/maps/search/Warung%20DALAN%20ANYAR%20%22%20CAPCAY%2C%20SEAFOOD%26BAKMI%22
+0cde0,Kulon Progo,Seafoodku Kulon Progo,5.0,286,-7.8588238,110.1637113,https://www.google.com/maps/search/Seafoodku%20Kulon%20Progo
+64ce0,Kulon Progo,Teras Musio,4.9,917,-7.8188582,110.1531625,https://www.google.com/maps/search/Teras%20Musio
+4bfa0,Kulon Progo,Warung Tritis,4.6,39,-7.8299686,110.1635515,https://www.google.com/maps/search/Warung%20Tritis
+59ad0,Kulon Progo,Rumah Makan Selera Baru,5.0,39,-7.8342317,110.1794128,https://www.google.com/maps/search/Rumah%20Makan%20Selera%20Baru
+8b4c0,Kulon Progo,Pecel Lele Cak Bejo,4.7,112,-7.8504006,110.1680828,https://www.google.com/maps/search/Pecel%20Lele%20Cak%20Bejo
+410f0,Kulon Progo,Warung Pinggir SAWAH,4.5,52,-7.8669827,110.1752679,https://www.google.com/maps/search/Warung%20Pinggir%20SAWAH
+ef2f0,Kulon Progo,Mae Damar,4.6,154,-7.8348521,110.1625346,https://www.google.com/maps/search/Mae%20Damar
+ae020,Kulon Progo,Tongseng ayam kampung& kupat tahu magelang kang wawan,4.8,29,-7.8588779,110.158554,https://www.google.com/maps/search/Tongseng%20ayam%20kampung%26%20kupat%20tahu%20magelang%20kang%20wawan
+ad890,Kulon Progo,Warmindo TETEG,4.3,73,-7.8598074,110.1553839,https://www.google.com/maps/search/Warmindo%20TETEG
+accb0,Kulon Progo,Rumah makan Gunung Rebab,4.6,275,-7.7997272,110.1234022,https://www.google.com/maps/search/Rumah%20makan%20Gunung%20Rebab
+9b690,Kulon Progo,Warung Berkah Lamongan Kulonprogo,4.6,60,-7.8353579,110.1659125,https://www.google.com/maps/search/Warung%20Berkah%20Lamongan%20Kulonprogo
+33fd0,Kulon Progo,"Bakso Balungan dan Tetelan ""AA""",4.4,16,-7.8491979,110.1679465,https://www.google.com/maps/search/Bakso%20Balungan%20dan%20Tetelan%20%22AA%22
+a29d0,Kulon Progo,"Angkringan ""AYM"" Yu Sum Mak e",4.3,28,-7.843094,110.161612,https://www.google.com/maps/search/Angkringan%20%22AYM%22%20Yu%20Sum%20Mak%20e
+9.00E+530,Kulon Progo,Kedai Dimsum & Seblak Bahagia,4.4,172,-7.8502153,110.1685583,https://www.google.com/maps/search/Kedai%20Dimsum%20%26%20Seblak%20Bahagia
+89hy0,Sleman,Kedai Naknan,4.1,87,-7.75506,110.3770313,https://www.google.com/maps/search/Kedai%20Naknan
+776i0,Bantul,Rumah Curry,4.9,170,-7.80763,110.4186602,https://www.google.com/maps/search/Rumah%20Curry
+097j0,Bantul,Lesehan Pecel Lele Pring Ori,4.4,77,-77.8847,110.4055525,https://www.google.com/maps/search/Lesehan%20Pecel%20Lele%20Pring%20Ori
+778h0,Kulon Progo,Dadap Sumilir,4.8,66,-7.73071,110.1879767,https://www.google.com/maps/search/Dadap%20Sumilir
