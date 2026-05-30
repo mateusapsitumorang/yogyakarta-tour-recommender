@@ -76,4 +76,4 @@ DISTANCE_FACTOR = 0.1  # Faktor pengali jarak untuk memengaruhi bobot jarak dala
 # Memastikan jarak antar lokasi (penginapan, tempat wisata, rumah makan) memengaruhi skor secara proporsional tanpa mendominasi faktor lain seperti rating atau harga.
 
 # Path direktori data
-DATA_DIR = "C:/Users/ASUS/Desktop/Skripsi/data" 
+DATA_DIR = "D:/yogyakarta-tour-recommender/data"
