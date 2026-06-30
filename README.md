@@ -6,7 +6,7 @@ Sistem ini memodelkan entitas pariwisata (tempat wisata, penginapan, dan rumah m
 
 ## Latar Belakang & Tujuan
 
-Pemilihan paket wisata (destinasi, penginapan, dan kuliner) yang saling berdekatan dan sesuai preferensi pengguna seringkali dilakukan secara manual dan memakan waktu. Penelitian ini mengusulkan pendekatan berbasis graph untuk merepresentasikan keterhubungan antar entitas pariwisata, lalu menerapkan Path Ranking Algorithm untuk menghitung skor relevansi jalur (path) antar entitas berdasarkan kombinasi faktor jarak, rating, harga, kategori, dan jumlah ulasan — sehingga sistem dapat merekomendasikan paket wisata secara otomatis dan terukur.
+Pemilihan paket wisata (destinasi, penginapan, dan kuliner) yang saling berdekatan dan sesuai preferensi pengguna seringkali dilakukan secara manual dan memakan waktu. Penelitian ini mengusulkan pendekatan berbasis graph untuk merepresentasikan keterhubungan antar entitas pariwisata, lalu menerapkan Path Ranking Algorithm untuk menghitung skor relevansi jalur (path) antar entitas berdasarkan kombinasi faktor jarak, rating, harga, kategori, dan jumlah ulasan sehingga sistem dapat merekomendasikan paket wisata secara otomatis dan terukur.
 
 ## Metodologi Singkat
 
